@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import BIModal from '@/ant_components/BIModal';
 import styles from './index.less';
 import { message } from 'antd';
-
-import { getOptionName } from '@/utils/utils';
 import { checkPathname } from '@/components/AuthButton';
 import FormTable from '@/components/FormTable';
 
@@ -246,7 +244,7 @@ class Index extends Component {
                     editBtnText="编辑"
                     disabled={
                         checkPathname('/foreEnd/business/project/contract/detail/backInfo/add') &&
-                        contractReturnMoneyTotal < Number(formDataObj.contract.contractMoneyTotal)
+                            contractReturnMoneyTotal < Number(formDataObj.contract.contractMoneyTotal)
                             ? false
                             : true
                     }

@@ -62,10 +62,10 @@ export function columnsFn(props) {
                         {disabled
                             ? '-'
                             : record
-                              && record[radioKey]
-                              && dataMask4Number(record[radioKey], 0, (value) => {
-                                  return getOptionName(FEE_TYPE, String(value));
-                              })}
+                            && record[radioKey]
+                            && dataMask4Number(record[radioKey], 0, (value) => {
+                                return getOptionName(FEE_TYPE, String(value));
+                            })}
                     </span>
                 </div>
             </>
@@ -76,8 +76,8 @@ export function columnsFn(props) {
         return editable && required ? (
             <div className={s.requireTitle}>{title}</div>
         ) : (
-            <div className={s.noRequireTitle}>{title}</div>
-        );
+                <div className={s.noRequireTitle}>{title}</div>
+            );
     }
     const columns = [
         {

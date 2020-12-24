@@ -137,32 +137,37 @@ class StatementList extends React.Component {
                                     fieldNames: { value: 'contractId', label: 'contractName' },
                                 },
                             },
-                            {}
+                            {
+                                key: 'contract1Name',
+                                type: 'associationSearchFilter',
+                                placeholder: '请输入负责人',
+                                className: styles.searchCls,
+                                componentAttr: {
+                                    request: (val) => {
+                                        return getContractList({ contractName: val });
+                                    },
+                                    initDataType: 'onfocus',
+                                    fieldNames: { value: 'contractId', label: 'contractName' },
+                                },
+                            }
                         ],
                         [
                             {
-                                key: 'contractMoneyStatus',
-                                type: 'checkbox',
-                                label: '回款状态',
-                                options: contractMoneyStatus,
+                                key: 'contractDate',
+                                label: '应收日期',
+                                type: 'daterange',
+                                placeholder: ['签约开始日期', '签约结束日期'],
+                                className: styles.dateRangeCls,
                             },
                         ],
                         [
                             {
                                 key: 'expenseConfirmStatus',
                                 type: 'checkbox',
-                                label: '费用确认状态',
-                                options: CONTRACT_FEE_STATUS,
+                                label: '应收状态',
+                                options: [{ id: 1, name: '延期' }, { id: 2, name: '正常' }],
                             },
                         ],
-                        [
-                            {
-                                key: 'contractSettlementStatusTemp',
-                                type: 'checkbox',
-                                label: '结算状态',
-                                options: CUSTOM_SETTLEMENT_STATUS,
-                            },
-                        ]
                     ]}
                     fetch={this.fetchFn}
                     cols={columnsFn(this)}

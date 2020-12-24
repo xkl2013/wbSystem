@@ -269,6 +269,8 @@ class Index extends Component {
                 <BIModal
                     title="发起审批"
                     visible={this.state.visible}
+                    onOk={() => this.setState({ visible: false })}
+                    onCancel={() => this.setState({ visible: false })}
                 >
                     <Approval />
                 </BIModal>

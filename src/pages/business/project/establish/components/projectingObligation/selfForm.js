@@ -120,13 +120,13 @@ const checkLimit = (formData, props) => {
     const { projectingAppointmentId, key } = props.state.formData;
     // 已选的履约义务列表
     const talentObligationList = (projectingAppointmentDTOList
-            && projectingAppointmentDTOList.filter((item) => {
-                return (
-                    Number(item.projectingAppointmentTalentId) === Number(talentId)
-                    && Number(item.projectingAppointmentTalentType) === Number(talentType)
-                    && item.projectingAppointmentPath
-                );
-            }))
+        && projectingAppointmentDTOList.filter((item) => {
+            return (
+                Number(item.projectingAppointmentTalentId) === Number(talentId)
+                && Number(item.projectingAppointmentTalentType) === Number(talentType)
+                && item.projectingAppointmentPath
+            );
+        }))
         || [];
     let flag = false;
     if (talentObligationList.length > 0) {

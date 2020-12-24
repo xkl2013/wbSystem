@@ -128,23 +128,23 @@ const checkLimit = (formData, props) => {
     const { projectAppointmentId, no } = props.state.formData;
     // 合同关联的项目履约中，该艺人已填写的履约义务（过滤掉空数据即没有履约义务字段的）
     const talentProjectObligationList = (projectAppointments
-            && projectAppointments.filter((item) => {
-                return (
-                    Number(item.projectAppointmentTalentId) === Number(talentId)
-                    && Number(item.projectAppointmentTalentType) === Number(talentType)
-                    && item.projectAppointmentPath
-                );
-            }))
+        && projectAppointments.filter((item) => {
+            return (
+                Number(item.projectAppointmentTalentId) === Number(talentId)
+                && Number(item.projectAppointmentTalentType) === Number(talentType)
+                && item.projectAppointmentPath
+            );
+        }))
         || [];
     // 合同的项目履约中，该艺人已填写的履约义务
     const talentContractObligationList = (contractAppointmentList
-            && contractAppointmentList.filter((item) => {
-                return (
-                    Number(item.contractAppointmentTalentId) === Number(talentId)
-                    && Number(item.contractAppointmentTalentType) === Number(talentType)
-                    && item.contractAppointmentPath
-                );
-            }))
+        && contractAppointmentList.filter((item) => {
+            return (
+                Number(item.contractAppointmentTalentId) === Number(talentId)
+                && Number(item.contractAppointmentTalentType) === Number(talentType)
+                && item.contractAppointmentPath
+            );
+        }))
         || [];
     let flag = false;
     if (talentProjectObligationList.length > 0) {

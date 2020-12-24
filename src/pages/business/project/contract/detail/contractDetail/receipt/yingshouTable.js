@@ -11,7 +11,6 @@ import moment from 'moment';
 
 // 获取table列表头
 export function columnsFn(currentIsCreater, props) {
-  console.log(props)
   const columns = [
     {
       title: '序列',

@@ -17,43 +17,11 @@ const goProgress = (val) => {
 function columnsFn() {
     const columns = [
         {
-            title: 'talent',
-            dataIndex: 'talentName',
-            width: 110,
-            render: (text) => {
-                return String(text).slice(0, 10);
-            },
-        },
-        {
             title: '项目名称',
             dataIndex: 'projectingName',
             width: 150,
             render: (text) => {
                 return <span style={{ whiteSpace: 'nowrap' }}>{renderTxt(text)}</span>;
-            },
-        },
-        {
-            title: '拆账金额',
-            dataIndex: 'divideAmount',
-            width: 120,
-            render: (text) => {
-                return <span style={{ whiteSpace: 'nowrap' }}>{renderTxt(`${thousandSeparatorFixed(text)}元`)}</span>;
-            },
-        },
-
-        {
-            title: '分成比例(艺人:公司）',
-            dataIndex: 'divideRateTalent',
-            width: 150,
-            render: (text, record) => {
-                return (
-                    (record.divideRateCompany || record.divideRateTalent)
-                    && `${dataMask4Number(record.divideRateTalent, 0, (value) => {
-                        return (value * 100).toFixed(0);
-                    })}:${dataMask4Number(record.divideRateCompany, 0, (value) => {
-                        return (value * 100).toFixed(0);
-                    })}`
-                );
             },
         },
         {
@@ -73,93 +41,6 @@ function columnsFn() {
             title: '开票进度',
             dataIndex: 'contractInvoiceProgress',
             width: 110,
-        },
-        {
-            title: '费用报销单数',
-            dataIndex: 'reimburseCount',
-            width: 110,
-            render: (text, record) => {
-                const params = {
-                    // 根据费用列表塞选项key
-                    projectId: {
-                        label: record.projectingName,
-                        value: record.projectingId,
-                    },
-                    approvalStatus: ['3'],
-                };
-                return (
-                    <span
-                        className={!text ? `${styles.link} ${styles.disabled}` : styles.link}
-                        onClick={
-                            text
-                                ? () => {
-                                    return toPage('/foreEnd/business/feeManage/reimbursement', params);
-                                }
-                                : null
-                        }
-                    >
-                        {text || 0}
-                    </span>
-                );
-            },
-        },
-        {
-            title: '费用申请单数',
-            dataIndex: 'applicationCount',
-            width: 110,
-            render: (text, record) => {
-                const params = {
-                    // 根据费用列表塞选项key
-                    applicationProjectId: {
-                        label: record.projectingName,
-                        value: record.projectingId,
-                    },
-                    applicationApproveStatus: ['3'],
-                };
-                return (
-                    <span
-                        className={!text ? `${styles.link} ${styles.disabled}` : styles.link}
-                        onClick={
-                            text
-                                ? () => {
-                                    return toPage('/foreEnd/business/feeManage/apply', params);
-                                }
-                                : null
-                        }
-                    >
-                        {text || 0}
-                    </span>
-                );
-            },
-        },
-        {
-            title: '投放条数',
-            dataIndex: 'popularizeCount',
-            width: 110,
-            render: (text, record) => {
-                const params = {
-                    // 根据费用列表塞选项key
-                    projectName: {
-                        label: record.projectingName,
-                        value: record.projectingId,
-                    },
-                    putStatuses: ['3'],
-                };
-                return (
-                    <span
-                        className={!text ? `${styles.link} ${styles.disabled}` : styles.link}
-                        onClick={
-                            text
-                                ? () => {
-                                    return toPage('/foreEnd/business/talentManage/throwManage/list', params);
-                                }
-                                : null
-                        }
-                    >
-                        {text || 0}
-                    </span>
-                );
-            },
         },
         {
             title: '费用确认进度',
@@ -187,14 +68,6 @@ function columnsFn() {
             },
         },
         {
-            title: '制作人',
-            dataIndex: 'producerName',
-            width: 110,
-            render: (text) => {
-                return renderTxt(text);
-            },
-        },
-        {
             title: '签约日期',
             dataIndex: 'contractSigningDate',
             width: 130,
@@ -209,16 +82,7 @@ function columnsFn() {
             render: (text) => {
                 return getOptionName(CONTRACT_ARCHIVE_STATUS, text);
             },
-        },
-        {
-            title: '商务',
-            dataIndex: 'projectingHeaderName',
-            width: 150,
-            textAlign: 'left',
-            render: (text) => {
-                return String(text || '').slice(0, 10);
-            },
-        },
+        }
     ];
     return columns || [];
 }

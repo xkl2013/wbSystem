@@ -22,11 +22,11 @@ export const receivable = {
         // 项目合同
         {
             path: '/foreEnd/business/receivable',
-            component: './business/settleManage/progress/list',
+            component: './business/settleManage/receivable/list',
             tagGroup: [
                 { path: '/foreEnd/business/receivable', },
             ],
-            name: '结算进度',
+            name: '应收管理',
         },
     ],
 };
