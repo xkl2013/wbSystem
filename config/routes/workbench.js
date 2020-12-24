@@ -1,7 +1,7 @@
 export const workbench = [
     {
         path: '/foreEnd/workbench',
-        component: './workbench/mine',
+        component: '../components/renderRouter',
         type: 'icongongzuotai1',
         activeType: 'icongongzuotai',
         name: '工作台',
@@ -16,6 +16,12 @@ export const workbench = [
                 path: '/foreEnd/workbench/mine',
                 component: './workbench/mine',
                 name: '工作台',
+                authignore: true,
+            },
+            {
+                path: '/foreEnd/workbench/monitor',
+                component: './workbench/monitor',
+                name: '数据监控',
                 authignore: true,
             },
         ],

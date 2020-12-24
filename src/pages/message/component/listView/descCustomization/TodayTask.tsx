@@ -39,10 +39,16 @@ const Index = (props) => {
     const applyNode = (obj) => {
         if (obj.toDoType === 1 && obj.toDoCount) {
             return (
-                <a href="/foreEnd/approval/approval/myjob" rel="noopener noreferrer" target="_blank" className={styles.listItem}>
-                    {obj.toDoCount}
-                    条审批待处理
+                <a rel="noopener noreferrer" target="_blank" className={styles.listItem}>
+                    10笔合同待开发票
+                    <span className={styles.warn}>
+                        （已逾期5个）
+                    </span>
                 </a>
+                // <a href="/foreEnd/approval/approval/myjob" rel="noopener noreferrer" target="_blank" className={styles.listItem}>
+                //     {obj.toDoCount}
+                //     条审批待处理
+                // </a>
             );
         }
         return null;
@@ -51,15 +57,21 @@ const Index = (props) => {
     const workbenchNode = (obj) => {
         if (obj.toDoType === 2 && obj.toDoCount) {
             return (
-                <a href="/foreEnd/workbench/mine?viewType=1" className={styles.listItem} target="_blank">
-                    {obj.toDoCount}
-                    个工作台任务待处理
-                    {!!obj.toDoExpireCount && (<span className={styles.warn}>
-                        （已逾期
-                        {obj.toDoExpireCount}
-                        个）
-                    </span>)}
+                <a className={styles.listItem} target="_blank">
+                    10笔款项待催收
+                    <span className={styles.warn}>
+                        （已逾期2个）
+                    </span>
                 </a>
+                // <a href="/foreEnd/workbench/mine?viewType=1" className={styles.listItem} target="_blank">
+                //     {obj.toDoCount}
+                //     个工作台任务待处理
+                //     {!!obj.toDoExpireCount && (<span className={styles.warn}>
+                //         （已逾期
+                //         {obj.toDoExpireCount}
+                //         个）
+                //     </span>)}
+                // </a>
             );
         }
         return null;

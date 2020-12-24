@@ -58,6 +58,7 @@ class Message extends React.Component {
         let { listParams } = this.state;
         const { pages } = this.state;
         listParams = getParams(listParams, this.props);
+        listParams.messageModule = 1;
         this.setState({ listParams }, () => {
             this.getMessageList(listParams, pages);
             this.getMessageType(listParams);
@@ -194,7 +195,10 @@ class Message extends React.Component {
     };
 
     render() {
-        const messageCountList = this.props.messageCountList || [];
+        let messageCountList = this.props.messageCountList || [];
+        // 
+        messageCountList = messageCountList.filter(ls => ls.messageModule !== 3 && ls.messageModule !== 4 && ls.messageModule !== 5)
+        console.log(messageCountList)
         const {
             total, messageList, loading, listParams, commentVisible, commentItem,
         } = this.state;
