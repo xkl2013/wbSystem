@@ -1,6 +1,7 @@
 import React from 'react';
 import PageDataView from '@/components/DataView';
 import { connect } from 'dva';
+import { message } from 'antd';
 import moment from 'moment';
 import { CONTRACT_FEE_STATUS } from '@/utils/enum';
 import { contractMoneyStatus } from '@/utils/enumNo2';
@@ -95,7 +96,9 @@ class StatementList extends React.Component {
             },
         });
     };
-
+    startApproval = () => {
+        message.info('功能同:合同模块');
+    }
     render() {
         const { progressData } = this.props;
         return (

@@ -14,7 +14,8 @@ const goProgress = (val) => {
     window.open(`/foreEnd/business/project/contract/verify/detail?id=${val}`, '_blank');
 };
 
-function columnsFn() {
+function columnsFn(props) {
+
     const columns = [
         {
             title: '应收编码',
@@ -79,10 +80,21 @@ function columnsFn() {
             align: 'center',
             width: 150,
             dataIndex: 'contractReturnDate3',
-            fixed: 'right',
             render: (text) => {
                 return (
                     <span style={{ color: 'red' }}>延期</span>
+                )
+            }
+        },
+        {
+            title: '操作',
+            align: 'center',
+            width: 150,
+            dataIndex: 'contractReturnDate4',
+            fixed: 'right',
+            render: (text) => {
+                return (
+                    <a onClick={() => props.startApproval()}>延期审批</a>
                 )
             }
         },
