@@ -21,7 +21,8 @@ export default {
             const originalMenuData = formateMenu(routes);
             const breadcrumbNameMap = getBreadcrumbNameMap(originalMenuData);
             // 将扁平数据转成树状结构
-            const treeData = transformTree(authData, breadcrumbNameMap);
+            // const treeData = transformTree(authData, breadcrumbNameMap);
+            const treeData = originalMenuData
             const menuObj = treeData.find((item) => {
                 return item;
             }) || {};

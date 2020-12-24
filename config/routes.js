@@ -1,26 +1,6 @@
 import CRM_Routes from './routes/foreEnd';
-import { adminRouter } from './routes/admin';
 
 export const routes = [
-    // 文档配置模块
-    {
-        path: '/doc',
-        component: '../components/renderRouter',
-        routes: [
-            {
-                path: '/doc',
-                component: './doc',
-            },
-            {
-                path: '/doc/approval',
-                component: './doc/approval',
-            },
-            {
-                path: '/doc/editor',
-                component: './doc/editor',
-            },
-        ],
-    },
     // 登录模块
     {
         path: '/loginLayout',
@@ -59,7 +39,7 @@ export const routes = [
     // 主要业余模块
     {
         path: '/',
-        redirect: '/foreEnd',
+        redirect: '/foreEnd/workbench/mine',
     },
     {
         path: '/',
@@ -72,8 +52,6 @@ export const routes = [
                 component: '../layouts/ForeEndLayout',
                 routes: [...CRM_Routes],
             },
-
-            ...adminRouter,
         ],
     },
 ];

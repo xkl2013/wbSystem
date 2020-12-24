@@ -10,8 +10,6 @@ export const project = {
             tagGroup: [
                 { path: '/foreEnd/business/project/contract', name: '项目合同' },
                 { path: '/foreEnd/business/project/manage', name: '项目管理' },
-                { path: '/foreEnd/business/project/establish', name: '立项管理' },
-                { path: '/foreEnd/business/project/verify', name: '项目条款审核' },
             ],
             name: '项目合同',
             routes: [
@@ -57,8 +55,6 @@ export const project = {
             tagGroup: [
                 { path: '/foreEnd/business/project/contract', name: '项目合同' },
                 { path: '/foreEnd/business/project/manage', name: '项目管理' },
-                { path: '/foreEnd/business/project/establish', name: '立项管理' },
-                { path: '/foreEnd/business/project/verify', name: '项目条款审核' },
             ],
             name: '项目管理',
             routes: [
@@ -125,72 +121,6 @@ export const project = {
                             isDoBack: true,
                         },
                     ],
-                },
-            ],
-        },
-        // 立项管理
-        {
-            path: '/foreEnd/business/project/establish',
-            component: '../components/renderRouter',
-            tagGroup: [
-                { path: '/foreEnd/business/project/contract', name: '项目合同' },
-                { path: '/foreEnd/business/project/manage', name: '项目管理' },
-                { path: '/foreEnd/business/project/establish', name: '立项管理' },
-                { path: '/foreEnd/business/project/verify', name: '项目条款审核' },
-            ],
-            name: '立项管理',
-            routes: [
-                {
-                    path: '/foreEnd/business/project/establish',
-                    component: './business/project/establish/list',
-                    name: '立项管理',
-                },
-                {
-                    path: '/foreEnd/business/project/establish/add',
-                    component: './business/project/establish/add',
-                    name: '新增立项',
-                    hideSecondMenu: true,
-                    isDoBack: true,
-                },
-                {
-                    path: '/foreEnd/business/project/establish/edit',
-                    component: './business/project/establish/edit',
-                    name: '编辑立项',
-                    hideSecondMenu: true,
-                    isDoBack: true,
-                },
-                {
-                    path: '/foreEnd/business/project/establish/detail',
-                    component: './business/project/establish/detail',
-                    name: '立项详情',
-                    hideSecondMenu: true,
-                    isDoBack: true,
-                },
-            ],
-        },
-        // 项目条款审核
-        {
-            path: '/foreEnd/business/project/verify',
-            component: '../components/renderRouter',
-            tagGroup: [
-                { path: '/foreEnd/business/project/contract', name: '项目合同' },
-                { path: '/foreEnd/business/project/manage', name: '项目管理' },
-                { path: '/foreEnd/business/project/establish', name: '立项管理' },
-                { path: '/foreEnd/business/project/verify', name: '项目条款审核' },
-            ],
-            name: '项目条款审核',
-            routes: [
-                {
-                    path: '/foreEnd/business/project/verify',
-                    component: './approval/contract/apply/businessList',
-                    name: '项目条款审核',
-                },
-                {
-                    path: '/foreEnd/business/project/verify/detail',
-                    component: './approval/contract/detail',
-                    name: '合同条款审核详情',
-                    hideSecondMenu: true,
-                    isDoBack: true,
                 },
             ],
         },
