@@ -1,0 +1,87 @@
+@import "../../theme/common";
+
+@smallSpace: 4px;
+@normalSpace: 16px;
+.wrap {
+    padding: 16px 24px;
+
+    .wrapTit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .mr12 {
+            margin-right: 12px;
+        }
+    }
+
+    .bitable {
+        margin-top: 20px;
+    }
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.view {
+    .tableWrap {
+        background: #fff;
+        padding: 20px 0;
+
+        :global(th) {
+            text-align: center;
+        }
+
+        :global(td) {
+            text-align: center;
+        }
+
+        .tableDiv {
+            margin: 10px 0;
+            //text-align: center;
+            color: @textGeneralColor;
+            font-size: 12px;
+        }
+    }
+
+    .row {
+        text-align: right;
+
+        .col {
+            display: inline-block;
+            vertical-align: middle;
+            width: 30%;
+            margin: @smallSpace;
+        }
+
+        .btn {
+            margin: @smallSpace;
+
+            color: @primaryColor;
+            border-color: @primaryColor;
+            background: #fff;
+
+            .addIconCls {
+                font-size: 18px;
+                margin-right: 6px;
+            }
+        }
+    }
+}
+
+//表格加必选*
+.requireTitle {
+    &:before {
+        display: inline-block;
+        margin-right: 4px;
+        color: @errorColor;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: '*';
+        vertical-align: top;
+        position: relative;
+        top: 5px;
+    }
+}

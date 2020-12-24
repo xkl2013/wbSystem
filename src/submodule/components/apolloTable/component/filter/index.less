@@ -1,0 +1,122 @@
+@import '../../common';
+@import '../../media';
+
+.optionsModal {
+    min-width: 585px;
+    padding-top: 10px;
+    .mediaMax(750px,{
+        min-width: 0;
+        width: 100%;
+        overflow: hidden;
+        flex: 1;
+    });
+}
+
+.optionItem {
+    display: flex;
+    align-items: center;
+    margin: 0 @marginLg @marginLg;
+    font-size: @textFontGen;
+
+    .optionLeft {
+        width: 136px;
+        text-align: left;
+        .mediaMax(750px,{
+            width: 30%;
+        });
+    }
+
+    .optionMid {
+        width: 111px;
+        margin-left: 20px;
+        .mediaMax(750px,{
+            width: 10%;
+        });
+    }
+
+    .optionRight {
+        width: 194px;
+        margin-left: 20px;
+        .mediaMax(750px,{
+            width: 50%;
+        });
+    }
+
+    .optionAdd {
+        margin-left: 15px;
+    }
+
+    .optionDel {
+        margin-left: 15px;
+        width: 20px;
+        cursor: pointer;
+        text-align: center;
+        .mediaMax(750px,{
+            width: 60px;
+        });
+
+        .delIcon {
+            width: 10px;
+            height: 11px;
+            .mediaMax(750px,{
+                width: 20px;
+                height: 22px;
+            });
+        }
+    }
+
+    .add{
+        cursor: pointer;
+        color: @primaryColor;
+        width: 60px;
+        border-radius: @borderRadius;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        .addIcon{
+            margin-right: @marginSmX;
+        }
+    }
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+    .mediaMax(750px,{
+        width: 100%;
+        justify-content:center;
+        height: 100px;
+        line-height: 100px;
+        padding:0;
+        border-top: 1px solid @borderColor;
+    });
+
+    .btn {
+        text-align: center;
+        cursor: pointer;
+        color: @supportColor;
+        margin-left: 10px;
+        width: 60px;
+        border-radius: @borderRadius;
+        height: 30px;
+        line-height: 30px;
+        .mediaMax(750px,{
+            width: 50%;
+            margin-left: 0;
+            border-left: 1px solid @borderColor;
+            &:first-child{
+                border-left:0;
+            }
+        });
+        &.search {
+            color: white;
+            background: @supportColor;
+        }
+        &.reset {
+            background: white;
+            border: 1px solid @supportColor;
+        }
+    }
+}

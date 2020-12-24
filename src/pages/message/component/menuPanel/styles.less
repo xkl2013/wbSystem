@@ -1,0 +1,136 @@
+@import "~@/theme/common";
+
+.wrap{
+   width: 318px;
+   height: 100vh;
+   background:rgba(248,250,250,1);
+   border-right:1px solid #ECECEC;
+   .menuHeader{
+    display: flex;
+    padding: 16px;
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    h3{
+        font-size:18px;
+        font-weight:500;
+        color:rgba(44,63,83,1); 
+    }
+    .setReadBtn{
+        font-size:12px;
+        color:rgba(140,151,163,1);
+        cursor: pointer;
+    }
+    .selectReadBtn{
+        color: @primaryColor;
+    }
+   }
+   .search{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 16px;
+    .searchInput{
+        width:224px;
+        height:32px;
+        :global .ant-input{
+            border-radius:16px;
+        }
+       }
+   }
+  .menuList{
+    padding: 16px 0 16px 16px;
+        font-size: 14px;
+        text-align: left;
+        :global(.ant-menu) {
+            background: transparent;
+        }
+        :global .ant-menu-inline {
+            border: none;
+        }
+        :global(.ant-menu-sub.ant-menu-inline > .ant-menu-item) {
+            margin: 0;
+        }
+        :global(.ant-menu-item > a) {
+            color: @textGeneralColor;
+        }
+        :global(.ant-menu-item > a:hover) {
+            color: @primaryColor;
+        }
+        :global(.ant-menu-item-selected > a) {
+            color: @primaryColor;
+        }
+        :global(.ant-menu-item-selected > a:hover) {
+            color: @primaryColor;
+        }
+        .menuItem{
+            width: 100%;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            flex-flow: row;
+            flex: 1;
+            :global{
+                .ant-badge-count {
+                    // transform: scale(0.85) translate(50%, -75%);
+                    background: #ff5b57;
+                    box-shadow: none;
+                }
+                .ant-badge-multiple-words {
+                    padding: 0px 6px;
+                }
+            }
+            :global {
+                .ant-badge-count {
+                    right: 0px;
+                    top: 0px;
+                    // transform: scale(0.85) translate(50%, -75%);
+                    transition-duration: 0;
+                    background: #ff5b57;
+                    box-shadow: none;
+                }
+                .ant-badge-multiple-words {
+                    padding: 0px 6px;
+                }
+            }
+            .avatar{
+                margin-right: 16px;
+            }
+            .metaContent{
+                width: 238px;
+                height: 100%;
+                display: flex;
+                flex-flow: column;
+                align-items: flex-start;
+                justify-content: center;
+                flex: 1 0;
+                .metaContentTitle{
+                    position: relative;
+                    width: 100%;
+                    font-size:14px;
+                    color:rgba(44,63,83,1);
+                    line-height: 20px;
+                    .time{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        color:rgba(140,151,163,1); 
+                        font-size: 12px;
+                    }
+                }
+                .metaContentDes{
+width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    font-size:12px;
+color:rgba(140,151,163,1);
+line-height: 20px;
+                }
+            }
+        }
+  }
+}
+

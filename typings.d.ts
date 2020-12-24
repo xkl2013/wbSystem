@@ -1,0 +1,15 @@
+declare module '*.css';
+declare module "*.png";
+declare module "*.less";
+declare module '@/ant_components/*';
+declare module '@/components/*';
+declare module '@/submodule/*';
+declare module 'memoize-one';
+declare module 'classnames';
+declare module 'file-saver';
+declare module 'sha256';
+declare module 'sockjs-client';
+declare module 'stompjs';
+declare module 'js-cookie';
+declare module 'mockjs';
+declare module 'lodash';

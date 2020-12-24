@@ -1,0 +1,66 @@
+@import '~@/theme/common';
+.wrap {
+    position: relative;
+    width: 580px;
+    background: #fff;
+    .titleCls {
+        position: absolute;
+        left: 26px;
+        width: 520px;
+        font-size: 14px;
+        color: #5a6876;
+        line-height: 62px;
+        z-index: 10;
+        background: #fff;
+    }
+    .formWrap {
+        padding: 0 45px 0 26px;
+        max-height: 520px;
+        overflow: scroll;
+        border-bottom: 1px solid #ececec;
+        margin: 62px 0 68px;
+        position: relative;
+        :global(.ant-form-item-control) {
+            line-height: 28px;
+        }
+        :global(.ant-btn-link) {
+            color: #ff5363;
+        }
+        :global(.BIDatePicker .ant-calendar-range-picker-input) {
+            max-width: 112px;
+            text-align: center;
+        }
+        :global(.BIDatePicker .ant-calendar-picker) {
+            text-align: left;
+            width: 350px;
+        }
+        .groupTitle {
+            color: #2c3f53;
+            margin-bottom: 8px;
+            .itemIcon {
+                width: 14px;
+                height: 14px;
+                color: @textSupplyColor;
+                margin: 0 5px 4px 0;
+            }
+        }
+    }
+    .btnCls {
+        width: 68px;
+        margin-left: 10px;
+    }
+    .buttonWrap {
+        position: absolute;
+        bottom: 16px;
+        right: 45px;
+        .delBtnCls {
+            color: #ff5363;
+            position: relative;
+            left: -303px;
+        }
+        :global(.ant-btn.ant-btn-loading:not(.ant-btn-circle):not(.ant-btn-circle-outline):not(.ant-btn-icon-only)
+                .anticon:not(:last-child)) {
+            margin-left: -24px;
+        }
+    }
+}

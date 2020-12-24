@@ -1,0 +1,56 @@
+@import '~@/theme/common';
+
+.checkboxGroup{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding: 5px 0;
+    .enterBox{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        :global(.ant-input-number-handler-wrap){
+    display: none;
+        }
+    }
+    .ageInput{
+        width: 100px;
+        height:24px;
+        font-size: 12px;
+    }
+    .line{
+        display: inline-block;
+        width: 10px;
+        height: 1px;
+        margin: 0 5px;
+        background: #979797;
+    }
+    .tailNode{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        .taxesRateInput{
+            width: 64px;
+            height:24px;
+            font-size: 12px;
+            margin-left: 10px;
+            padding-right: 12px;
+        }
+        .taxesRateSymbol{
+            position: absolute;
+            right: 5px;
+        }
+    }
+}
+.inputCheckboxGroup{
+    border-top: 1px solid @primaryColor;
+    border-bottom: 1px solid @primaryColor;
+}
+.errorBox{
+    border-top: 1px solid @errorColor;
+    border-bottom: 1px solid @errorColor;
+}
+

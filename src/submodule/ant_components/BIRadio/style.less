@@ -1,0 +1,24 @@
+@import "../config.less";
+:global .BIRadio {
+  .m_box{
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
+  .ant-radio-wrapper:hover .ant-radio, .ant-radio:hover .ant-radio-inner, .ant-radio-input:focus + .ant-radio-inner,.ant-radio-checked .ant-radio-inner{
+    //border-color: @base-green!important;
+  }
+  .ant-radio-inner::after{
+    //background-color: @base-green;
+    width: 6px;
+    height:6px;
+  }
+  .ant-radio-checked::after{
+    //border: 1px solid @base-green;
+  }
+  .ant-radio-inner{
+    width: 14px;
+    height:14px;
+  }
+}
+
+

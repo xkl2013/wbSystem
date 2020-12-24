@@ -1,0 +1,67 @@
+@import "../../theme/common";
+
+.container, .container1 {
+    margin: @marginLg;
+    text-align: center;
+    font-size: @textFontSm;
+    color: @textHolderColor;
+    line-height: 17px;
+    height: 34px;
+    overflow: hidden;
+    position: relative;
+    word-break: break-all;
+
+    .user {
+        //margin-right: @marginSmX;
+    }
+
+    .time {
+        //margin: @marginSmX;
+    }
+
+    .op {
+        //margin: @marginSmX;
+    }
+
+    .opCol {
+        //margin: @marginSmX;
+    }
+
+    .old {
+        margin: 0 @marginSmX;
+        text-decoration: line-through;
+    }
+
+    .new {
+        margin: 0 @marginSmX;
+    }
+
+    .unfold {
+        position: absolute;
+        right: 0;
+        top: 17px;
+        background: #fafafa;
+        width: 40px;
+        cursor: pointer;
+
+        .unfoldTip {
+            color: @primaryColor;
+        }
+    }
+
+    .fold {
+        color: @primaryColor;
+        cursor: pointer;
+    }
+}
+
+.container1 {
+    position: absolute;
+    opacity: 0;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    max-height: 100px;
+}

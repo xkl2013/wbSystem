@@ -1,0 +1,24 @@
+.search {
+    width: 100%;
+    display: flex !important;
+    :global(.ant-select-selection) {
+        width: 100%;
+        min-height: 100%;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        height: auto !important;
+    }
+    :global(.ant-select-selection__rendered) {
+        width: 100%;
+    }
+    :global(.ant-select-dropdown-menu) {
+        max-height: none;
+    }
+}
+.searchDropdown {
+    overflow: auto;
+    :global(.ant-select-dropdown-menu) {
+        max-height: none;
+    }
+}

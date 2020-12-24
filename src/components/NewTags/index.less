@@ -1,0 +1,30 @@
+.addBtnCls{
+  display: inline-block;
+  position: relative;
+  right: -15px;
+  color: #5C99FF;
+}
+.delBtnCls{
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  color: #5C99FF;
+}
+.tagNameCls{
+  display: inline-block;
+  min-width: 96px;
+}
+.container{
+    :global(.ant-select-tree){
+        max-height: 270px!important;
+    }
+    :global(.ant-select-tree li){
+        padding-right: 12px;
+    }
+    :global(.ant-select-tree li span.ant-select-tree-checkbox + .ant-select-tree-node-content-wrapper){
+        width: calc(100% - 100px);
+    }
+    :global(.ant-select-dropdown){
+        z-index: 100;
+    }
+}

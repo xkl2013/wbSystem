@@ -1,0 +1,79 @@
+@import '~@/theme/common';
+
+.cell {
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+
+    &.disabled {
+        background: @disabledColor;
+    }
+
+    .cellContent {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+    }
+}
+
+.editPop {
+    min-width: 300px;
+
+    :global(.ant-popover-inner){
+        box-shadow: none;
+    }
+
+    :global(.ant-popover-inner-content) {
+        padding: 0;
+        border: 1px solid @primaryColor;
+        border-radius: 2px;
+    }
+}
+
+.menuPop {
+    width: 110px;
+
+    :global(.ant-popover-inner-content) {
+        padding: @paddingSmX 0;
+        border-radius: @borderRadius;
+        background: #333333;
+    }
+
+    .menuContainer {
+        .splitLine {
+            height: 1px;
+            background: white;
+            opacity: 0.2;
+        }
+
+        .menu {
+            display: flex;
+            height: 28px;
+            padding: 0 @paddingGen;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                background: rgba(216, 216, 216, 0.1);
+            }
+
+            .menuIcon {
+                width: 12px;
+                margin-right: @marginSmX;
+                color: white;
+                font-size: @textFontGen;
+                display: flex;
+            }
+
+            .menuTitle {
+                font-size: @textFontGen;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: white;
+            }
+        }
+    }
+}

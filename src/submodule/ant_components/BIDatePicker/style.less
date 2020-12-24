@@ -1,0 +1,80 @@
+@import "../config.less";
+@import "../../theme/common";
+
+:global .BIDatePicker {
+  .ant-calendar-picker-input {
+    border-radius: @borderRadius;
+    font-size: @textFontSm;
+  }
+
+  //
+  //.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+  //  border-color: @base-green !important;
+  //}
+  //
+  //.ant-calendar-picker:focus .ant-calendar-picker-input:not(.ant-input-disabled) {
+  //  border-color: @base-green;
+  //  outline: 0;
+  //  -webkit-box-shadow: 0 0 0 2px @base-green-shadow;
+  //  box-shadow: 0 0 0 2px @base-green-shadow;
+  //}
+  //
+  //.ant-calendar-selected-day .ant-calendar-date:hover {
+  //  background: @base-green;
+  //}
+  //
+  //.ant-calendar-selected-day .ant-calendar-date {
+  //  background: @base-green;
+  //}
+  //
+  //.ant-calendar-date:hover {
+  //  background: @base-green;
+  //}
+  //
+  //.ant-calendar-today .ant-calendar-date {
+  //  border-color: @base-green;
+  //  font-weight: bold;
+  //  color: @base-green;
+  //  background: #fff;
+  //}
+  //
+  .ant-calendar-range-picker-input {
+    max-width: 105px;
+    text-align: center;
+  }
+
+  .ant-calendar-picker {
+    text-align: left;
+    width: 100%;
+  }
+
+  //
+  .ant-calendar-picker-clear {
+    color: rgba(0, 0, 0, 0.25);
+  }
+
+  //
+  //.ant-input:hover {
+  //  border-color: @base-green;
+  //}
+  //
+  //.anticon {
+  //  color: #848F9B
+  //}
+}
+
+.suffixIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.suffixIconSingle {
+  width: 14px;
+  height: 14px;
+}
+:global .ant-calendar-range-right .ant-calendar-date-input-wrap{
+  margin-left: 0;
+}
+:global .ant-calendar-range .ant-calendar-input{
+  line-height: 24px;
+}

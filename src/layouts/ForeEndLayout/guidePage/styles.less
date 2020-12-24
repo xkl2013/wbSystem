@@ -1,0 +1,145 @@
+.modeRoot{
+    .modalMask{
+        // min-width: 1100px;
+        background-color: rgba(0, 0, 0, 0.45);
+        position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    // overflow: auto;
+    }
+}
+.stepWrap{
+    position: absolute;
+    right: 62px;
+    bottom:28px ;
+    width: 296px;
+    height: 138px;
+    background: #FFFFFF;
+    border-radius: 4px; 
+    .line{
+        position: absolute;
+        bottom: 43px;
+        right: -30px;
+        width: 45px;
+        height: 2px;
+        background: #04B4AD;
+    } 
+    .point{
+        position: absolute;
+        bottom: 40px;
+        right: 10px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #04B4AD;
+    }
+    .iconContent{
+        position: absolute;
+        right: -86px;
+        bottom: 14px;
+        width: 56px;
+        height: 56px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        div{
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: 40px;
+            height: 40px;
+            background: #04B4AD;
+            box-shadow: 0px 2px 10px 0px #04B4AD; 
+            border-radius: 50%;
+            img{
+                position: absolute;
+                width: 12.6px;
+                height: 19.6px;
+                top: 11px;
+                left: 15px;
+            }
+            .shouqi{
+                position: absolute;
+                width: 20.6px;
+                top: 11px;
+                left: 10px;
+            }
+        }
+    }
+}
+.step2Wrap{
+    bottom: 120px;
+    right: 103px;
+    .point{
+        bottom: 10px;
+        right: 39px;  
+    }
+    .line{
+        bottom: -33px;
+        right: 42px;
+        width: 2px;
+        height: 45px;  
+    }
+    .iconContent{
+        right: 14px;
+        bottom: -88px;
+        .settingImg{
+            position: absolute;
+            top: 5px;
+            left: 4px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+.step3Wrap{
+    width:1000px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    .container{
+        position: absolute;
+background: #fff;
+width: 280px;
+    }
+}
+.stepContent{
+    padding: 20px 30px;
+    h3{   
+font-size: 16px;
+font-weight: 500;
+color: #2C3F53;  
+    }
+    p{
+color: #2C3F53;
+font-size: 14px;  
+    }
+}
+.footer{
+    margin-top: 10px;
+  .skip{
+font-size: 14px;
+color: #848F9B; 
+margin-right: 30px;
+cursor: pointer;
+  }  
+  .nextStep{
+    font-size: 14px;
+font-weight: 400;
+color: #04B4AD;  
+cursor: pointer;
+  }
+}
+.pageImg{
+    position: absolute;
+  width:600px;
+  max-height: 100vh;
+    left: 309px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+}

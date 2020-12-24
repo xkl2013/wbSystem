@@ -1,0 +1,152 @@
+@import '../common';
+
+.cellContainer {
+    display: flex;
+    .firstArea {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        overflow: hidden;
+        //max-width: 66px;
+        margin-left: @marginLg;
+        .num {
+            min-width: 30px;
+            max-width: 100px;
+            margin-right: @marginSmX;
+            font-size: @textFontGen;
+            .icon {
+                width: 22px;
+            }
+            &.checked {
+                display: none;
+            }
+        }
+        .checkbox {
+            min-width: 30px;
+            max-width: 100px;
+            margin-right: @marginSmX;
+            &.hasNum {
+                display: none;
+            }
+            &.checked {
+                display: block;
+            }
+        }
+        .expand {
+            display: flex;
+            width: 16px;
+            margin-right: @marginSmX;
+            cursor: pointer;
+            visibility: hidden;
+
+            .expandIcon {
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+                &:hover {
+                    background: #d0f0fd;
+                }
+            }
+        }
+    }
+    &.hover {
+        background: @tableHoverBgColor;
+        .firstArea {
+            .checkbox {
+                display: flex;
+                &.hasNum {
+                    display: flex;
+                }
+            }
+            .num {
+                display: block;
+                &.hasCheckbox {
+                    display: none;
+                }
+            }
+            .expand {
+                visibility: visible;
+            }
+        }
+    }
+    .cellData {
+        flex: 1;
+        overflow: hidden;
+    }
+    .groupLevel {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: @textFontGen;
+        height: 40px;
+        line-height: 40px;
+        color: @textPrimaryColor;
+        z-index: 5;
+    }
+}
+
+.detailCell {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 100%;
+    font-size: @textFontGen;
+    padding: 0 @paddingLg;
+    //&.hover {
+    //    background: @tableHoverBgColor;
+    //    .checkbox {
+    //        display: block;
+    //        &.hasNum {
+    //            display: block;
+    //        }
+    //    }
+    //    .num {
+    //        display: block;
+    //        &.hasCheckbox {
+    //            display: none;
+    //        }
+    //    }
+    //    .expand {
+    //        visibility: visible;
+    //    }
+    //}
+
+    .content {
+        flex: 1;
+        overflow: hidden;
+        color: @textGeneralColor;
+    }
+}
+.editCell {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    z-index: 10;
+    //top: 0;
+    //left: 0;
+}
+.menuPop {
+    width: 110px;
+
+    :global(.ant-popover-inner-content) {
+        padding: @paddingSmX 0;
+        border-radius: @borderRadius;
+        background: #333333;
+    }
+}
+&.selected {
+    box-shadow: inset 0 0 0 1px @primaryColor;
+}
+
+:global(.groupLevel3) {
+}
+:global(.groupLevel2) {
+}
+:global(.groupLevel1) {
+}

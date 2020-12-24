@@ -1,0 +1,105 @@
+@import '~@/theme/common';
+
+.handleWidth {
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    bottom: 0;
+  left: 2px;
+    cursor: ew-resize;
+    z-index: 1;
+    background:transparent;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .drugIcon{
+        display: none;
+        margin: auto;
+        height: 15px;
+        width: 4px;
+      flex-flow: column;
+        i{
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            margin-top: 1px;
+            background: @primaryColor;
+        }
+    }
+}
+.handleWidth:hover .drugIcon{
+display: flex;
+}
+.drawerClass{
+    padding-left: 12px;
+    :global(.ant-drawer-header){
+        padding: 0;
+    }
+    :global(.ant-tabs-bar){
+        border-bottom: none;
+        margin: 0 0 1px 0;
+    }
+    :global(.ant-drawer-wrapper-body){
+        border-left: 12px solid @hoverColor;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .btnWrap{
+position: absolute;
+right: 0;
+padding-right: 16px;
+color: #AEB4BA;
+.btn{
+    margin-left: 5px;
+}
+.btn:hover{
+    color: @textPrimaryColor;
+}
+        }
+    }
+}
+.modalBody{
+    width: 100%;
+    // min-height: 80vh;
+    .content{
+        max-height: calc(100vh - 200px);
+        overflow: auto;
+    }
+    .enlargeContent{
+        max-height: calc(100vh - 120px); 
+    }
+    
+}
+
+.drugWrap{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 10000;
+  
+}
+.drugSideWrap{
+    position: fixed;
+    top: 0;
+    cursor: ew-resize;
+    width: 2px;
+    height: 100vh;
+    background-color: rgb(33, 150, 243);
+    transition: 0.2;
+    z-index: 1;
+}
+.btnIcon{
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    color: @primaryColor;
+    cursor: pointer;
+}

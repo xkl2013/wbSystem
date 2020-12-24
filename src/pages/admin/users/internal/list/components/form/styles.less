@@ -1,0 +1,54 @@
+.formCotainer{
+width: 100%;
+}
+.inputRowWrap{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    // border: 1px solid red;
+    .inputItemCls{
+        width: 33.33%;
+        height: 32px;
+        .input{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .inputItemCls:not(:last-child){
+        margin-right: 20px;
+      }
+}
+.selectRowWrap{
+    &:extend(.inputRowWrap);
+    .itemLabel{
+        display: inline-block;
+        width: 66px;
+        text-align: right;
+        margin-right: 30px;
+        font-size: 14px;
+        color: #2C3F53
+    }
+    .checkboxGroup{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+    .radio:not(:last-child){
+        margin-right: 10px;
+        width: 116px;
+    }
+}
+
+.ageInput{
+    width: 80px;
+    height:24px;
+    font-size: 12px;
+}
+.line{
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    margin: 0 5px;
+    background: #D3D3D3;
+}

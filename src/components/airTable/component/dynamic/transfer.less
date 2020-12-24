@@ -1,0 +1,26 @@
+@import "../../../../theme/common";
+
+.transfer {
+    :global(.ant-transfer-list) {
+        width: 200px;
+        height: 400px;
+    }
+
+    .line {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        .avatar {
+            width: 20px;
+            border-radius: 50%;
+            margin-right: 3px;
+        }
+
+        .userName {
+            color: @textGeneralColor;
+            font-size: @textFontGen;
+        }
+    }
+}
+

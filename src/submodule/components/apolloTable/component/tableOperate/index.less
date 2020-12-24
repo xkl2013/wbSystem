@@ -1,0 +1,31 @@
+@import '../../common';
+@import '../../media';
+.container {
+    background: white;
+    position: relative;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    padding: 0 @paddingLg;
+    .btns {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        //flex-direction: row-reverse;
+        .operate {
+            cursor: pointer;
+            user-select: none;
+            margin-left: 10px;
+            .btn {
+                background: white;
+                color: @supportColor;
+                border-radius: @borderRadius;
+                border: 1px solid @supportColor;
+                &.primary {
+                    background: @supportColor;
+                    color: white;
+                }
+            }
+        }
+    }
+}

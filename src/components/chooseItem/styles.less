@@ -1,0 +1,54 @@
+.tagContent{
+    display: flex;
+    align-items: baseline;
+    min-height:40px;
+    .gropLabel{
+        width: 69px;
+        font-size: 14px;
+        margin-right: 30px;
+        margin-left: 6px;
+        color: #2C3F53;
+    }
+
+    .tagsCls{
+        width: 100%;
+        min-height:42px;
+        border-radius:4px;
+        border:1px solid rgba(231,231,231,1)
+    }
+}
+.tags{
+    display: inline-block;
+    margin-top:5px;
+    :global{
+        .ant-tag{
+            color: #89929B;
+            font-size: 12px;
+            padding: 5px 10px;
+            border: none;
+            background: rgba(245,246,246,1);
+            .anticon-close{
+                color: #fff !important;
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: #BBC7D2;
+                padding: 2px 0;
+            }
+        }
+    }
+}
+.flexGroupTags{
+    width:calc(~"100% - 300px");
+    // margin-left: -20px;
+    position: fixed;
+    top: 50px;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 4px 6px -3px #D3D3D3;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid red;
+}

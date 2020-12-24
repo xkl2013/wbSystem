@@ -1,0 +1,96 @@
+@import '~@/theme/common.less';
+.wrap {
+    padding: 30px 40px;
+    color: @textPrimaryColor;
+    font-size: 14px;
+    .titleCls {
+        &::before {
+            content: '';
+            display: inline-block;
+            margin-right: 5px;
+            width: 4px;
+            height: 18px;
+            vertical-align: text-bottom;
+            background-color: @otherBgColor;
+        }
+        margin-bottom: 24px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .tempWrap {
+        margin-bottom: 14px;
+        // width: 1162px;
+        // min-height: 216px;
+        padding: 26px 16px;
+        background: #f8f9fa;
+        .title {
+            font-weight: 500;
+        }
+        .tip {
+            margin: 16px 0;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .downCls {
+            cursor: pointer;
+            width: 250px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: #fff;
+            border-radius: 4px;
+            border: 1px solid @otherBgColor;
+            color: @otherBgColor;
+            .iconCls {
+                margin-right: 10px;
+            }
+            .downLink{
+                color: @otherBgColor;
+            }
+        }
+
+        .uploadFile {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 24px;
+            padding: 24px 0;
+            background: #fff;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px dashed rgba(220, 220, 220, 1);
+            :global .upload-list-picture {
+                height: 200px;
+                background-color: #fff;
+                border: none;
+            }
+            :global .ant-upload-list-picture-card-container {
+                display: none;
+            }
+        }
+    }
+    .operateBtn {
+        margin-top: 114px;
+        text-align: center;
+        :global .ant-btn {
+            margin-left: 20px;
+            width: 113px;
+            height: 40px;
+            border-radius: 4px;
+        }
+    }
+    .errWrap {
+        margin-top: 12px;
+        padding: 24px;
+        color: #e13453;
+        background: rgba(225, 52, 83, 0.08);
+        .fileIcon {
+            color: #1aa0f4;
+            text-decoration: underline;
+        }
+    }
+    .successWrap {
+        color: #04b4ad;
+        background: rgba(4, 180, 173, 0.08);
+    }
+}

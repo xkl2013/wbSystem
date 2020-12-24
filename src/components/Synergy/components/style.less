@@ -1,0 +1,112 @@
+.userList{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+    position: relative;
+    padding-right: 10px;
+    &::before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 20px;
+        width: 1px;
+        height: 20px;
+        background: #D6DDE3;
+    }
+    .userSingle{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .headWrap{
+            margin-right: 12px;
+        }
+    }
+    .userMultiple{
+        display: flex;
+        align-items: center;
+        .text{
+            font-size:14px;
+            font-family:PingFangSC-Regular,PingFang SC;
+            font-weight:400;
+            color:rgba(132,143,155,1);
+            margin-right: 12px;
+        }
+
+    }
+
+    .userMore{
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border-radius: 50%;
+        background:rgba(206,209,214,1);
+        font-size:14px;
+        font-family:PingFangSC-Regular,PingFang SC;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        cursor: pointer;
+    }
+}
+
+
+
+.head{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    .headImg{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:linear-gradient(270deg,rgba(111,193,192,1) 0%,rgba(4,180,173,1) 100%);
+        img{
+            width: 100%;
+            display: block;
+        }
+        span{
+            font-size:12px;
+            font-family:PingFangSC-Regular,PingFang SC;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+        }
+    }
+    .headIcon{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #000;
+        border: 2px solid #fff;
+    }
+}
+
+.userMoreIcon{
+    width: 32px;
+    height: 32px;
+    display: block;
+    cursor: pointer;
+}
+
+.menuItem{
+    display: flex;
+    align-items: center;
+    .menuItemName{
+        font-size:14px;
+        font-family:PingFangSC-Regular,PingFang SC;
+        font-weight:400;
+        color:rgba(44,63,83,1);
+        margin-left: 12px;
+    }
+}
+
+
+

@@ -1,0 +1,49 @@
+@import "../../../../../theme/common";
+
+.tabCotainer {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin-left: @marginGen;
+
+
+  .item {
+    font-size: @textFontGen;
+    margin-right: @paddingGen;
+    position: relative;
+
+
+    a {
+        color: @textGeneralColor;
+      transition: color 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+      &:hover {
+        color: @primaryColor;
+      }
+    }
+  }
+
+  .item::after {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    display: inline-block;
+    content: "";
+    background: transparent;
+    bottom: 3px;
+    left: 0;
+  }
+
+  .selectedItem {
+    a {
+      color: @primaryColor;
+    }
+  }
+
+  .selectedItem::after {
+    background: @primaryColor;
+    transition: background 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}

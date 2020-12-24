@@ -1,0 +1,50 @@
+@import '~@/theme/common';
+.readonly {
+    background: @disabledColor;
+}
+.menu {
+    display: flex;
+    height: 28px;
+    padding: 0 @paddingGen;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(216, 216, 216, 0.1);
+    }
+
+    .menuIcon {
+        width: 12px;
+        margin-right: @marginSmX;
+        color: white;
+        font-size: @textFontGen;
+        display: flex;
+    }
+
+    .menuTitle {
+        font-size: @textFontGen;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: white;
+    }
+}
+.table {
+    background: #f9f9f9;
+}
+.loading {
+    margin-top: 0 !important;
+}
+.search {
+    width: 300px;
+}
+.totalContainer {
+    font-size: @textFontSm;
+    background: #fff6d7;
+    border-radius: @borderRadius;
+    padding: 0 @paddingGen;
+    cursor: default;
+    .totalNum {
+        font-size: @textFontGen;
+        color: @textPrimaryColor;
+    }
+}

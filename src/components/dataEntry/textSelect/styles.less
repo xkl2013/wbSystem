@@ -1,0 +1,35 @@
+@import '~@/theme/common';
+.container {
+    position: relative;
+}
+.overlayClassName {
+    max-height: 300px;
+    overflow: auto;
+    margin-top: 20px;
+}
+.searchIcon {
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    z-index: 2;
+    margin-top: -13px;
+    background: #fff;
+}
+.clearIcon {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    margin-top: -13px;
+    background: #fff;
+}
+.input:hover .clearIcon {
+    z-index: 100;
+}
+.spin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

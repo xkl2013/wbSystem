@@ -1,0 +1,86 @@
+@import "~@/theme/common";
+
+.popover {
+    :global(.ant-popover-inner-content) {
+        padding: 0;
+    }
+
+    :global(.ant-popover-title) {
+        padding: 14px 16px;
+    }
+}
+
+.operateContainer {
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 2px;
+
+    &:hover {
+        background: #F6F6F6;
+    }
+
+    .operateIcon {
+        width: 14px;
+        height: 12px;
+        margin-right: 3px;
+    }
+
+    .operateName {
+        font-size: 14px;
+        font-weight: 400;
+        color: @textPrimaryColor;
+    }
+
+    &:hover {
+        background: #F6F6F6;
+    }
+
+    &.selected {
+        background: @primaryColor;
+    }
+}
+
+.optionsModal {
+    min-width: 174px;
+    padding-top: 10px;
+
+    .optionList {
+        max-height: 300px;
+        overflow: auto;
+
+        .optionItem {
+            padding: 0 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+
+            .optionName {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .btns {
+        width: 100%;
+        height: 44px;
+        background: #F6F6F6;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .btn {
+            //width: 50%;
+            font-size: 12px;
+            color: @textGeneralColor;
+            cursor: pointer;
+
+            &:last-child {
+                color: @primaryColor;
+            }
+        }
+    }
+}
+.addBtn{
+    cursor: pointer;
+    color: @primaryColor;
+}

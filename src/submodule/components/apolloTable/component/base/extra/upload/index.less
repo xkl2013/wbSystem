@@ -1,0 +1,21 @@
+@import "../../../../common";
+.container {
+    width: 100%;
+    .upload {
+        :global(.ant-upload.ant-upload-select-picture-card){
+            background: none;
+            border: none;
+        }
+        // list-picture样式覆盖
+        :global(.ant-upload-list-picture .ant-upload-list-item-name){
+            padding-right: 60px;
+        }
+        :global(.ant-upload-list-item-card-actions.picture){
+            font-size: @textFontLgX;
+        }
+    }
+    .addIcon {
+        cursor: pointer;
+        width: 12px;
+    }
+}

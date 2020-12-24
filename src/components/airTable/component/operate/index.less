@@ -1,0 +1,67 @@
+@import '~@/theme/common';
+.headerContainer {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background: white;
+
+    .operate {
+        margin: 0 10px;
+    }
+
+    .btns {
+        flex: 1;
+        text-align: right;
+        .search {
+            width: 200px;
+            display: inline-block;
+            vertical-align: middle;
+            :global(.ant-input) {
+                border-radius:16px;
+            }
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            vertical-align: middle;
+
+            .icon {
+                width: 12px;
+            }
+
+            .text {
+                font-size: @textFontGen;
+                line-height: @textFontGen;
+            }
+        }
+        .more {
+            width: 48px;
+            font-size: 20px;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+    }
+}
+.moreContainer {
+    border: none;
+    //box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    .moreBtns {
+        width: 90px;
+        background: white;
+        text-align: center;
+        padding: @paddingSmX 0;
+        .menuItem {
+            height: 32px;
+            line-height: 32px;
+            color: @textGeneralColor;
+            cursor: pointer;
+            &:hover {
+                color: @primaryColor;
+                background: @hoverColor;
+            }
+        }
+    }
+}

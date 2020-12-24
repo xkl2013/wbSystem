@@ -1,0 +1,42 @@
+@import '~@/theme/common';
+.table {
+    width: 700px;
+    height: 280px !important;
+}
+.innerTable{
+    box-shadow: none !important;
+}
+.addContainer {
+    display: flex;
+    align-items: center;
+    color: @primaryColor;
+    font-size: @textFontGen;
+    margin-top: @marginSm;
+    cursor: pointer;
+    .addIcon {
+        font-size: @textFontGen;
+    }
+    .addTip {
+        margin-left: @marginSm;
+    }
+}
+
+.exportContainer {
+    margin: 0;
+    float: none !important;
+
+    .btn {
+        display: flex;
+        align-items: center;
+        margin-left: @marginGen;
+
+        .icon {
+            width: 12px;
+        }
+
+        .text {
+            margin-left: @marginSmX;
+            font-size: @textFontGen;
+        }
+    }
+}

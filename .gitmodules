@@ -1,0 +1,4 @@
+[submodule "src/submodule"]
+	path = src/submodule
+	url = http://apollo.mttop.cn/gitlab/web_component/submodule.git
+    branch = master

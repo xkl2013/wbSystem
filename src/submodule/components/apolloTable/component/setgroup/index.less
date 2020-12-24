@@ -1,0 +1,67 @@
+@import '../../common';
+@import '../../media';
+@import '../filter/index.less';
+
+.optionsModal {
+    min-width: 325px;
+    .mediaMax(750px,{
+        min-width: 0;
+    });
+}
+
+.optionItem {
+    .optionLeft {
+        flex: 1;
+        .mediaMax(750px,{
+            width: auto;
+        });
+    }
+
+    .optionMid {
+        max-width: 112px;
+        .mediaMax(750px,{
+            max-width: 30%;
+            width: auto;
+        });
+
+        .sortBtn {
+            width: 54px;
+            padding: 0 5px;
+            border-color: @supportColor;
+            &.primary{
+                background: @supportColor;
+                color: white;
+            }
+        }
+    }
+
+    .optionRight {
+        margin-left: 20px;
+    }
+
+    .optionDel {
+
+    }
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+
+    .btn {
+        text-align: center;
+        cursor: pointer;
+        color: @supportColor;
+        margin-left: 10px;
+        width: 60px;
+        border-radius: @borderRadius;
+        height: 30px;
+        line-height: 30px;
+        &.reset {
+            background: white;
+            border: 1px solid @supportColor;
+        }
+    }
+}

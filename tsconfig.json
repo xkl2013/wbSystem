@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "sourceMap": false,
+    "baseUrl": ".",
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "allowSyntheticDefaultImports": true
+  }
+}

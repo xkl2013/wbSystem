@@ -1,0 +1,237 @@
+@import '../../theme/common';
+
+.menuCotainer {
+    display: flex;
+    flex-flow: row;
+    background-color: @contentBg;
+    .qrCode {
+        position: fixed;
+        left: 17px;
+        bottom: 28px;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: #04a9a3;
+        background-size: 14px 21px;
+        border-radius: 50%;
+        cursor: pointer;
+        .shoujiIcon {
+            color: #d8e5ef;
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .qrcodeIcon {
+            position: absolute;
+            left: 43px;
+            bottom: 23px;
+            width: 138px;
+            height: 138px;
+            display: none;
+        }
+    }
+    .qrCode:hover {
+        .qrcodeIcon {
+            display: block;
+        }
+    }
+    :global .ant-menu-inline-collapsed {
+        width: 70px;
+    }
+
+    .secWrap {
+        height: 100vh;
+        //padding: 13px 0;
+        background: @secondSliderBg;
+        color: #333;
+        overflow: auto;
+        transition: width 0.3s cubic-bezier(0.68, 0, 0.265, 1);
+        border-right: 1px solid @borderColor;
+        overflow-x: hidden;
+
+        .secName {
+            font-size: 16px;
+            padding-left: 26px;
+            line-height: @headerHeight;
+            height: @headerHeight;
+            color: @textPrimaryColor;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .secList {
+            font-size: 14px;
+            text-align: left;
+            :global(.ant-menu) {
+                background: transparent;
+            }
+            :global .ant-menu-inline {
+                border: none;
+            }
+            :global(.ant-menu-sub.ant-menu-inline > .ant-menu-item) {
+                margin: 0;
+            }
+            :global(.ant-menu-item > a) {
+                color: @textGeneralColor;
+            }
+            :global(.ant-menu-submenu > .ant-menu-submenu-title) {
+                color: @textGeneralColor;
+            }
+            :global(.ant-menu-item > a:hover) {
+                color: @primaryColor;
+            }
+            :global(.ant-menu-item-selected > a) {
+                color: @primaryColor;
+            }
+            :global(.ant-menu-item-selected > a:hover) {
+                color: @primaryColor;
+            }
+
+            .secItem {
+                cursor: pointer;
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                color: #818c98;
+                padding-left: 42px;
+                transition: padding-left 0.5s linear;
+                //cubic-bezier(0.71, -0.46, 0.29, 1.46)
+
+                .secTxtCls {
+                    display: inline-block;
+                    width: 57px;
+                    text-align: left;
+                }
+            }
+
+            .activeCls {
+                // font-size: 16px;
+                position: relative;
+                color: #6394fa;
+                // background: #F1F3F8;
+                padding-left: 50px;
+            }
+
+            .activeCls::before {
+                content: '';
+                position: absolute;
+                top: 14px;
+                left: 20px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                border: 4px solid #6394fa;
+            }
+
+            .activeCls:after {
+                content: '';
+                position: absolute;
+                right: 0;
+                width: 4px;
+                height: 40px;
+                // background: linear-gradient(180deg, rgba(135, 183, 253, 1) 0%, rgba(79, 129, 249, 1) 100%);
+            }
+        }
+    }
+}
+
+.siderLeft {
+    display: flex;
+    position: fixed;
+    left: 0;
+    background: #fff;
+    z-index: 100;
+}
+.sider {
+    background-color: @primaryColor;
+    width: 70px;
+    height: 100vh;
+
+    .logoCls {
+        display: flex;
+        margin-top: 18px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .myCls {
+        display: block;
+        width: 38px;
+        height: 53px;
+        margin: 0 auto;
+        // border: 1px dashed #999
+    }
+
+    .menuCls {
+        padding-top: 44px;
+        text-align: center;
+        height: 70vh;
+        min-height: 300px;
+        overflow: auto;
+        .menuItemCls {
+            height: 45px;
+            margin-bottom: 44px;
+            cursor: pointer;
+            position: relative;
+            color: rgba(255, 255, 255, 0.5);
+            .menuNameNew {
+                font-size: 13px;
+                font-weight: 400;
+            }
+
+            &:hover {
+                color: #fff;
+            }
+        }
+        .menuActiveCls {
+            color: #fff;
+        }
+
+        .iconCls {
+            font-size: 22px;
+            line-height: 22px;
+        }
+        .iconClsActive {
+            // color: rgba(255,255,255,1);;
+        }
+    }
+}
+
+.menuItem {
+    display: inline-block;
+    text-align: center;
+    background: #999;
+}
+
+:global .iconBadge {
+    .ant-badge-count {
+        transform: scale(0.85) translate(50%, -75%);
+        background: #ff5b57;
+        box-shadow: none;
+    }
+    .ant-badge-multiple-words {
+        padding: 0px 6px;
+    }
+}
+:global .secondIconBadge {
+    .ant-badge-count {
+        right: -40px;
+        top: 12px;
+        transform: scale(0.85) translate(50%, -75%);
+        transition-duration: 0;
+        background: #ff5b57;
+        box-shadow: none;
+    }
+    .ant-badge-multiple-words {
+        padding: 0px 6px;
+    }
+}
+.expandIcon {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}

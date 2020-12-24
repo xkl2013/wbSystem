@@ -1,0 +1,29 @@
+@import '~@/theme/common';
+.rightContainer {
+    .title {
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: @textPrimaryColor;
+        line-height: 20px;
+        margin: @marginLg 0;
+        text-align: center;
+    }
+    .tableContainer {
+        margin: 0 @marginLgX;
+        height: 500px;
+        :global(.ant-table-placeholder){
+            height: 450px;
+        }
+        .table{
+            width: 792px;
+        }
+    }
+    .btnContainer {
+        margin: @marginLg 0;
+        text-align: center;
+        .confirmBtn {
+            margin-left: @marginLg;
+        }
+    }
+}

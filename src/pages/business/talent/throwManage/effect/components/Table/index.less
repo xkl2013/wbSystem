@@ -1,0 +1,56 @@
+@import "../../../../../../../theme/common";
+
+.wrap {
+    background: #fff;
+    padding: 0 20px;
+    margin-bottom: 10px;
+
+    .titleWrap {
+        height: 59px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: @textPrimaryColor;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 10px;
+
+        .titleWrapLeft {
+            display: flex;
+            align-items: center;
+
+            .titleCls {
+                height: 58px;
+                line-height: 58px;
+                display: block;
+                font-size: 16px;
+                margin-right: 30px;
+                cursor: pointer;
+                border-bottom: 2px solid transparent;
+            }
+
+            .titleClsSel {
+                color: @primaryColor;
+                border-bottom: 2px solid @primaryColor;
+            }
+
+        }
+
+        .titleWrapRight {
+            display: flex;
+            align-items: center;
+
+            .dateCls {
+                width: 300px;
+                margin-left: 20px;
+            }
+
+            .associationSearch {
+                width: 300px;
+            }
+        }
+    }
+
+    .contentWrap {
+        min-height: 200px;
+    }
+}

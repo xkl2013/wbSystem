@@ -1,0 +1,690 @@
+/**
+ *@author   zhangwenshuai
+ *@date     2019-07-08 15:22
+ **/
+export const currency = [{
+  "countryname": "欧洲货币联盟",
+  "name": "欧元",
+  "currency": "EUR",
+  "id": 1
+}, {
+  "countryname": "冰岛",
+  "name": "冰岛克朗",
+  "currency": "ISK",
+  "id": 2
+}, {
+  "countryname": "丹麦",
+  "name": "丹麦克朗",
+  "currency": "DKK",
+  "id": 3
+}, {
+  "countryname": "挪威",
+  "name": "挪威克朗",
+  "currency": "NOK",
+  "id": 4
+}, {
+  "countryname": "瑞典",
+  "name": "瑞典克朗",
+  "currency": "SEK",
+  "id": 5
+}, {
+  "countryname": "芬兰",
+  "name": "芬兰马克",
+  "currency": "FIM",
+  "id": 6
+}, {
+  "countryname": "俄罗斯",
+  "name": "卢布",
+  "currency": "RUB",
+  "id": 7
+}, {
+  "countryname": "波兰",
+  "name": "兹罗提",
+  "currency": "PLN",
+  "id": 8
+}, {
+  "countryname": "捷克和斯洛伐克",
+  "name": "捷克克朗",
+  "currency": "CSK",
+  "id": 9
+}, {
+  "countryname": "匈牙利",
+  "name": "福林",
+  "currency": "HUF",
+  "id": 10
+}, {
+  "countryname": "德国",
+  "name": "马克",
+  "currency": "DEM",
+  "id": 11
+}, {
+  "countryname": "奥地利",
+  "name": "奥地利先令",
+  "currency": "ATS",
+  "id": 12
+}, {
+  "countryname": "瑞士",
+  "name": "瑞士法郎",
+  "currency": "CHF",
+  "id": 13
+}, {
+  "countryname": "荷兰",
+  "name": "荷兰盾",
+  "currency": "NLG",
+  "id": 14
+}, {
+  "countryname": "比利时",
+  "name": "比利时法郎",
+  "currency": "BEF",
+  "id": 15
+}, {
+  "countryname": "卢森堡",
+  "name": "卢森堡法郎",
+  "currency": "LUF",
+  "id": 16
+}, {
+  "countryname": "英国",
+  "name": "英镑",
+  "currency": "GBP",
+  "id": 17
+}, {
+  "countryname": "爱尔兰",
+  "name": "爱尔兰镑",
+  "currency": "IEP",
+  "id": 18
+}, {
+  "countryname": "法国",
+  "name": "法郎",
+  "currency": "FRF",
+  "id": 19
+}, {
+  "countryname": "西班牙",
+  "name": "比塞塔",
+  "currency": "ESP",
+  "id": 20
+}, {
+  "countryname": "葡萄牙",
+  "name": "埃斯库多",
+  "currency": "PTE",
+  "id": 21
+}, {
+  "countryname": "意大利",
+  "name": "里拉",
+  "currency": "ITL",
+  "id": 22
+}, {
+  "countryname": "马耳他",
+  "name": "马耳他镑",
+  "currency": "MTP",
+  "id": 23
+}, {
+  "countryname": "南斯拉夫",
+  "name": "南斯拉夫新第纳尔",
+  "currency": "YUD",
+  "id": 24
+}, {
+  "countryname": "罗马尼亚",
+  "name": "列伊",
+  "currency": "ROL",
+  "id": 25
+}, {
+  "countryname": "保加利亚",
+  "name": "列弗",
+  "currency": "BGL",
+  "id": 26
+}, {
+  "countryname": "阿尔巴尼亚",
+  "name": "列克",
+  "currency": "ALL",
+  "id": 27
+}, {
+  "countryname": "希腊",
+  "name": "德拉马克",
+  "currency": "GRD",
+  "id": 28
+}, {
+  "countryname": "加拿大",
+  "name": "加元",
+  "currency": "CAD",
+  "id": 29
+}, {
+  "countryname": "美国",
+  "name": "美元",
+  "currency": "USD",
+  "id": 30
+}, {
+  "countryname": "墨西哥",
+  "name": "墨西哥比索",
+  "currency": "MXP",
+  "id": 31
+}, {
+  "countryname": "危地马拉",
+  "name": "格查尔",
+  "currency": "GTQ",
+  "id": 32
+}, {
+  "countryname": "萨尔瓦多",
+  "name": "萨尔瓦多科朗",
+  "currency": "SVC",
+  "id": 33
+}, {
+  "countryname": "洪都拉斯",
+  "name": "伦皮拉",
+  "currency": "HNL",
+  "id": 34
+}, {
+  "countryname": "尼加拉瓜",
+  "name": "科多巴",
+  "currency": "NIC",
+  "id": 35
+}, {
+  "countryname": "哥斯达黎加",
+  "name": "哥斯达黎加科朗",
+  "currency": "CRC",
+  "id": 36
+}, {
+  "countryname": "巴拿马",
+  "name": "巴拿马巴波亚",
+  "currency": "PAB",
+  "id": 37
+}, {
+  "countryname": "古巴",
+  "name": "古巴比索",
+  "currency": "CUP",
+  "id": 38
+}, {
+  "countryname": "巴哈马联邦",
+  "name": "巴哈马元",
+  "currency": "BSD",
+  "id": 39
+}, {
+  "countryname": "牙买加",
+  "name": "牙买加元",
+  "currency": "JMD",
+  "id": 40
+}, {
+  "countryname": "海地",
+  "name": "古德",
+  "currency": "HTG",
+  "id": 41
+}, {
+  "countryname": "多米尼加",
+  "name": "多米尼加比索",
+  "currency": "DOP",
+  "id": 42
+}, {
+  "countryname": "特立尼达和多巴哥",
+  "name": "特立尼达多巴哥元",
+  "currency": "TTD",
+  "id": 43
+}, {
+  "countryname": "巴巴多斯",
+  "name": "巴巴多斯元",
+  "currency": "BBD",
+  "id": 44
+}, {
+  "countryname": "哥伦比亚",
+  "name": "哥伦比亚比索",
+  "currency": "COP",
+  "id": 45
+}, {
+  "countryname": "委内瑞拉",
+  "name": "博利瓦",
+  "currency": "VEB",
+  "id": 46
+}, {
+  "countryname": "圭亚那",
+  "name": "圭亚那元",
+  "currency": "GYD",
+  "id": 47
+}, {
+  "countryname": "苏里南",
+  "name": "苏里南盾",
+  "currency": "SRG",
+  "id": 48
+}, {
+  "countryname": "秘鲁",
+  "name": "新索尔",
+  "currency": "PES",
+  "id": 49
+}, {
+  "countryname": "厄瓜多尔",
+  "name": "苏克雷",
+  "currency": "ECS",
+  "id": 50
+}, {
+  "countryname": "巴西",
+  "name": "新克鲁赛罗",
+  "currency": "BRC",
+  "id": 51
+}, {
+  "countryname": "玻利维亚",
+  "name": "玻利维亚比索",
+  "currency": "BOP",
+  "id": 52
+}, {
+  "countryname": "智利",
+  "name": "智利比索",
+  "currency": "CLP",
+  "id": 53
+}, {
+  "countryname": "阿根廷",
+  "name": "阿根廷比索",
+  "currency": "ARP",
+  "id": 54
+}, {
+  "countryname": "巴拉圭",
+  "name": "巴拉圭瓜拉尼",
+  "currency": "PYG",
+  "id": 55
+}, {
+  "countryname": "乌拉圭",
+  "name": "乌拉圭新比索",
+  "currency": "UYP",
+  "id": 56
+}, {
+  "countryname": "埃及",
+  "name": "埃及镑",
+  "currency": "EGP",
+  "id": 57
+}, {
+  "countryname": "利比亚",
+  "name": "利比亚第纳尔",
+  "currency": "LYD",
+  "id": 58
+}, {
+  "countryname": "苏丹",
+  "name": "苏丹镑",
+  "currency": "SDP",
+  "id": 59
+}, {
+  "countryname": "突尼斯",
+  "name": "突尼斯第纳尔",
+  "currency": "TND",
+  "id": 60
+}, {
+  "countryname": "阿尔及利亚",
+  "name": "阿尔及利亚第纳尔",
+  "currency": "DZD",
+  "id": 61
+}, {
+  "countryname": "摩洛哥",
+  "name": "摩洛哥迪拉姆",
+  "currency": "MAD",
+  "id": 62
+}, {
+  "countryname": "毛里塔尼亚",
+  "name": "乌吉亚",
+  "currency": "MRO",
+  "id": 63
+}, {
+  "countryname": "塞内加尔",
+  "name": "非共体法郎",
+  "currency": "XOF",
+  "id": 64
+}, {
+  "countryname": "上沃尔特",
+  "name": "非共体法郎",
+  "currency": "XOF",
+  "id": 65
+}, {
+  "countryname": "科特迪瓦",
+  "name": "非共体法郎",
+  "currency": "XOF",
+  "id": 66
+}, {
+  "countryname": "多哥",
+  "name": "非共体法郎",
+  "currency": "XOF",
+  "id": 67
+}, {
+  "countryname": "贝宁",
+  "name": "非共体法郎",
+  "currency": "XOF",
+  "id": 68
+}, {
+  "countryname": "尼日尔",
+  "name": "非共体法郎",
+  "currency": "XOF",
+  "id": 69
+}, {
+  "countryname": "冈比亚",
+  "name": "法拉西",
+  "currency": "GMD",
+  "id": 70
+}, {
+  "countryname": "几内亚比绍",
+  "name": "几内亚比索",
+  "currency": "GWP",
+  "id": 71
+}, {
+  "countryname": "几内亚",
+  "name": "几内亚西里",
+  "currency": "GNS",
+  "id": 72
+}, {
+  "countryname": "塞拉里昂",
+  "name": "利昂",
+  "currency": "SLL",
+  "id": 73
+}, {
+  "countryname": "利比里亚",
+  "name": "利比里亚元",
+  "currency": "LRD",
+  "id": 74
+}, {
+  "countryname": "加纳",
+  "name": "塞地",
+  "currency": "GHC",
+  "id": 75
+}, {
+  "countryname": "尼日利亚",
+  "name": "奈拉",
+  "currency": "NGN",
+  "id": 76
+}, {
+  "countryname": "喀麦隆",
+  "name": "中非金融合作法郎",
+  "currency": "XAF",
+  "id": 77
+}, {
+  "countryname": "乍得",
+  "name": "中非金融合作法郎",
+  "currency": "XAF",
+  "id": 78
+}, {
+  "countryname": "刚果",
+  "name": "中非金融合作法郎",
+  "currency": "XAF",
+  "id": 79
+}, {
+  "countryname": "加蓬",
+  "name": "中非金融合作法郎",
+  "currency": "XAF",
+  "id": 80
+}, {
+  "countryname": "中非",
+  "name": "中非金融合作法郎",
+  "currency": "XAF",
+  "id": 81
+}, {
+  "countryname": "赤道几内亚",
+  "name": "赤道几内亚埃奎勒",
+  "currency": "GQE",
+  "id": 82
+}, {
+  "countryname": "南非",
+  "name": "兰特",
+  "currency": "ZAR",
+  "id": 83
+}, {
+  "countryname": "吉布提",
+  "name": "吉布提法郎",
+  "currency": "DJF",
+  "id": 84
+}, {
+  "countryname": "索马里",
+  "name": "索马里先令",
+  "currency": "SOS",
+  "id": 85
+}, {
+  "countryname": "肯尼亚",
+  "name": "肯尼亚先令",
+  "currency": "KES",
+  "id": 86
+}, {
+  "countryname": "乌干达",
+  "name": "乌干达先令",
+  "currency": "UGS",
+  "id": 87
+}, {
+  "countryname": "坦桑尼亚",
+  "name": "坦桑尼亚先令",
+  "currency": "TZS",
+  "id": 88
+}, {
+  "countryname": "卢旺达",
+  "name": "卢旺达法郎",
+  "currency": "RWF",
+  "id": 89
+}, {
+  "countryname": "布隆迪",
+  "name": "布隆迪法郎",
+  "currency": "BIF",
+  "id": 90
+}, {
+  "countryname": "扎伊尔",
+  "name": "扎伊尔",
+  "currency": "ZRZ",
+  "id": 91
+}, {
+  "countryname": "赞比亚",
+  "name": "赞比亚克瓦查",
+  "currency": "ZMK",
+  "id": 92
+}, {
+  "countryname": "马达加斯加",
+  "name": "马达加斯加法郎",
+  "currency": "MCF",
+  "id": 93
+}, {
+  "countryname": "塞舌尔",
+  "name": "塞舌尔卢比",
+  "currency": "SCR",
+  "id": 94
+}, {
+  "countryname": "毛里求斯",
+  "name": "毛里求斯卢比",
+  "currency": "MUR",
+  "id": 95
+}, {
+  "countryname": "津巴布韦",
+  "name": "津巴布韦元",
+  "currency": "ZWD",
+  "id": 96
+}, {
+  "countryname": "科摩罗",
+  "name": "科摩罗法郎",
+  "currency": "KMF",
+  "id": 97
+}, {
+  "countryname": "中国香港",
+  "name": "港元",
+  "currency": "HKD",
+  "id": 98
+}, {
+  "countryname": "中国澳门",
+  "name": "澳门元",
+  "currency": "MOP",
+  "id": 99
+}, {
+  "countryname": "中国",
+  "name": "人民币元",
+  "currency": "CNY",
+  "id": 100
+}, {
+  "countryname": "朝鲜",
+  "name": "朝鲜元",
+  "currency": "KPW",
+  "id": 101
+}, {
+  "countryname": "越南",
+  "name": "越南盾",
+  "currency": "VND",
+  "id": 102
+}, {
+  "countryname": "韩国",
+  "name": "韩元",
+  "currency": "KRW",
+  "id": 103
+}, {
+  "countryname": "日本",
+  "name": "日元",
+  "currency": "JPY",
+  "id": 104
+}, {
+  "countryname": "老挝",
+  "name": "基普",
+  "currency": "LAK",
+  "id": 105
+}, {
+  "countryname": "柬埔寨",
+  "name": "瑞尔",
+  "currency": "KHR",
+  "id": 106
+}, {
+  "countryname": "菲律宾",
+  "name": "菲律宾比索",
+  "currency": "PHP",
+  "id": 107
+}, {
+  "countryname": "马来西亚",
+  "name": "林吉特",
+  "currency": "MYR",
+  "id": 108
+}, {
+  "countryname": "新加坡",
+  "name": "新加坡元",
+  "currency": "SGD",
+  "id": 109
+}, {
+  "countryname": "泰国",
+  "name": "泰铢",
+  "currency": "THP",
+  "id": 110
+}, {
+  "countryname": "缅甸",
+  "name": "缅元",
+  "currency": "BUK",
+  "id": 111
+}, {
+  "countryname": "斯里兰卡",
+  "name": "斯里兰卡卢比",
+  "currency": "LKR",
+  "id": 112
+}, {
+  "countryname": "马尔代夫",
+  "name": "马尔代夫卢比",
+  "currency": "MVR",
+  "id": 113
+}, {
+  "countryname": "印度尼西亚",
+  "name": "印尼盾",
+  "currency": "IDR",
+  "id": 114
+}, {
+  "countryname": "巴基斯坦",
+  "name": "巴基斯坦卢比",
+  "currency": "PRK",
+  "id": 115
+}, {
+  "countryname": "印度",
+  "name": "卢比",
+  "currency": "INR",
+  "id": 116
+}, {
+  "countryname": "尼泊尔",
+  "name": "尼泊尔卢比",
+  "currency": "NPR",
+  "id": 117
+}, {
+  "countryname": "阿富汗",
+  "name": "阿富汗尼",
+  "currency": "AFA",
+  "id": 118
+}, {
+  "countryname": "伊朗",
+  "name": "伊朗里亚尔",
+  "currency": "IRR",
+  "id": 119
+}, {
+  "countryname": "伊拉克",
+  "name": "伊拉克第纳尔",
+  "currency": "IQD",
+  "id": 120
+}, {
+  "countryname": "叙利亚",
+  "name": "叙利亚镑",
+  "currency": "SYP",
+  "id": 121
+}, {
+  "countryname": "黎巴嫩",
+  "name": "黎巴嫩镑",
+  "currency": "LBP",
+  "id": 122
+}, {
+  "countryname": "约旦",
+  "name": "约旦第纳尔",
+  "currency": "JOD",
+  "id": 123
+}, {
+  "countryname": "沙特阿拉伯",
+  "name": "亚尔",
+  "currency": "SAR",
+  "id": 124
+}, {
+  "countryname": "科威特",
+  "name": "科威特第纳尔",
+  "currency": "KWD",
+  "id": 125
+}, {
+  "countryname": "巴林",
+  "name": "巴林第纳尔",
+  "currency": "BHD",
+  "id": 126
+}, {
+  "countryname": "卡塔尔",
+  "name": "卡塔尔里亚尔",
+  "currency": "QAR",
+  "id": 127
+}, {
+  "countryname": "阿曼",
+  "name": "阿曼里亚尔",
+  "currency": "OMR",
+  "id": 128
+}, {
+  "countryname": "阿拉伯也门",
+  "name": "也门里亚尔",
+  "currency": "YER",
+  "id": 129
+}, {
+  "countryname": "民主也门",
+  "name": "也门第纳尔",
+  "currency": "YDD",
+  "id": 130
+}, {
+  "countryname": "土耳其",
+  "name": "土耳其镑",
+  "currency": "TRL",
+  "id": 131
+}, {
+  "countryname": "塞浦路斯",
+  "name": "塞浦路斯镑",
+  "currency": "CYP",
+  "id": 132
+}, {
+  "countryname": "蒙古",
+  "name": "图格里克",
+  "currency": "MNT",
+  "id": 133
+}, {
+  "countryname": "澳大利亚",
+  "name": "澳大利亚元",
+  "currency": "AUD",
+  "id": 134
+}, {
+  "countryname": "新西兰",
+  "name": "新西兰元",
+  "currency": "NZD",
+  "id": 135
+}, {
+  "countryname": "斐济",
+  "name": "斐济元",
+  "currency": "FJD",
+  "id": 136
+}, {
+  "countryname": "所罗门群岛",
+  "name": "所罗门元",
+  "currency": "SBD",
+  "id": 137
+}]

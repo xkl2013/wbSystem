@@ -1,0 +1,84 @@
+@import "~@/theme/common";
+
+.downIcon {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.pictureTextUploadList {
+    display: flex;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+    zoom: 1;
+    overflow: hidden;
+    width: 100%;
+
+    .textUploadListItem {
+        position: relative;
+        display: flex;
+        justify-items: center;
+        height: 41px;
+        font-size: 14px;
+        margin-right: 12px;
+        border-radius:4px;
+        border:1px solid rgba(236,236,236,1);
+        padding: 6px 12px;
+        .textUploadListItemInfo {
+
+            .textUploadListItemBox {
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                .fileImgStyle {
+                    width: 32px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+
+                .textUploadListItemInfoName {
+                    display: inline-block;
+                    margin-right: 10px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: @textGeneralColor;
+
+                    &:hover {
+                        color: @primaryColor;
+                    }
+                }
+                &:hover{
+                    .downIcon{
+                        opacity: 1;
+                    }
+                }
+
+                .downIcon {
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    cursor: pointer;
+                    color: @textSupplyColor;
+                    opacity: 0;
+                    transition: opacity 0.2s linear;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import '../../theme/common';
+@import '../associationSearch/index';
+
+.treeSelect {
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+
+    :global(.ant-select-dropdown-search) {
+        padding: 10px @paddingLgX;
+
+        input {
+            border-radius: @borderRadius !important;
+            padding: 4px @paddingGen !important;
+            height: 32px;
+            font-size: @textFontSm;
+        }
+
+        :global(.ant-select-search__field__placeholder) {
+            font-size: @textFontSm;
+        }
+    }
+
+    :global(.ant-select-tree) {
+        padding: 0;
+    }
+
+    :global(.ant-select-tree-treenode-switcher-open) {
+        &:hover {
+            background: @hoverColor;
+        }
+    }
+
+    :global(.ant-select-tree-treenode-selected) {
+        background: @hoverColor;
+    }
+
+    :global(.ant-select-tree li) {
+        margin: 0;
+        padding: 4px 0;
+
+        &:first-child {
+            margin-top: 4px;
+        }
+    }
+    :global(.ant-select-tree
+            li
+            .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected) {
+        background: transparent;
+    }
+    :global(.ant-select-tree li .ant-select-tree-node-content-wrapper:hover) {
+        background: transparent;
+    }
+    :global(.ant-select-not-found){
+        padding: 10px 24px;
+    }
+}

@@ -1,0 +1,165 @@
+@import '~@/theme/common';
+//_selfTable
+.view {
+    .tableWrap {
+        background: #fff;
+        overflow-x: auto;
+
+        :global(.ant-table-thead > tr:first-child > th:last-child) {
+            text-align: center;
+        }
+
+        :global(.ant-table-thead > tr > th) {
+            text-align: center;
+        }
+
+        :global(.ant-table-tbody > tr > td) {
+            text-align: center;
+        }
+
+         //详情
+        .tableDiv {
+            margin-bottom: @marginGen;
+            text-align: center;
+            font-family: initial;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .tableSpan,
+            .tableSpanbg {
+                color: @textGeneralColor;
+                font-size: @textFontSm;
+            }
+
+            .tableSpanbg {
+                background: @hoverColor;
+                border-radius: @borderRadius;
+                height: @marginLg;
+                line-height: @marginLg;
+                color: @primaryColor;
+                padding: 3px @paddingGen;
+            }
+        }
+        //编辑
+        .tableInput {
+            margin: 0 20px @marginGen 6px;
+
+            :global(.ant-input) {
+                height: 24px;
+                padding: 4px @paddingGen;
+                border-radius: @borderRadius;
+                color: @textGeneralColor;
+                font-size: @textFontSm;
+            }
+
+            :global(.ant-input-affix-wrapper .ant-input-suffix) {
+                font-size: @textFontSm;
+            }
+
+            :global(.ant-input-number-handler-wrap) {
+                display: none;
+            }
+        }
+        //编辑
+        .tableRadio {
+            width: 100%;
+            text-align: left;
+            :global(.ant-radio-wrapper) {
+                margin-bottom: @marginGen;
+                margin-right: 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            :global(.ant-radio-wrapper span) {
+                color: @textGeneralColor !important;
+                font-size: @textFontSm;
+            }
+
+            :global(.ant-radio) {
+                width: 12px;
+                height: 12px;
+            }
+
+            :global(.ant-radio-input) {
+                width: 12px;
+                height: 12px;
+            }
+
+            :global(.ant-radio-inner) {
+                width: 12px;
+                height: 12px;
+            }
+
+            :global(.ant-radio-checked .ant-radio-inner) {
+                width: 12px;
+                height: 12px;
+
+                &:after {
+                    width: 6px;
+                    height: 6px;
+                    top: 2px;
+                    left: 2px;
+                }
+            }
+        }
+    }
+
+    .row {
+        text-align: right;
+        margin-bottom: @marginLg;
+
+        .col {
+            display: inline-block;
+            vertical-align: middle;
+            width: 30%;
+            margin: 4px;
+        }
+
+        .btn {
+            color: @primaryColor;
+            border-color: @primaryColor;
+            font-size: @textFontGen;
+
+            .addIconCls {
+                font-size: @textFontGen;
+                margin-right: 4px;
+                vertical-align: middle;
+            }
+
+            .labelText {
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+//表格加必选*
+.requireTitle {
+    color: @textPrimaryColor;
+    font-weight: lighter;
+    font-family: initial;
+
+    &:before {
+        display: inline-block;
+        margin-right: 4px;
+        color: #f5222d;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: '*';
+        vertical-align: top;
+        position: relative;
+        top: 5px;
+    }
+}
+
+.noRequireTitle {
+    color: @textPrimaryColor;
+    font-weight: lighter;
+    font-family: initial;
+}

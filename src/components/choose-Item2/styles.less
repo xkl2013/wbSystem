@@ -1,0 +1,90 @@
+@import '../../theme/common';
+
+.tagContent {
+    display: flex;
+    align-items: baseline;
+    min-height: 40px;
+
+    .gropLabel {
+        width: 70px;
+        font-size: 14px;
+        margin-right: 23px;
+        margin-left: 6px;
+        color: #2c3f53;
+    }
+
+    .tagsCls {
+        margin-right: 10px;
+        width: 100%;
+        padding: 0 100px 0 14px;
+        min-height: 42px;
+        border-radius: 4px;
+        border: 1px solid rgba(231, 231, 231, 1);
+        position: relative;
+    }
+}
+
+.tags {
+    display: inline-block;
+    margin-top: 5px;
+
+    :global {
+        .ant-tag {
+            color: #89929b;
+            font-size: 12px;
+            padding: 5px 10px;
+            border: none;
+            background: rgba(245, 246, 246, 1);
+
+            .anticon-close {
+                color: #fff !important;
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: #bbc7d2;
+                padding: 2px 0;
+            }
+        }
+    }
+}
+
+.flexGroupTags {
+    width: calc(~'100% - 300px');
+    // margin-left: -20px;
+    position: fixed;
+    top: 50px;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 4px 6px -3px #d3d3d3;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.btnAddQuickSift {
+    color: @primaryColor;
+    font-size: 14px;
+    font-style: normal;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    line-height: 30px;
+    cursor: pointer;
+    .itemIcon {
+        margin-right: 5px;
+    }
+    // &:before {
+    //     content: '';
+    //     display: block;
+    //     width: 14px;
+    //     height: 14px;
+    //     background: url('../../assets/star.png') no-repeat center center;
+    //     background-size: 100%;
+    //     position: absolute;
+    //     top: 50%;
+    //     left: -17px;
+    //     transform: translate(0, -50%);
+    // }
+}

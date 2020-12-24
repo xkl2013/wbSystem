@@ -1,0 +1,119 @@
+@import "../../../../theme/common";
+
+.container {
+    .showTitle {
+        font-size: @textFontLg;
+        color: @textPrimaryColor;
+        cursor: pointer;
+
+        .dropdown {
+            width: 8px;
+            margin-left: @marginSm;
+        }
+    }
+
+    .filterContainer {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 12px 0 0;
+        position: relative;
+        .filterTip {
+            width: 60px;
+            height: 28px;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(163, 169, 183, 1);
+            line-height: 28px;
+        }
+        .filterValue{
+            width:239px;
+            height:28px;
+            font-size:12px;
+            font-family:PingFangSC-Regular,PingFang SC;
+            font-weight:400;
+            color:rgba(39,61,82,1);
+            line-height:28px;
+            overflow: hidden;
+            .user{
+                position: relative;
+                margin-right: 10px;
+                &:hover{
+                    .delUser{
+                        opacity: 1;
+                    }
+                }
+                &:last-child{
+                    &:after{
+                        display: none;
+                    }
+                }
+                &:after{
+                    content:'|';
+                    position: absolute;
+                    right: -7px;
+                }
+                .delUser{
+                    opacity: 0;
+                    position: absolute;
+                    width: 12px;
+                    right: -2px;
+                    top: -2px;
+                    transition: opacity 0.2s linear;
+                    cursor: pointer;
+                }
+            }
+        }
+        .delFilter{
+            width: 8px;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }
+    }
+}
+
+.menusContainer {
+    width: 100px;
+    min-width: 0 !important;
+
+    .menus {
+        width: 100px;
+
+        .menu {
+            width: 100px;
+            font-size: @textFontGen;
+            color: @textPrimaryColor;
+
+            &:hover {
+                color: @primaryColor;
+            }
+        }
+    }
+}
+
+.modalCls {
+    //width: 800px !important;
+    //height: 580px;
+    //padding-bottom: 0;
+    //
+    //:global(.ant-modal-header) {
+    //    height: 60px;
+    //}
+    //
+    :global(.ant-modal-body) {
+        height: 440px;
+    }
+
+    :global(.ant-modal-footer) {
+        text-align: center;
+    }
+
+    .contentCls {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+}

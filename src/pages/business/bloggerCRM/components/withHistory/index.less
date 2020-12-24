@@ -1,0 +1,27 @@
+@import '~@/theme/common';
+.container {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    .cell {
+        flex: 1;
+        overflow: hidden;
+    }
+    .historyCount {
+        margin: @marginSmX;
+        cursor: pointer;
+        .countNo {
+            color: @primaryColor;
+        }
+    }
+    .addCls {
+        width: 20px;
+        text-align: center;
+        cursor: pointer;
+        .addIcon {
+            //display: none;
+            color: @primaryColor;
+        }
+    }
+}

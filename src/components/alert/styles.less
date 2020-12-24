@@ -1,0 +1,28 @@
+@import "~@/theme/common";
+.wrap{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 200;
+    .alertBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        :global .ant-alert-icon{
+            position: static;
+            margin-right: 20px;
+        }
+    }
+    :global .ant-alert-info{
+        background-color:@hoverColor;
+    }
+}
+.noticeIcon{
+    color:@primaryColor !important;
+}
+.brokenLineIcon{
+    color:@errorColor !important;
+
+}

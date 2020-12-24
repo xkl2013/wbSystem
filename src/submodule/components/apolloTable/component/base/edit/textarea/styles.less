@@ -1,0 +1,55 @@
+@import '../../../../common';
+.container {
+    position: relative;
+    top: 0;
+    left: 0;
+    .inputForm {
+        padding-bottom: 18px;
+    }
+    .wordNumberForm {
+        position: absolute;
+        right: 20px;
+        bottom: 2px;
+        color: #e1e1e1;
+        font-size: 12px;
+    }
+    .cellInput {
+        user-select: none;
+    }
+}
+.input {
+    padding-bottom: 18px;
+    max-height: 500px !important;
+}
+.wordNumber {
+    position: absolute;
+    right: 35px;
+    bottom: 80px;
+    color: #e1e1e1;
+    font-size: 12px;
+}
+.tableCell {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid @primaryColor;
+    padding: @paddingSmX @paddingSm 0;
+    .divInput {
+        outline: none !important;
+        font-size: @textFontGen;
+        flex: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .numTip {
+        height: 20px;
+        line-height: 20px;
+        text-align: right;
+        color: @textSupplyColor;
+        font-size: @textFontSm;
+    }
+}

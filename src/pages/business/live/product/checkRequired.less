@@ -1,0 +1,28 @@
+@import '~@/theme/common';
+.row {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    .text {
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .edit {
+        width: 80px;
+        text-align: center;
+        color: @primaryColor;
+        cursor: pointer;
+    }
+    .finish {
+        width: 80px;
+        text-align: center;
+    }
+}
+.modalWrap {
+    :global(.ant-modal-body) {
+        max-height: 80vh;
+        overflow: auto;
+    }
+}

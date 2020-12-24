@@ -1,0 +1,37 @@
+.roundsComment {
+    background-color: #fcfcfc;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 20px;
+    position: relative;
+    .roundsCommentBox {
+        &.hide {
+            height: 0;
+            overflow: hidden;
+        }
+        &.show {
+            height: auto;
+        }
+    }
+
+    .btnRoundsComment {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        bottom: 5px;
+        transform: translateX(-50%);
+        .show {
+            position: absolute;
+            top: 15px;
+            font-size: 12px;
+            transform: translateY(-50%);
+        }
+        .hide {
+            position: absolute;
+            top: 13px;
+            font-size: 12px;
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+}

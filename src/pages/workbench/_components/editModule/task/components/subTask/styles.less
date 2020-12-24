@@ -1,0 +1,173 @@
+@import '~@/theme/common';
+
+.rootPanel{
+   width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+    .item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        width: 100%;
+        height: 36px;
+        .labelIcon{
+            margin-right: 10px;
+            .subTaskNum{
+                margin-left: 10px;
+                color: #8C97A3FF;
+            }
+        }
+    }
+    .panelCls{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-flow: column;
+        width: 100%; 
+        .panelWrap{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-flow: column;
+            width: 100%;
+            .addCotainer{
+                // height: 36px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .addSubTaskTitle{
+                    flex: 1;
+                }
+            }
+            .editPanel{
+                border-top: 1px solid @primaryColor;
+                border-bottom: 1px solid @primaryColor;;
+            }
+            .panelData{
+                // height: 38px;
+                padding: 2px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                background: rgba(249,249,249,1);
+                .left{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    max-width:calc(100% - 260px);
+                    .headerIconContainer{
+                        position: relative;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        margin-right: 16px;
+                        min-width: 20px;
+                        .subStatus{
+                            position: absolute;
+                            display: none;
+                        }
+                        .expendIcon{
+                            padding-left: 20px;
+                            cursor: pointer;
+                        }
+                    }
+                    .titleBox{
+                        display: flex;
+                        flex-flow: row;
+                        width: 100%;
+                        .subTaskTitle{
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            cursor: pointer;
+                            color: #2C3F53FF;
+                           
+                        }
+                        .subTaskFinishTitle{
+                            text-decoration: line-through;
+                            color:#8C97A3FF
+                           
+                        }
+                        .subTaskLayer{
+                            margin-left: 10px;
+                            margin-right: 15px;
+                            display: flex;
+            flex-flow: row;
+            align-items: center;
+            color: #8C97A3FF;
+                        }
+                    }
+                }
+               
+                
+                .btnWrap{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    padding-left: 20px;
+                    .btn{
+                        display: flex;
+    justify-content: center;
+    align-items: center;
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+                    .addBtn{
+                        position: absolute;
+                        left:-4px;
+                        display: none;
+                    }
+                    .timeBtn{
+                        color:#8C97A3FF;
+                    }
+                }
+            }
+           
+        }
+        .menuData{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-flow: column;
+            width: 100%;
+            transition: all 1s ease-in;
+
+        }
+        .panelData:hover .subStatus{
+            display: block !important;
+            
+        }
+        .panelData:hover .addBtn{
+            display: block !important;
+            
+        }
+    }
+    .addnewTask {
+        color: @primaryColor;
+        cursor: pointer;
+    }
+    .icon{
+        font-size: 26px;
+        color: #BEC8D4FF;
+    }
+}
+.settingGroup{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.toSubTaskIcon{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.disableIcon{
+    cursor: not-allowed;
+}
+

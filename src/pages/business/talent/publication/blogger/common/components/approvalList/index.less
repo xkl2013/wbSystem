@@ -1,0 +1,75 @@
+@import '~@/theme/common';
+.listContainer {
+    padding: @paddingLg;
+    position: relative;
+    :global(.ant-timeline-item-tail) {
+        border-color: @timelineColor;
+    }
+    :global(.ant-timeline-item-head) {
+        background-color: transparent;
+    }
+    .outerDiv {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: @primaryColor;
+        position: relative;
+        .innerDiv {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: #fafafa;
+            left: 3px;
+            top: 3px;
+            position: relative;
+        }
+    }
+    .split {
+        height: 1px;
+        background: @borderColor;
+        margin-top: @marginLg;
+    }
+    .infoContainer {
+        .title {
+            display: flex;
+            //align-items: center;
+            justify-content: space-between;
+            height: 24px;
+            //margin-top: 8px;
+            margin-bottom: 20px;
+
+            .left {
+                font-size: @textFontGen;
+                color: @textPrimaryColor;
+                font-weight: 400;
+
+                .time {
+                }
+            }
+
+            .right {
+                width: 100px;
+                text-align: right;
+
+                .btn {
+                }
+            }
+        }
+
+        .line {
+            display: flex;
+            align-items: flex-start;
+
+            .label {
+                width: 100px;
+                font-size: @textFontGen;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: @textPrimaryColor;
+            }
+            .content{
+                flex: 1;
+            }
+        }
+    }
+}

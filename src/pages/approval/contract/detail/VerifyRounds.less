@@ -1,0 +1,44 @@
+@import '~@/theme/common';
+.roundsBox {
+    padding-left: 25px;
+    border-left: 1px solid #ececec;
+    position: relative;
+    padding-bottom: 30px;
+    .roundsIcon {
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: @primaryColor;
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        left: -8px;
+        &:before {
+            content: '';
+            display: block;
+            width: 7px;
+            height: 7px;
+            background-color: #fff;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .roundsInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .roundsInfoTitle {
+            font-size: 16px;
+            color: #5a6876;
+            line-height: 1;
+        }
+        .roundsInfoBtnBox {
+            .roundsInfoBtn {
+                margin-left: 20px;
+            }
+        }
+    }
+}

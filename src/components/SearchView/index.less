@@ -1,0 +1,91 @@
+@import '../../theme/common';
+
+@smallSpace: 4px;
+@normalSpace: 16px;
+.view {
+    :global(.ant-checkbox-wrapper) {
+        min-width: 116px;
+        margin-right: 10px;
+        color: @textSupplyColor;
+    }
+
+    :global(.ant-select-selection) {
+        height: 32px;
+        overflow-y: auto;
+    }
+
+    .rowWrap {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .colWrap {
+            display: inline-block;
+            vertical-align: middle;
+
+            &._2 {
+                width: 50%;
+            }
+
+            &._3 {
+                width: 33.33%;
+            }
+
+            &._4 {
+                width: 25%;
+            }
+
+            &._5 {
+                width: 20%;
+            }
+
+            .colInner {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .label {
+                    color: @textPrimaryColor;
+                    margin-right: 25px;
+                    width: 66px;
+                    text-align: right;
+                }
+
+                .itemWrap {
+                    flex: 1;
+
+                    .itemContent {
+                        //min-width: 230px;
+                        //display: inline-block;
+                        // width: 100%;
+                        margin-right: 20px;
+                    }
+                    .checkboxContainer {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-bottom: -20px;
+                    }
+                    .checkbox {
+                        margin-bottom: 20px;
+                    }
+                    .searchBtnWrap {
+                        display: inline-block;
+
+                        .searchBtn {
+                            background: @primaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.chooseAll {
+    //padding: 5px 0;
+    //display: block;
+    //background-color: blue;
+    //border-top: 1px solid red;
+}

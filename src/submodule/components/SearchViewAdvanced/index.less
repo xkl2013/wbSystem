@@ -1,0 +1,25 @@
+.collapseTitle {
+    color: #04b4ad;
+    font-size: 14px;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+.collapseIcon {
+    font-size: 9px;
+    transform: rotate(0);
+    transition: transform 0.3s ease-in-out;
+    margin-left: 5px;
+    vertical-align: middle;
+    &.show {
+        transform: rotate(180deg);
+    }
+}
+:global .ant-collapse > .ant-collapse-item.ant-collapse-no-arrow > .ant-collapse-header {
+    padding: 0;
+}
+:global .ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+    padding: 0;
+}
+:global .ant-collapse-header {
+    display: inline-block;
+}

@@ -1,0 +1,113 @@
+@import '../common';
+
+.tableContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid @borderColor;
+    overflow: hidden;
+    height: 100%;
+    .loading {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+    .leftSideContainer {
+        box-shadow: 6px 0 6px -4px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .centerContainer {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        background: #fff;
+    }
+    .rightSideContainer {
+        box-shadow: -6px 0 6px -4px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        overflow: hidden;
+    }
+    :global(.ReactVirtualized__Grid__innerScrollContainer) {
+        overflow: unset !important;
+    }
+}
+
+.leftSideHeaderContainer,
+.rightSideHeaderContainer {
+    position: absolute;
+    top: 0;
+    flex: 0 0 75px;
+    z-index: 10;
+    background-color: rgba(246, 246, 246, 1);
+}
+.leftSideGridContainer,
+.rightSideGridContainer {
+    position: absolute;
+    flex: 0 0 75px;
+    z-index: 10;
+    background-color: white;
+}
+
+.sideGrid,.centerGrid {
+    outline: none;
+}
+
+.bodyCell {
+    font-size: 20px;
+    color: @textGeneralColor;
+    font-weight: @weightRegular;
+}
+.headerGrid {
+    width: 100%;
+    overflow: hidden !important;
+    outline: none;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.fillHandleWrapper {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+.defaultEmpty {
+    padding-top: 100px;
+}
+.widthHandleWrapper {
+    position: absolute;
+    cursor: ew-resize;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 4;
+    display: none;
+    user-select: none;
+    .widthHandle {
+        position: absolute;
+        cursor: ew-resize;
+        width: 2px;
+        height: 100%;
+        background-color: rgb(33, 150, 243);
+    }
+}
+.columnCopyDiv {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    cursor: grab;
+    text-align: center;
+    padding-top: @paddingSmX;
+    z-index: 2;
+}

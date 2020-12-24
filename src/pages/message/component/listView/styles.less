@@ -1,0 +1,121 @@
+@import "~@/theme/common";
+
+.listView{
+    padding-top: 20px;
+}
+.listItems{
+    padding: 0;
+    list-style: none;
+    .listItem{
+        display: flex;
+        align-content: center;
+        min-height: 100px;
+        padding: 10px 0;
+        margin: 10px;
+        color: rgba(0,0,0,0.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    .itemMeta{
+        display: flex;
+        flex: none;
+        width: 810px;
+    }
+
+    }
+}
+// 头像
+.itemMetaAvatar{
+    margin-right: 10px;
+    .avatarCrrcle{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    width: 36px;
+    line-height: 32px;
+    img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    }
+}
+.metaContent{
+    position: relative;
+    width:810px;
+    background:rgba(250,251,253,1);
+    border-radius:4px;
+    padding-left: 20px;
+    cursor: pointer;
+    .metaTitle{
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 4px;
+        color:rgba(44,63,83,1);
+    font-size: 14px;
+    line-height: 22px;
+    }
+    .metaDescription{
+        color:rgba(132,143,155,1);
+        min-height: 44px;
+        word-break: break-all;
+    }
+}
+.dateTime{
+    float: right;
+    margin-right: 10px;
+    height: 20px;
+    width: 40px;
+    font-size: 14px;
+    color:rgba(132,143,155,1);
+}
+    .point{
+        position: absolute;
+        display: inline-block;
+        top: -5px;
+        right: -24px;
+        z-index: 10;
+        color: '#93A3AFFF';
+    }
+    .statusPoint{
+        position: absolute;
+        display: inline-block;
+        top: -5px;
+        right: -5px;
+        z-index: 10;
+        color: '#93A3AFFF';
+        width: 5px;
+        height: 5px;
+        background: #FF5B57;
+        border-radius: 50%;
+    }
+    .splitLine{
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .splitLeft{
+            height: 1px;
+            background: linear-gradient(to right,transparent,#ECECEC);
+            flex: 1;
+
+        }
+        .splitText{
+            margin: 0 30px;
+            font-size: 12px;
+            color:@textSupplyColor ;
+        }
+        .splitRight{
+            height: 1px;
+            background: linear-gradient(to left,transparent,#ECECEC);
+            flex: 1;
+
+        }
+    }

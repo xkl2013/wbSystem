@@ -1,0 +1,67 @@
+@import '~@/theme/common';
+
+.wrap {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .topWrap {
+        display: flex;
+        height: 60px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 @paddingLg;
+        .titleCls {
+            font-size: @textFontGen;
+            color: #5a6876;
+        }
+    }
+
+    .formItemCls {
+        flex: 1;
+        padding: 0 @paddingLg;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border-bottom: 1px solid #ececec;
+        position: relative;
+
+        :global(.ant-form-item-control) {
+            line-height: 28px;
+        }
+        :global(.ant-form-item-required:before) {
+            position: initial;
+            vertical-align: middle;
+        }
+        .titleContainer {
+            vertical-align: middle;
+            .colIcon {
+                width: @textFontGen;
+                color: @textSupplyColor;
+            }
+            .itemTitle {
+                margin-left: @marginSm;
+                color: @textPrimaryColor;
+                margin-right: 2px;
+            }
+            .remarkIcon{
+                color: #AEB4BA;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .bottomWrap {
+        display: flex;
+        height: 68px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 @paddingLg;
+        .btnCls {
+            min-width: 68px;
+            margin-left: 10px;
+        }
+        .delBtnCls {
+            color: @errorColor;
+        }
+    }
+}

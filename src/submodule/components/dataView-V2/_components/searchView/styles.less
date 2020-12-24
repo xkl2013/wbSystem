@@ -1,0 +1,47 @@
+@import '~@/theme/common';
+
+@smallSpace: 4px;
+@normalSpace: 16px;
+
+
+.colInner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .label {
+        color: @textPrimaryColor;
+        margin-right: 25px;
+        width: 66px;
+        text-align: right;
+    }
+    .itemContent{
+        flex: 1;
+    
+        .itemContent {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            margin-right: 20px;
+            text-align: left;
+        }
+        .checkboxContainer {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: -20px;
+        }
+        .checkbox {
+            margin-bottom: 20px;
+        }
+        .timeStyle{
+            max-width: 320px;
+
+        }
+        .searchBtnWrap {
+            display: inline-block;
+
+            .searchBtn {
+                background: @primaryColor;
+            }
+        }
+    }
+}

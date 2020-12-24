@@ -1,0 +1,114 @@
+@import "../../../../theme/common";
+
+.pageWrap {
+    //overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-left: 1px solid @borderColor;
+    min-width: 300px;
+    .titleCls {
+        font-size: @textFontLg;
+        color: @textPrimaryColor;
+        background: #fafafa;
+        padding: @paddingLg;
+    }
+
+    .contentCls {
+        flex: 1;
+        overflow: auto;
+        padding: 0 @paddingGen;
+
+        .userNameCls {
+            color: @textPrimaryColor;
+            cursor: pointer;
+            text-overflow: ellipsis;
+            //max-width: 56px;
+            overflow: hidden;
+            display: block;
+            white-space: nowrap;
+            margin-right: 10px;
+        }
+
+        .tipCls {
+            color: #8C97A3
+        }
+
+        pre {
+            font-family: PingFangSC-Regular;
+            white-space: pre-wrap; /* css3.0 */
+            white-space: -moz-pre-wrap; /* Firefox */
+            white-space: -pre-wrap; /* Opera 4-6 */
+            white-space: -o-pre-wrap; /* Opera 7 */
+            word-wrap: break-word; /* Internet Explorer 5.5+ */
+            margin: 0;
+
+            span {
+                color: @primaryColor;
+            }
+        }
+
+        .fileCls {
+            width: 100%;
+            height: 100%;
+
+            :global(.ant-upload.ant-upload-select) {
+                display: none;
+            }
+            :global(.ant-upload-list) {
+                height: auto;
+            }
+        }
+
+        :global .ant-comment-content-author-name {
+            display: flex;
+            color: @textPrimaryColor;
+            font-size: 14px;
+            flex:1;
+            max-width: 150px;
+        }
+
+        :global .ant-btn-primary {
+            width: 68px;
+        }
+
+        :global .ant-comment-content-detail {
+            background: #fff;
+            padding: 10px;
+            border-radius: @borderRadius;
+        }
+
+        :global .ant-comment-inner {
+            padding: 10px 0;
+        }
+
+        :global .ant-comment-content-author {
+            justify-content: space-between;
+            span{
+                padding-right: 0;
+            }
+        }
+        :global(.ant-comment-content-author-time){
+            width: 120px;
+        }
+    }
+
+    .inputCls {
+        width: 100%;
+        min-height: 82px;
+        max-height: 512px;
+        overflow-y: scroll;
+        background: white;
+        padding: @paddingGen;
+        border-top: 1px solid @borderColor;
+
+        :global .ant-comment:before {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 100%;
+            background: #F3F3F3;
+        }
+    }
+}
+

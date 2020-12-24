@@ -1,0 +1,12 @@
+@import '~@/theme/common';
+
+.treeSelect {
+    :global(.ant-select-tree
+            li
+            .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected) {
+        background: @hoverColor;
+    }
+    :global(.ant-select-tree li .ant-select-tree-node-content-wrapper:hover) {
+        background: @hoverColor;
+    }
+}

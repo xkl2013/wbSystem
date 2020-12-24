@@ -1,0 +1,64 @@
+@import '~@/theme/common';
+
+.wrp{
+    width: 320px;
+}
+
+.tableContainer{
+    border: 1px solid #ececec;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.dateNum{
+    display: inline-block;
+    padding: 0 5px;
+}
+.table{
+    background-color: transparent;
+    border-collapse: collapse;
+    border: 0;
+    width: 100%;
+    .tbody{
+        display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    .tr{
+        display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    .td{
+        display: table-cell;
+    vertical-align: inherit;
+        height: 30px;
+    padding: 10px;
+    .cell{
+        display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 24px;
+    text-align: center;
+        color: @textGeneralColor;
+        background: transparent;
+        border-color: transparent;  
+        cursor: pointer;
+        border-radius: @smallBorderRadius;
+    }
+    .selectedCell{
+        color: #fff;
+        border-color:@primaryColor;
+        background:@operateColor;
+    }
+    }
+    }
+    }
+}
+.split{
+    display: inline-block;
+   padding: 0 12px;
+}
+.timePicker{
+    width: 100px;
+}

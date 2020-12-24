@@ -1,0 +1,154 @@
+@import '../../theme/detailPage';
+.panelContainer {
+    display: flex;
+    height: 60vh;
+    .leftBox {
+        flex: 0.5;
+        display: flex;
+        flex-flow: column;
+        .tagsContainer {
+            display: flex;
+            justify-content: center;
+            color: #848f9b;
+            height: 30px;
+            align-items: center;
+            font-size: 14px;
+            .tab {
+                padding: 0 16px;
+                cursor: pointer;
+            }
+            .selectTab {
+                color: @primaryColor;
+            }
+        }
+        .searchBox {
+            flex: 1;
+            width: 100%;
+            background: rgba(255, 255, 255, 1);
+            overflow: hidden;
+        }
+    }
+    .middleSplit {
+        width: 30px;
+        color: #dfdfdf;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: @textFontLg;
+    }
+
+    .rightBox {
+        flex: 0.5;
+        display: flex;
+        flex-flow: column;
+        .rightBoxHeader {
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            align-items: center;
+            font-size: 14px;
+            .chooseTitle {
+                color: #848f9b;
+            }
+            .chooseClear {
+                color: @primaryColor;
+                cursor: pointer;
+            }
+        }
+        .chooseBox {
+            flex: 1;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+            border-radius: @borderRadius;
+        }
+    }
+}
+
+// choose部分
+.userBox {
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    overflow: auto;
+    .userItem {
+        height: 35px;
+        display: flex;
+        align-items: center;
+        padding: 0 @paddingLg;
+        cursor: move;
+        .avatar {
+            width: 24px;
+            height: 24px;
+        }
+        .userName {
+            margin-left: @marginGen;
+            flex: 1;
+        }
+        .clearUser {
+            cursor: pointer;
+        }
+        &:hover {
+            background: rgba(230, 240, 255, 1);
+        }
+        &.hasCheckedUserItem {
+            background: rgba(230, 240, 255, 1);
+        }
+    }
+}
+.drugWordTip{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.iconCls{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.userItem{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:4px 8px;
+    .avatarContainer{
+        display: inline-block;
+        position: relative;
+        height: 26px;
+        .avatarCls{
+            position: absolute;
+            top: 0;
+            .icon{
+                font-size: 26px;
+            }
+        }
+       
+    }
+    :global .ant-avatar{
+        margin:0
+    }
+    
+}
+.singleUser{
+    position: relative;
+}
+.clearUsers {
+    display: none;
+    position: absolute;
+    top: 0;
+   right: 12px;
+    height: 0px;
+    width: 12px;
+    font-size: 14px !important;
+    cursor: pointer;
+}
+.singleUser:hover .clearUsers {
+    display: block;
+}
+.clearIcon {
+    width: 14px;
+}
+.overlayClassName{
+    width: 320px;
+}

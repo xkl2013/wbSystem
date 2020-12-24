@@ -1,0 +1,149 @@
+/* 样式覆盖 */
+:global .fc-license-message{
+    display: none !important;
+}
+:global .meetingCalendar .fc-body .fc-scroller{
+    height: calc(100vh - 200px) !important;
+}
+
+:global .meetingCalendar .fc-today{
+    background: transparent !important;
+}
+:global .meetingCalendar tr[data-resource-id] .fc-widget-content>div{
+    background: #fafafa;
+}
+:global .meetingCalendar tr[data-resource-id^='meetingId'] .fc-widget-content>div{
+    background: #fff;
+}
+/* // 给第三层级 会议室 styles增加最小高度 */
+:global .meetingCalendar tr[data-resource-id^='meetingId'] .fc-widget-content > div{
+    min-height: 72px;
+}
+:global .meetingCalendar .fc-content>table{
+    min-height: 40px;
+    background: #F7F9FA;
+}
+
+:global .meetingCalendar .fc-cell-text{
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFangSC;
+    font-weight:400;
+    color:#2c3f53;
+}
+:global .meetingCalendar .fc-event{
+    background:rgba(71, 174, 170, 0.1);
+    color:rgba(39,55,70,1);
+    z-index: 5;
+}
+:global .meetingCalendar .fc-timeline-event .fc-title{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+:global .meetingCalendar .meetingItem{
+    padding-top: 10px;
+    padding-left: 38px;
+    font-family:PingFangSC-Regular,PingFangSC;
+}
+
+:global .meetingCalendar .meetingItem .meetingItemTit{
+    display: flex;
+    align-items: center;
+}
+:global .meetingCalendar .meetingItem .meetingItemTit img{
+    width: 14px;
+    /* height: 12px; */
+    display: block;
+
+}
+:global .meetingCalendar .meetingItem .meetingItemTit span{
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFangSC;
+    font-weight:400;
+    color:rgba(44,63,83,1);
+    padding-left: 7px;
+}
+:global .meetingCalendar .meetingItem .meetingItemCon{
+    width:174px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+
+}
+:global .meetingCalendar .meetingItem .meetingItemCon span{
+    flex-shrink: 0;
+    display: block;
+    background:rgba(92,153,255,0.1);
+    border-radius:4px;
+    font-size:12px;
+    font-family:PingFangSC-Regular,PingFangSC;
+    font-weight:400;
+    color:rgba(90,104,118,1);
+    padding: 0 8px;
+    margin-right: 6px;
+}
+
+
+
+:global .meetingCalendar .fc-unthemed th,
+:global .meetingCalendar .fc-unthemed td,
+:global .meetingCalendar .fc-unthemed thead,
+:global .meetingCalendar .fc-unthemed tbody,
+:global .meetingCalendar .fc-unthemed .fc-divider,
+:global .meetingCalendar .fc-unthemed .fc-row,
+:global .meetingCalendar .fc-unthemed .fc-content,
+:global .meetingCalendar .fc-unthemed .fc-popover,
+:global .meetingCalendar .fc-unthemed .fc-list-view,
+:global .meetingCalendar .fc-unthemed .fc-list-heading td{
+    border-color: #ececec;
+}
+
+
+:global .meetingCalendar .fc-icon-plus-square::before{
+    content:'';
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAtUlEQVQ4T2NkoDJgxGXeqlWr2O48/xQJkhfmMFiWnm7ymxi7cRrY2j975X8GhjCwIYyMRwRZ+Tyzs8O+EDIUp4Et/XN+MjD8Z4MbQKSheAyc/R/DNUQYSpqBRHifdAMJGEqegXgMJd9AqKGinAZOyEmKMgMZGBiYmBgTqvJTFsIicJAZyMh4hHpexpEmyfMyngROuoEEcgtpBlKW9ahcOFC9+Jo58wzr2x8XoqhWwBIqSHHJAwB2UnIVDDcqpwAAAABJRU5ErkJggg==') no-repeat center center;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin-top: 4px;
+    margin-left: 2px;
+}
+:global .meetingCalendar .fc-icon-minus-square::before{
+    content:'';
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAy0lEQVQ4T8XTMQrCQBAF0D96AmPt2Sw0FiKSdGICWsTYaYpgk208hReyEsRGsHNki4gG4s6EgFt/3n7Y/YSWD7XsoRGY5se+LbKcDa/VQmowzYoFgxILMTCPg/HhE1WBm32xZmBVAkS4RYHvNQKrWInEof9VStSwDrOoGvyFqUEXpgIlmBiUYiJQgzlB+2mfjK1mjrWvvDPGe9xxYebu30AinKPAH9QuJcnMlMAJM3qulhYDdyZRODo1mp7rgve+pUFpTrRlKWZzrYMvpgJXFa/0o4sAAAAASUVORK5CYII=') no-repeat center center;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+:global .meetingCalendar .fc-time-area .fc-slats .fc-minor{
+    border: none;
+}
+
+:global .meetingCalendar .fc-scroller-canvas > .fc-bg{
+    z-index: 3;
+    pointer-events:none;
+}
+
+/* :global .meetingCalendar ::-webkit-scrollbar { width: 0 !important } */
+
+:global .meetingCalendar .fc-now-indicator-line{
+    background: #FF5B57;
+}
+:global .meetingCalendar .fc-now-indicator-arrow{
+    /* border: 0 solid #FF5B57; */
+    /* border-color: #FF5B57; */
+}
+:global .meetingCalendar .fc-ltr .fc-timeline-event.fc-not-end:after,
+:global .meetingCalendar .fc-rtl .fc-timeline-event.fc-not-start:before,
+:global .meetingCalendar .fc-ltr .fc-timeline-event.fc-not-start:before,
+:global .meetingCalendar .fc-rtl .fc-timeline-event.fc-not-end:after{
+    border: none;
+}
+

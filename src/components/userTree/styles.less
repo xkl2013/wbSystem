@@ -1,0 +1,59 @@
+
+// 搜索部分
+    .userList{
+        list-style: none;
+        height: 50em;
+        overflow: auto;
+        .userItem{
+            cursor: pointer;
+            padding: 5px 0px;
+            min-height:30px;
+            .chooseIcon{
+                color: #5C99FF;
+                float: right;
+            }
+        }
+        .hasCheckedUserItem{
+            background:rgba(230,240,255,1);
+        }
+        .userItem:hover{
+         background:rgba(230,240,255,1);
+        }
+:global .ant-checkbox-wrapper{
+    display: flex;
+    align-items: center;
+    padding-left:10px
+}
+:global .ant-checkbox-group{
+    display: block;
+}
+:global .ant-checkbox-wrapper :nth-last-child(1){
+flex: 1;
+}
+
+    }
+    .treeList{
+        height: 50em;
+        overflow: auto;
+        .treeTitle{
+            cursor: pointer;
+            
+            .chooseIcon{
+                color: #5C99FF;
+                float: right;
+            }
+           
+        }
+    }
+
+
+.addOrgIcon{
+    display: none;
+    margin-right:10px; 
+    color: #5492FF;
+    color: 16px;
+    float: right;
+}
+.treeTitle:hover .addOrgIcon{
+  display: inline-block;
+}

@@ -1,0 +1,202 @@
+@import "../../theme/common";
+
+.fileList {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.fileListCenter {
+    justify-content: center;
+}
+
+.wrap {
+    position: relative;
+    cursor: pointer;
+}
+
+.wrap:hover .fileBoxHove {
+    display: flex;
+}
+
+.fileBox {
+    padding: 10px;
+    width: 100px;
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.fileBoxHove {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+
+    .icon {
+        color: #fff;
+        padding: 5px;
+    }
+}
+
+.fileName {
+    margin-top: 5px;
+    width: 80px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(90, 104, 118, 1);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.fileStyle {
+    height: 56px;
+}
+
+.dialog {
+    width: 900px !important;
+    min-height: 500px;
+}
+
+.textUploadList {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+    zoom: 1;
+
+    .textUploadListItem {
+        position: relative;
+        height: 22px;
+        margin-top: 8px;
+        font-size: 14px;
+
+        .textUploadListItemInfo {
+            height: 100%;
+            padding: 0 12px 0 4px;
+
+            .textUploadListItemBox {
+                display: flex;
+                align-items: center;
+
+                .textUploadListItemInfoName {
+                    display: inline-block;
+                    margin-right: 10px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: #5a6876;
+
+                    &:hover {
+                        color: #5c99ff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.downIcon {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.pictureTextUploadList {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+    zoom: 1;
+    overflow: hidden;
+    width: 100%;
+
+    .textUploadListItem {
+        position: relative;
+        display: flex;
+        justify-items: center;
+        height: 41px;
+        margin-top: 10px;
+        font-size: 14px;
+        width: 100%;
+
+        .textUploadListItemInfo {
+            width: 100%;
+            height: 100%;
+            padding: 0 12px 0 4px;
+
+            .textUploadListItemBox {
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                .fileImgStyle {
+                    width: 32px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+
+                .textUploadListItemInfoName {
+                    display: inline-block;
+                    margin-right: 10px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: @textGeneralColor;
+
+                    &:hover {
+                        color: @primaryColor;
+                    }
+                }
+                &:hover{
+                    .downIcon{
+                        opacity: 1;
+                    }
+                }
+
+                .downIcon {
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    cursor: pointer;
+                    color: @textSupplyColor;
+                    opacity: 0;
+                    transition: opacity 0.2s linear;
+                }
+            }
+        }
+    }
+}
+
+
+// .textUploadListItemInfo:hover {
+//     background: #e6f7ff;
+// }

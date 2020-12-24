@@ -1,0 +1,95 @@
+.collapseTitle {
+    color: #04b4ad;
+    font-size: 14px;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+.collapseIcon {
+    font-size: 9px;
+    transform: rotate(0);
+    transition: transform 0.3s ease-in-out;
+    margin-left: 5px;
+    &.show {
+        transform: rotate(180deg);
+    }
+}
+:global .ant-collapse > .ant-collapse-item.ant-collapse-no-arrow > .ant-collapse-header {
+    padding: 0;
+}
+:global .ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+    padding: 0;
+}
+:global .ant-collapse-header {
+    display: inline-block;
+}
+.termLine {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    .termLabel {
+        width: 66px;
+        height: 32px;
+        margin-right: 25px;
+        text-align: right;
+        line-height: 32px;
+    }
+    .termCont {
+        flex: 1;
+        .termContext {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .termHead {
+            width: 300px;
+            margin-right: 20px;
+        }
+        .termBody {
+            width: 450px;
+        }
+        .termDelete {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            margin-left: 10px;
+            cursor: pointer;
+            &:before {
+                content: '';
+                display: block;
+                width: 2px;
+                height: 15px;
+                background-color: #8c97a3;
+                transform: translate(-50%, -50%) rotate(45deg);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+            &:after {
+                content: '';
+                display: block;
+                width: 2px;
+                height: 15px;
+                background-color: #8c97a3;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+        }
+    }
+}
+.btnAddTerm {
+    display: inline-block;
+    margin-left: 98px;
+    color: #04b4ad;
+    cursor: pointer;
+    .btnAddTermIcon {
+        font-size: 9px;
+        margin-right: 3px;
+    }
+}

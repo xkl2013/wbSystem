@@ -1,0 +1,119 @@
+.wrapUl {
+    overflow-y: auto;
+    padding: 8px 12px;
+    .listView {
+        padding-top: 20px;
+    }
+    .listItems {
+        margin-left: 10px;
+        padding: 0;
+        list-style: none;
+        .listItem {
+            display: flex;
+            align-content: center;
+            min-height: 100px;
+            padding: 10px 0;
+            margin: 10px;
+            color: rgba(0, 0, 0, 0.65);
+            font-size: 14px;
+            font-variant: tabular-nums;
+            line-height: 1.5;
+            .itemMeta {
+                display: flex;
+                flex: none;
+                width: 810px;
+            }
+        }
+    }
+    // 头像
+    .itemMetaAvatar {
+        margin-right: 10px;
+        .avatarCrrcle {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            color: #fff;
+            white-space: nowrap;
+            text-align: center;
+            vertical-align: middle;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .metaContent {
+        position: relative;
+        width: 810px;
+        background: rgba(250, 251, 253, 1);
+        border-radius: 4px;
+        padding-left: 20px;
+        cursor: pointer;
+        .metaTitle {
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 4px;
+            color: rgba(44, 63, 83, 1);
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .metaDescription {
+            color: rgba(132, 143, 155, 1);
+            min-height: 44px;
+            overflow: auto;
+        }
+    }
+    .dateTime {
+        float: right;
+        margin-right: 10px;
+        height: 20px;
+        width: 40px;
+        font-size: 14px;
+        color: rgba(132, 143, 155, 1);
+    }
+    .point {
+        position: absolute;
+        top: 2px;
+        right: -10px;
+        transform: translate(50%, -50%);
+        transform-origin: 100% 0%;
+        z-index: 10;
+        width: 6px;
+        height: 6px;
+        background: #ff5b57;
+        border-radius: 100%;
+        box-shadow: 0 0 0 1px #fff;
+    }
+    .splitLine {
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .splitLeft {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #ececec);
+            flex: 1;
+        }
+        .splitText {
+            margin: 0 30px;
+            font-size: 12px;
+        }
+        .splitRight {
+            height: 1px;
+            background: linear-gradient(to left, transparent, #ececec);
+            flex: 1;
+        }
+    }
+
+    .spin {
+        text-align: center;
+        margin-top: 200px;
+    }
+}

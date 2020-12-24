@@ -1,0 +1,205 @@
+/* 样式覆盖 */
+:global .fc-license-message{
+    display: none !important;
+}
+:global .weekViewCalendar .fc-body .fc-scroller{
+    height: calc(100vh - 250px) !important;
+}
+
+:global .weekViewCalendar .fc-today{
+    background: transparent !important;
+    color: var(--primaryColor);
+}
+:global .weekViewCalendar tr[data-resource-id] .fc-widget-content>div{
+    min-height: 102px;
+
+}
+
+:global .weekViewCalendar .fc-content>table{
+    min-height: 40px;
+    background: #F7F9FA;
+}
+
+:global .weekViewCalendar .fc-cell-text{
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFangSC;
+    font-weight:400;
+    color:rgba(127,138,151,1);
+}
+
+:global .weekViewCalendar .fc-resource-area .fc-widget-header  .fc-cell-text{
+    padding-left: 10px;
+}
+
+
+
+
+:global .weekViewCalendar .fc-unthemed th,
+:global .weekViewCalendar .fc-unthemed td,
+:global .weekViewCalendar .fc-unthemed thead,
+:global .weekViewCalendar .fc-unthemed tbody,
+:global .weekViewCalendar .fc-unthemed .fc-divider,
+:global .weekViewCalendar .fc-unthemed .fc-row,
+:global .weekViewCalendar .fc-unthemed .fc-content,
+:global .weekViewCalendar .fc-unthemed .fc-popover,
+:global .weekViewCalendar .fc-unthemed .fc-list-view,
+:global .weekViewCalendar .fc-unthemed .fc-list-heading td{
+    border-color: #ececec;
+}
+
+:global .weekViewCalendar .fc-time-area .fc-slats .fc-minor{
+    /* border: none; */
+}
+
+:global .weekViewCalendar .fc-scroller-canvas > .fc-bg{
+    /* z-index: 3; */
+    /* pointer-events:none; */
+}
+
+
+
+/* 左侧资源样式 */
+:global .weekViewCalendar .meetingItem{
+    padding-top: 16px;
+    padding-left: 32px;
+}
+:global .weekViewCalendar .meetingItem .name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+:global .weekViewCalendar .meetingItem .name .star {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 4px;
+    cursor: pointer;
+}
+:global .weekViewCalendar .meetingItem .name .nameLeft{
+    display: flex;
+    align-items: center;
+}
+:global .weekViewCalendar .meetingItem .name .nameLeft p{
+    font-size:15px;
+    font-family:PingFangSC-Medium,PingFangSC;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 130px;
+}
+:global .weekViewCalendar .meetingItem .name .nameLeft .nameIcon{
+    flex-shrink: 0;
+    margin-left: 8px;
+    padding-bottom: 2px;
+}
+:global .weekViewCalendar .meetingItem .name .nameLeft .nameIcon img{
+    width: 19px;
+    height: 16px;
+    display: block;
+    cursor: pointer;
+}
+:global .weekViewCalendar .meetingItem .name .nameEdit{
+    margin-right: 10px;
+    flex-shrink: 0;
+    font-size:12px;
+    font-family:PingFangSC-Regular,PingFangSC;
+    font-weight:400;
+    color:var(--primaryColor);
+    cursor: pointer;
+    display: none;
+}
+:global .weekViewCalendar .meetingItem:hover .name .nameEdit{
+    display: block;
+}
+
+:global .weekViewCalendar .meetingItem .base{
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFangSC;
+    font-weight: 400;
+    color: #5a6876;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+:global .weekViewCalendar .meetingItem .intro{
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFangSC;
+    font-weight: 400;
+    color: #8c97a3;
+    width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+
+
+/* eventitem  样式 */
+:global .weekViewCalendar .fc-timeline-event{
+    padding: 0;
+}
+:global .weekViewCalendar .fc-content{
+    width: 100%;
+}
+:global .weekViewCalendar .fc-content .fc-content-out{
+    border-left:3px solid rgba(140,151,163,1);
+    padding: 4px 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+:global .weekViewCalendar .fc-content .fc-content-out .fc-content-out-text{
+    font-size:12px;
+    font-family:PingFangSC-Regular,PingFangSC;
+    font-weight:400;
+    color:rgba(163,169,183,1);
+    padding-left:0px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+:global .weekViewCalendar .fc-content .fc-content-out2{
+    border-left:3px solid #5c99ff;
+}
+:global .weekViewCalendar .fc-content .fc-content-out2 .fc-content-out-text{
+    color:#2C3F53;
+}
+:global .weekViewCalendar .fc-content .fc-content-out3{
+    border-left:3px solid rgba(66,202,196,1);
+}
+:global .weekViewCalendar .fc-content .fc-content-out3 .fc-content-out-text{
+    color:#2C3F53;
+}
+:global .weekViewCalendar .fc-content .fc-content-out .fc-content-out-address{
+    font-size:12px;
+    font-family:PingFangSC-Regular,PingFangSC;
+    font-weight:400;
+    color:rgba(39,55,70,1);
+    background: url('../../../../../../../assets/location_icon@2x.png') left 2px no-repeat;
+    background-size: 9px 11px;
+    padding-left: 12px;
+    padding-right: 5px;
+    max-width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+:global .weekViewCalendar .fc-timeline .fc-divider{
+    width: 0;
+}
+
+
+
+:global .weekViewCalendar .fc-ltr .fc-timeline-event.fc-not-end:after,
+:global .weekViewCalendar .fc-rtl .fc-timeline-event.fc-not-start:before,
+:global .weekViewCalendar .fc-ltr .fc-timeline-event.fc-not-start:before,
+:global .weekViewCalendar .fc-rtl .fc-timeline-event.fc-not-end:after{
+    border: none;
+}

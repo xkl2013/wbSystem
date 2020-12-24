@@ -1,0 +1,57 @@
+@import "common";
+
+.wrap {
+    background-color: @disabledColor;
+
+    .formWrap {
+        width: 100%;
+        min-height: 153px;
+        padding: 20px;
+        background: white;
+        border-radius: 3px;
+    }
+
+    .tableWrap {
+        margin-top: 16px;
+        // height: 804px;
+        padding: 10px 20px;
+        background: white;
+        border-radius: 3px;
+
+        .addButtonWrap {
+            margin-bottom: 30px;
+            width: 100%;
+            text-align: right;
+
+            //:global .BIButton .ant-btn {
+            //    color: #639DFF;
+            //    border-color: #639dff;
+            //}
+
+            .addIconCls {
+                font-size: 18px;
+                margin-right: 6px;
+            }
+
+            .addButton {
+                width: 66px;
+                height: 28px;
+                font-size: 12px;
+                color: @primaryColor;
+                background: rgba(246, 248, 255, 0.66);
+                border-radius: 2px;
+                border: 1px solid rgba(217, 226, 255, 1);
+            }
+        }
+
+    }
+}
+
+.btnCls {
+    color: @primaryColor;
+    cursor: pointer;
+}
+
+.btnCls:not(:last-child) {
+    margin-right: 18px;
+}

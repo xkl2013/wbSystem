@@ -1,0 +1,30 @@
+@import '~@/theme/tableOperateBtn';
+@import '~@/theme/common';
+
+.searchCls {
+    width: 320px;
+}
+.dateRangeCls {
+    width: 230px !important;
+}
+.btn{
+color: @primaryColor;
+cursor: pointer;
+}
+.link {
+    color: @primaryColor;
+    text-decoration: underline;
+    cursor: pointer;
+    &.disabled{
+        color: rgba(0, 0, 0, 0.25);
+        cursor: not-allowed;
+        pointer-events: none;
+    }}
+.wrap{
+    :global(.ant-table-thead > tr:first-child > th:last-child) {
+        text-align: left;
+    }
+    :global(.ant-table-tbody > tr > td:last-child){
+        text-align: left;
+    }
+}

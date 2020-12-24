@@ -1,0 +1,26 @@
+.select {
+    width: 100%;
+    display: flex !important;
+    :global(.ant-select-selector) {
+        height: 100% !important;
+        align-items: center;
+    }
+    :global(.ant-select-selection) {
+        width: 100%;
+        height: auto !important;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+    }
+    :global(.ant-select-selection__rendered) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+.selectDropdown{
+    overflow: auto;
+    :global(.ant-select-dropdown-menu) {
+        max-height: none;
+    }
+}

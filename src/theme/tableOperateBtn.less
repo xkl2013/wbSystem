@@ -1,0 +1,18 @@
+@import "common";
+
+.btnCls {
+  color: @operateColor;
+  cursor: pointer;
+    &.disabled{
+        color: @textHolderColor;
+        pointer-events: none;
+    }
+
+  &:hover {
+    color: @primaryColor;
+  }
+}
+
+.btnCls:not(:last-child) {
+  margin-right: 8px;
+}

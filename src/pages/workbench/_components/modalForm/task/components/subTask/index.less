@@ -1,0 +1,122 @@
+@import '~@/theme/common';
+.treeWrap {
+    position: relative;
+    margin-left: -20px;
+    :global(.ant-tree li .ant-tree-node-content-wrapper) {
+        width: 100%;
+        padding-right: 45px;
+    }
+    :global(.ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected) {
+        background: #fff;
+    }
+    :global(.ant-tree li .ant-tree-node-content-wrapper:hover) {
+        background: #fcfcfc;
+    }
+    :global(.ant-tree-checkbox-checked .ant-tree-checkbox-inner) {
+        background-color: transparent;
+        border-color: #919ea9;
+    }
+    :global(.ant-tree-checkbox-checked .ant-tree-checkbox-inner::after) {
+        border: 1px solid #919ea9;
+        border-top: 0;
+        border-left: 0;
+    }
+    .addnewTask {
+        position: absolute;
+        right: 0;
+        top: -6px;
+        color: @primaryColor;
+        cursor: pointer;
+    }
+  
+    .footerBtnCls {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 6px;
+        .cancelBtn {
+            margin-right: 15px;
+        }
+    }
+    .titleWrap {
+        display: flex;
+        justify-content: space-between;
+        .infoWrap {
+            display: flex;
+            justify-content: space-between;
+            .iconWrap {
+                position: relative;
+                margin-left: 9px;
+                padding: 0 12px;
+                background: #f8f8f8;
+                border-radius: 25px;
+                color: @textGeneralColor;
+                .iconCls {
+                    color: #919ea9;
+                    margin-right: 5px;
+                }
+                .avatarCls {
+                    width: 26px;
+                    height: 26px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .nameCls {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .finishCls {
+            text-decoration: line-through;
+            color: #8c97a3;
+        }
+    }
+}
+.addTaskWrap {
+    display: flex;
+    justify-content: space-between;
+flex-flow: column;
+width: 350px;
+.itemWrap{
+    width: 100%;
+    list-style: none;
+}
+.item{
+    width: 100%;
+  padding: 5px;
+   margin-bottom: 10px;
+    .iconWrap {
+        display: flex;
+        height: 32px;
+        color: @textGeneralColor;
+        .iconCls {
+            color: #919ea9;
+            margin: 7px 5px 0 0;
+        }
+        .iconClsSelf {
+
+        }
+        .datePickerCls {
+           width: 80%;
+        }
+    }
+    
+}
+    
+}
+.formItem{
+    display: flex;
+    align-items: center;
+}
+.buttonWrap {
+    width: 100%;
+    text-align: center;
+
+    .btnCls {
+      width: 94px;
+      margin:0 10px;
+    }
+  }
+
+

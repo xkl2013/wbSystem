@@ -1,0 +1,41 @@
+@import "../../../../../theme/common";
+.btnCls{
+  padding: 10px 10px;
+}
+.showTitle {
+  cursor: pointer;
+  .iconCls{
+    background: @primaryColor ;
+    margin-right: 5px;
+    padding: 2px;
+    border-radius:2px;
+    color: #fff;
+  }
+  .dropdown {
+      width: 8px;
+      margin-left: @marginSm;
+  } 
+}
+.menusContainer {
+  width: 100px;
+  min-width: 0 !important;
+
+  .menus {
+      width: 100px;
+      .menu {
+          width: 100px;
+          font-size: @textFontGen;
+          color: @textPrimaryColor;
+          &:hover {
+              color: @primaryColor;
+          }
+          .iconCls{
+            background: @primaryColor ;
+            margin-right: 5px;
+            padding: 2px;
+            border-radius:2px;
+            color: #fff;
+          }
+      }
+  }
+}

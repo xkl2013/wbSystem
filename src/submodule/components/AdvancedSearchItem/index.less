@@ -1,0 +1,51 @@
+.termContext {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:hover {
+        .termDelete {
+            display: block;
+        }
+    }
+}
+.termHead {
+    width: 300px;
+    margin-right: 20px;
+}
+.termBody {
+    width: 450px;
+}
+.termDelete {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+    &:before {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 15px;
+        background-color: #8c97a3;
+        transform: translate(-50%, -50%) rotate(45deg);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    &:after {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 15px;
+        background-color: #8c97a3;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+}

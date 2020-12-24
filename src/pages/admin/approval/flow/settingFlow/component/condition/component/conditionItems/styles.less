@@ -1,0 +1,43 @@
+.btnGroup{
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    .handleBtn{
+        padding: 0 5px;
+        font-size:14px;
+        font-weight:400;
+        color:rgba(92,153,255,1);
+        cursor: pointer;
+    }
+    .deleteBtn{
+        color:red
+    }
+}
+.varTitle{
+    display: flex;
+}
+.rightTitle{
+    display: flex;
+    margin-right: 10px;
+    .titleLaber{
+        margin-right: 5px;
+    }
+    .titleValue{
+        margin-right: 10px;
+    }
+}
+.leftTitle{
+    width:504px ;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    position: relative;
+    .linearCls{
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        right: 0;
+        background: linear-gradient(90deg,rgba(255,255,255,0.6) 0%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 100%);
+    }
+}

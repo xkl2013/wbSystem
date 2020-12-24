@@ -1,0 +1,31 @@
+.wrap {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    .spinning {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.7);
+        z-index: 1000;
+        .loading {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            margin-top: 200px;
+            &.small {
+                width: 50px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.loading {
+    //width: 250px;
+    //height: auto;
+    //transform: translate(-50%, -50%);
+}

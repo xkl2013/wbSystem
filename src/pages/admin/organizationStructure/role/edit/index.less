@@ -1,0 +1,51 @@
+.wrap{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+    background-color: #fff;
+    .titleCls{
+        line-height: 46px;
+        color: #2C3F53;
+        font-size: 16px;
+    }
+    .titleCls::after{
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        background: #F3F3F3
+    }
+    .rowWrap{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0 90px;
+        width: 100%;
+        .itemCls{
+        //   flex: 1;
+        .labelCls{
+            margin-right: 10px;
+        }
+          .commonWidthCls{
+              width:250px;
+            //   max-width: 440px;
+            //   min-width: 340px;
+          }
+        }
+    }
+    .treeCls{
+        margin-top: 17px;
+    }
+    .buttonWrap{
+        display: flex;
+        justify-content: center;
+        margin:150px 0 80px;  
+        .btnCls{
+            margin-right: 40px;
+            width:150px;   
+        }
+    }
+
+    :global(textarea.ant-input){
+        vertical-align: middle;
+    }
+}

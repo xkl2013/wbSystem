@@ -1,0 +1,40 @@
+@import '~@/theme/common.less';
+.selfUploadWrap {
+    :global .ant-upload-list-picture-card .ant-upload-list-item-info {
+        height: 100% !important;
+    }
+    :global div.ant-upload-list-item-thumbnail,
+    :global .ant-progress-status-success .ant-progress-text {
+        display: none;
+    }
+    :global .ant-progress-show-info .ant-progress-outer {
+        width: 180px;
+        margin-left: 30px;
+    }
+    .fileIcon {
+        width: 36px;
+        height: 36px;
+        svg {
+            width: 100%;
+            height: 100%;
+            color: @textHolderColor;
+        }
+    }
+    .fileNameCls {
+        color: @textSupplyColor;
+        margin-top: 15px;
+    }
+    .selectBtn {
+        margin: 15px auto;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: @textSupplyColor;
+        background: rgba(168, 168, 172, 0.2);
+        border-radius: 4px;
+    }
+    .tipCls {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}

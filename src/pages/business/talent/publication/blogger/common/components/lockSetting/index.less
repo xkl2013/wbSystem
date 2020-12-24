@@ -1,0 +1,43 @@
+@import '~@/theme/common';
+.selfDatePicker {
+    background: black;
+    :global(.ant-calendar-range .ant-calendar-input-wrap) {
+        display: none;
+    }
+    :global(.ant-calendar-range.ant-calendar-time .ant-calendar-range-middle) {
+        display: none;
+    }
+    :global(.ant-calendar-range .ant-calendar-header) {
+        //visibility: hidden;
+        display: none;
+    }
+    :global(.ant-calendar-disabled-cell .ant-calendar-date) {
+        display: none;
+    }
+    :global(.ant-calendar-table > thead) {
+        display: none;
+    }
+    :global(.ant-calendar-range.ant-calendar-time .ant-calendar-time-picker) {
+        top: 0;
+        height: 197px;
+    }
+    :global(.ant-calendar-range.ant-calendar-time .ant-calendar-time-picker-panel) {
+        height: 197px;
+        margin-top: 0;
+    }
+    :global(.ant-calendar-range.ant-calendar-time .ant-calendar-time-picker-inner) {
+        padding-top: 0;
+    }
+    :global(.ant-calendar-range-left .ant-calendar-table) {
+        width: 525px;
+    }
+    :global(.ant-calendar-range-left .ant-calendar-time-picker-panel) {
+        width: 274.5px;
+    }
+    :global(.ant-calendar-range-right .ant-calendar-table) {
+        display: none;
+    }
+    :global(.ant-calendar-range-right .ant-calendar-time-picker-panel) {
+        width: 274.5px;
+    }
+}

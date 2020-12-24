@@ -1,0 +1,61 @@
+.wrap {
+    background-color: #f9f9f9;
+
+    .detailWrap {
+        padding: 20px;
+        background: #fff;
+
+        .title {
+            color: #2c3f53;
+            font-size: 16px;
+            padding-bottom: 6px;
+            margin-bottom: 14px;
+            border-bottom: 1px solid #f3f3f3;
+            font-weight: 700;
+        }
+
+        .rowWrap {
+            display: flex;
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .colWrap {
+                width: 100%;
+                display: flex;
+                color: #848f9b;
+                font-size: 14px;
+                font-family: PingFangSC-Regular;
+                font-weight: 400;
+                padding: 0 10px 0 0;
+                word-break: break-all;
+
+                &.half {
+                    width: 50%;
+                }
+
+                &.three {
+                    width: 33.33%;
+                }
+
+                &.four {
+                    width: 25%;
+                }
+
+                &.five {
+                    width: 20%;
+                }
+
+                .colLabel {
+                }
+
+                .colValue {
+                    color: #5a6876;
+                    flex: 1;
+                }
+            }
+        }
+    }
+}

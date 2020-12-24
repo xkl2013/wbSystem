@@ -1,0 +1,70 @@
+@import '../../../../../theme/common';
+.modalCls {
+    cursor: pointer;
+
+    .activeCls {
+        color: @primaryColor !important;
+    }
+
+    .operateItem:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .operateItem:hover {
+        color: @primaryColor !important;
+    }
+
+    :global(.ant-popover-inner-content) {
+        padding: 0;
+    }
+
+    :global(.ant-popover) {
+        z-index: 1;
+    }
+}
+
+.searchCol {
+    width: 230px !important;
+}
+.inputCol {
+    width: 320px;
+}
+.ageInput {
+    width: 80px;
+    //height:24px;
+    font-size: 12px;
+}
+
+.line {
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    margin: 0 5px;
+    background: #d3d3d3;
+}
+
+.btnCls {
+    color: @primaryColor;
+    cursor: pointer;
+}
+
+.btnCls:not(:last-child) {
+    margin-right: 8px;
+}
+.modalLine {
+    margin-bottom: 20px;
+    > span:first-child {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        > i {
+            color: #ff5363;
+            font-style: normal;
+            margin-right: 5px;
+            display: inline-block;
+        }
+    }
+    .modalLineContent {
+        width: 300px;
+    }
+}

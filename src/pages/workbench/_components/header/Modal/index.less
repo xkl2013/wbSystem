@@ -1,0 +1,40 @@
+@import '../../../../../theme/common';
+.fileCls2 {
+    :global(.ant-modal-body) {
+        padding: 0 16px;
+    }
+    :global(.ant-tabs-nav .ant-tabs-tab) {
+        margin-right: 12px;
+        padding: 16px 0;
+    }
+    .modalWrap {
+        min-height: 500px;
+        :global(.ant-tabs-bar) {
+            margin-bottom: 0;
+        }
+        .listTaskCls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            // min-height: 54px;
+            color: @textPrimaryColor;
+            border-bottom: 1px solid #cbcfd36b;
+            .popCls {
+                flex: none;
+                .operateBtn {
+                    cursor: pointer;
+                    color: #5a6876;
+                    margin-left: 15px;
+                    .iconCls {
+                        color: #8c97a3;
+                    }
+                }
+            }
+        }
+        .empytCls {
+            text-align: center;
+            line-height: 400px;
+        }
+    }
+}

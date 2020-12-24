@@ -1,0 +1,21 @@
+@import '~@/theme/common';
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 32px;
+    .cellDetail {
+        flex: 1;
+        overflow: hidden;
+    }
+    .icon {
+        width: 30px;
+        color: #b7ccfe;
+    }
+}
+.overlayClassName {
+    z-index: 900;
+    :global(.ant-popover-content) {
+        border: 1px solid @primaryColor;
+    }
+}

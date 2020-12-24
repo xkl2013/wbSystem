@@ -1,0 +1,71 @@
+@import '../../../../common';
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    .item {
+        background: #e9eef9;
+        border-radius: 12px;
+        .itemBgTxt {
+            height: 24px;
+            padding: 5px 10px;
+            line-height: 1;
+            font-size: 14px;
+            color: @textGeneralColor;
+        }
+    }
+    .outContainer {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        .innerContainer {
+            display: flex;
+            .content {
+                display: flex;
+                .item {
+                    margin-right: 10px;
+                    background: #e9eef9;
+                    border-radius: 12px;
+                    &.multi {
+                        border-radius: @borderRadius;
+                    }
+                    .itemBgTxt {
+                        height: 24px;
+                        padding: 5px 10px;
+                        line-height: 1;
+                        font-size: 14px;
+                        color: @textGeneralColor;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.popContainer {
+    width: 200px;
+    :global(.ant-popover-inner-content) {
+        padding: 0;
+    }
+    .popContent {
+        padding: @paddingGen;
+    }
+}
+.popItem {
+    border-radius: @borderRadius;
+    margin-bottom: @marginSm;
+    background: #e9eef9;
+    padding: @paddingSmX;
+    display: flex;
+    .popItemBgTxt {
+        word-break: break-all;
+        height: 24px;
+        padding: 5px 10px;
+        line-height: 1;
+        font-size: 14px;
+    }
+}

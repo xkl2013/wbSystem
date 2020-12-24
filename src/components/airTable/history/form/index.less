@@ -1,0 +1,66 @@
+@import '~@/theme/common';
+@space: 60px;
+.wrap {
+    position: relative;
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+
+    .titleCls {
+        height: @space;
+        font-size: @textFontLg;
+        color: @textPrimaryColor;
+        line-height: @space;
+        background: white;
+        border-bottom: 1px solid @borderColor;
+        padding: 0 @paddingLg;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .formItemCls {
+        flex: 1;
+        padding: @paddingLg;
+        max-height: 520px;
+        min-height: 520px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+        .titleContainer {
+            vertical-align: middle;
+            .colIcon {
+                width: @textFontGen;
+                color: @textSupplyColor;
+            }
+            .itemTitle {
+                margin-left: @marginSm;
+                color: @textPrimaryColor;
+            }
+        }
+        :global(.ant-form-item-control) {
+            line-height: 28px;
+        }
+        :global(.ant-form-item-required:before) {
+            position: initial;
+            vertical-align: middle;
+        }
+    }
+
+    .buttonWrap {
+        height: @space;
+        text-align: right;
+        border-top: 1px solid @borderColor;
+        line-height: @space;
+        padding: 0 @paddingLg;
+        display: flex;
+        justify-content: space-between;
+        .delBtnCls {
+            color: @errorColor;
+        }
+        .btnCls {
+            width: 68px;
+            margin-left: @marginGen;
+        }
+    }
+}

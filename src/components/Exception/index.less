@@ -1,0 +1,75 @@
+@import '~antd/lib/style/themes/default.less';
+.clsString{
+  border: 1px solid red;
+}
+.cotainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exception {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 90vh;
+
+  .imgBlock {
+    width: 250px;
+    zoom: 1;
+    &:before,
+    &:after {
+      content: ' ';
+      display: table;
+    }
+    &:after {
+      clear: both;
+      visibility: hidden;
+      font-size: 0;
+      height: 0;
+    }
+  }
+
+  .imgEle {
+    height: 250px;
+    width: 100%;
+    max-width: 430px;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  .content {
+    margin-left: 40px;
+    h1 {
+      color: #434e59;
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 72px;
+      margin-bottom: 24px;
+    }
+
+    .desc {
+      font-size:14px;
+      font-weight:400;
+      color:rgba(132,143,155,1);
+      margin-bottom: 16px;
+    }
+
+    .actions {
+      button:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+.title{
+  width:72px;
+height:25px;
+font-size:18px;
+font-family:PingFangSC-Regular;
+font-weight:400;
+color:rgba(44,63,83,1);
+}

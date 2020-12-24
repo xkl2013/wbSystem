@@ -1,0 +1,98 @@
+.wrap {
+    background-color: #fff;
+    width: 595px;
+    margin: 0 auto;
+    color: #333;
+    page-break-after: always;
+    font-family: 'PingFang SC,宋体';
+    position: relative;
+    .title {
+        padding: 16px 0;
+        text-align: center;
+        font-size: 16px;
+        color: #333;
+        line-height: 1;
+        h2 {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: #333;
+        }
+    }
+    .cont {
+        padding: 0 18px;
+        .company_info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+.company_info {
+    font-size: 10px;
+    line-height: 1;
+    margin-bottom: 6px;
+    .company_name {
+        transform-origin: left;
+        transform: scale(0.9);
+        font-weight: 600;
+    }
+    .company_num {
+        transform-origin: right;
+        transform: scale(0.9);
+        font-weight: 600;
+    }
+}
+
+.preview_cont {
+    .preview_title {
+        margin-bottom: 6px;
+        font-weight: 500;
+        span {
+            font-size: 9px;
+            transform: scale(0.75);
+            transform-origin: left;
+        }
+        .title_right {
+            transform: scale(0.7);
+            transform-origin: right;
+            float: right;
+        }
+    }
+}
+
+.base_info {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    li {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        span {
+            font-size: 9px;
+            transform: scale(0.75);
+            transform-origin: left;
+            color: #666;
+        }
+    }
+}
+.current {
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    span {
+        font-size: 9px;
+        transform: scale(0.75);
+        color: #666;
+        display: inline-block;
+        transform-origin: center;
+    }
+}

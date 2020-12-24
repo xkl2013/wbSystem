@@ -1,0 +1,237 @@
+@import '~@/theme/common';
+.title {
+    color: #2c3f53;
+    font-size: 14px;
+    padding: 20px 10px 10px;
+    text-align: right;
+}
+
+.content {
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: -10px;
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        .item {
+            height: 120px;
+            width: 117px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            .itemTop {
+                position: relative;
+                width: 94px;
+                height: 80px;
+                background: rgba(255, 255, 255, 1);
+                box-shadow: 0px 2px 5px 0px rgba(234, 234, 234, 0.5);
+                border-radius: 2px 2px 2px 0px;
+                border: 1px solid rgba(242, 242, 242, 1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                p {
+                    font-size: 12px;
+                    font-family: PingFangSC-Medium;
+                    font-weight: 500;
+                    color: rgba(44, 63, 83, 1);
+                    line-height: 17px;
+                    text-align: center;
+                    span {
+                        color: rgba(44, 63, 83, 1);
+                    }
+                }
+                span {
+                    font-size: 12px;
+                    font-family: PingFangSC-Regular;
+                    font-weight: 400;
+                    color: rgba(132, 143, 155, 1);
+                    line-height: 17px;
+                    margin-top: 10px;
+                }
+                .itemTopIcon {
+                    position: absolute;
+                    left: 38px;
+                    bottom: -8px;
+                    width: 15px;
+                    height: 15px;
+                    background: #fff;
+                    transform: rotate(45deg);
+                    border-radius: 2px 2px 2px 0px;
+                    border-right: 1px solid rgba(242, 242, 242, 1);
+                    border-bottom: 1px solid rgba(242, 242, 242, 1);
+                }
+            }
+            .itemBottom {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .itemIcon {
+                    width: 22px;
+                    height: 22px;
+                    color: #5c99ff;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 20px;
+                    overflow: hidden;
+                    background: url('../../../src/assets/approval/await_s.png') center center
+                        no-repeat;
+                    background-size: contain;
+                }
+                .itemLine {
+                    width: 30px;
+                    height: 1px;
+                    background: rgba(230, 234, 238, 1);
+                }
+                .itemLineNone {
+                    visibility: hidden;
+                }
+                .itemLinePass {
+                    background: rgba(219, 233, 255, 1);
+                }
+            }
+        }
+        .itemReject {
+            .itemTop {
+                box-shadow: 0px 2px 5px 0px rgba(234, 234, 234, 0.5);
+                border: 1px solid rgba(255, 232, 230, 1);
+                span {
+                    color: rgba(236, 109, 104, 1);
+                }
+                .itemTopIcon {
+                    border-color: rgba(255, 232, 230, 1);
+                }
+            }
+            .itemBottom {
+                .itemIcon {
+                    background-image: url('../../../src/assets/approval/reject_s.png');
+                }
+            }
+        }
+        .itemWait {
+            .itemTop {
+                box-shadow: 0px 2px 5px 0px rgba(234, 234, 234, 0.5);
+                border: 1px solid rgba(255, 226, 178, 1);
+                span {
+                    color: rgba(246, 181, 73, 1);
+                }
+                .itemTopIcon {
+                    border-color: rgba(255, 226, 178, 1);
+                }
+            }
+            .itemBottom {
+                .itemIcon {
+                    background-image: url('../../../src/assets/approval/current.png');
+                }
+            }
+        }
+        .itemCancel {
+            .itemTop {
+                span {
+                    color: rgba(236, 109, 104, 1);
+                }
+            }
+            .itemBottom {
+                .itemIcon {
+                    background-image: url('../../../src/assets/approval/cancel_s.png');
+                }
+            }
+        }
+        .itemAgree {
+            .itemTop {
+                span {
+                    color: @primaryColor;
+                }
+            }
+            .itemBottom {
+                .itemIcon {
+                    background-image: url('../../../src/assets/approval/agree_s.png');
+                }
+            }
+        }
+    }
+    .state {
+        align-self: flex-end;
+        position: relative;
+        top: 30px;
+        left: 40px;
+        .stateLine {
+            position: absolute;
+            left: -45px;
+            top: 20px;
+            width: 30px;
+            height: 1px;
+            background: rgba(230, 234, 238, 1);
+        }
+        .stateLinePass {
+            background: rgba(219, 233, 255, 1);
+        }
+        .stateRight {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .stateIcon {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: rgba(255, 255, 255, 1);
+                overflow: hidden;
+                background: url('../../../src/assets/approval/await_b.png') center center no-repeat;
+                background-size: contain;
+            }
+            .stateIconCancel {
+                background-image: url('../../../src/assets/approval/cancel_b.png');
+            }
+            .stateIconReject {
+                background-image: url('../../../src/assets/approval/reject_b.png');
+            }
+            .stateIconAgree {
+                background-image: url('../../../src/assets/approval/agree_b.png');
+            }
+            p {
+                font-size: 12px;
+                font-family: PingFangSC-Regular;
+                font-weight: 400;
+                color: rgba(132, 143, 155, 1);
+                line-height: 17px;
+                margin-top: 4px;
+            }
+        }
+    }
+}
+
+.table {
+    margin-top: 20px;
+}
+.lastItem {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap-reverse;
+    margin-left: 5px;
+    .addIcon {
+        width: 38px;
+        height: 38px;
+        cursor: pointer;
+    }
+}
+.itemTop:hover .clearIcon {
+    display: block;
+}
+.clearIcon {
+    display: none;
+    width: 14px;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    cursor: pointer;
+}

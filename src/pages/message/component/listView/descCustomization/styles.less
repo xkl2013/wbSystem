@@ -1,0 +1,51 @@
+@import "~@/theme/common";
+
+.todayTask{
+    .title{
+        margin-top: 10px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #8C97A3;
+    }
+    .con{
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #3C4B58;
+        margin-top: 10px;
+    }
+    .foot{
+
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #3C4B58;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+    .listItem{
+        &::before{
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #04B4AD;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 6px;
+        }
+        position: relative;
+        padding-left: 15px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #04B4AD;
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
+        .warn{
+            color: #E02020;
+        }
+    }
+}

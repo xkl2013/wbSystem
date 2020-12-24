@@ -1,0 +1,194 @@
+@import './theme/detailPage';
+
+html, body, #root {
+    font-family: 'PingFangSC-Regular';
+    height: 100%;
+}
+
+body, p {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+:global .ant-input {
+    //border: 1px solid #E1E1E1 !important;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+:global .ant-input-affix-wrapper .ant-input-prefix, .ant-input-affix-wrapper .ant-input-suffix {
+    font-size: 16px;
+    top: 50%;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+:global .ant-select {
+    font-size: 12px;
+}
+
+//:global(.ant-select-arrow) {
+//  color: rgba(0, 0, 0, 0.25) !important;
+//}
+//
+//:global(.ant-cascader-picker-arrow){
+//  color: rgba(0, 0, 0, 0.25) !important;
+//}
+//
+//:global .ant-checkbox-wrapper {
+//  color: #848F9B;
+//}
+
+//:global .ant-input:hover {
+//  border: 1px solid @primaryColor !important;
+//}
+//
+//:global .ant-input:focus {
+//  border-color: @primaryColor !important;
+//  // box-shadow: 0 0 0 1px @primaryColor !important;
+//}
+
+//:global .ant-dropdown-menu-item:hover, :global .ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+//  background: rgba(230, 240, 255, 1) !important;
+//}
+
+/*:global .ant-pagination-item-active, :global .ant-pagination-item:focus, .ant-pagination-item:hover {*/
+/*  background: rgba(84, 146, 255, 1) !important;*/
+/*}*/
+
+/*:global .ant-pagination-item:focus a, .ant-pagination-item:hover a {*/
+/*  color: #fff !important;*/
+/*}*/
+
+:global .ant-pagination-item {
+    /*  background: rgba(249, 251, 255, 1);*/
+    border: none;
+}
+
+/*:global .ant-pagination-item a {*/
+/*  color: rgba(96, 98, 102, 1);*/
+/*}*/
+
+:global .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link {
+    border: none;
+}
+
+:global .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    //background: rgba(230, 240, 255, 1) !important;
+}
+
+:global .ant-table-tbody > tr > td {
+    //border-bottom: 1px solid #ECECEC;
+}
+
+:global .ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected, :global .ant-select-tree li .ant-select-tree-node-content-wrapper:hover {
+    //background: rgba(230, 240, 255, 1);
+}
+
+:global .ant-select-selection--multiple .ant-select-selection__choice {
+    //background: rgba(245, 246, 246, 1);
+    border: none
+}
+
+:global .ant-radio-button-wrapper:first-child, :global .ant-radio-button-wrapper {
+    //border-color: rgba(233, 239, 244, 1);
+    /* color:rgba(129,140,152,1); */
+}
+
+:global .ant-radio-button-wrapper-checked {
+    //background: rgba(112, 153, 254, 1);
+    //box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.17);
+}
+
+:global .ant-radio-button-wrapper-checked:hover, :global .ant-radio-button-wrapper-checked {
+    color: #fff
+}
+
+:global .ant-btn-primary {
+    border-color: #E7E7E7;
+}
+
+/* popover层级放在弹框下边 */
+:global .ant-popover-placement-right, :global .ant-popover-placement-rightTop, :global .ant-popover-placement-rightBottom {
+    z-index: 1;
+}
+
+/* form */
+:global .ant-form-item-label > label::after {
+    content: '';
+    margin-right: 10px;
+}
+
+:global .ant-form-inline .ant-form-item {
+    margin-right: 20px;
+}
+
+:global .ant-form-item label {
+    //color: #2C3F53
+}
+
+:global .ant-form-item {
+    margin-bottom: 16px;
+}
+
+:global .anticon.anticon-calendar.ant-calendar-picker-icon {
+    color: #848F9B;
+}
+
+:global .ant-col-6 {
+    height: 40px;
+}
+
+:global .ant-menu-vertical > .ant-menu-item:not(:last-child) {
+    border-bottom: 1px solid #E4E7E7;
+}
+
+:global .ant-dropdown {
+    border: 1px solid #E4E7E7;
+    box-shadow: 0 5px 11px 0 #E4E4E4;
+    z-index: 100 ;
+}
+
+:global .ant-layout-header {
+
+    border-bottom: 1px solid #f3f3f3;
+}
+
+:global .ant-calendar-range .ant-calendar-input, .ant-calendar-range .ant-calendar-time-picker-input {
+    /* background: #F1F3F8 */
+    font-size: 12px;
+}
+
+:global .has-error .ant-form-explain {
+    color: #FF4259;
+    font-size: 12px;
+    height: 12px;
+    line-height: 1;
+    margin-top: 4px;
+}
+
+
+:global .ant-table-tbody > tr > td {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.weightFont {
+    font-family: PingFangSC-Medium;
+}
+
+#wm_div_id {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 100px;
+    left: 200px;
+    z-index: 100000000;
+}
+:global .ant-btn > .anticon{
+    line-height: 0;
+}

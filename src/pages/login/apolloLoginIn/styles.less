@@ -1,0 +1,202 @@
+//@import './theme/common.less';
+.outCotainer{
+    width: 100%;
+    height: 100%;
+    .h5Login{
+        width: 100%;
+        height: 100%;
+    }
+    .loginCotainer{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: url(../../../assets/login/login_bg.png) no-repeat center;
+      background-size: 1920px 1080px;
+      background-color: #04B4AD;
+      .loginLogo {
+        position: absolute;
+        width: 172px;
+        height: 42px;
+        top: 38px;
+        left: 37px;
+      }
+      .loginCenter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 1166px;
+        height: 676px;
+        margin: auto;
+        .welcome {
+          float: left;
+          width: 600px;
+          height: 320px;
+          margin-top: 166px;
+          .welcomeImg {
+            width: 100%;
+            height: 160px;
+            padding-top: 20px;
+            padding-right: 45px;
+          }
+          .welcomeText {
+            width:388px;
+            height:112px;
+            margin-top: 48px;
+            font-size:18px;
+            font-family:PingFangSC-Regular,PingFang SC;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+            line-height:27px;
+          }
+        }
+        .loginContainer {
+          float: right;
+          width:476px;
+          padding: 47px 52px 0px;
+          background:rgba(255,255,255,1);
+          box-shadow:0px 2px 28px 0px rgba(4,180,173,0.8);
+          border-radius:21px;
+          .loginBox {
+            width:371px;
+            // border: 1px solid bisque;
+            .loginText {
+              width: 93px;
+              height: 54px;
+              padding: 10px 0;
+            }
+            .loginWelcome {
+              height:22px;
+              font-size:16px;
+              text-align: center;
+              margin-top: 8px;
+              font-family:PingFangSC-Regular,PingFang SC;
+              font-weight:400;
+              color:rgba(167,167,167,1);
+              line-height:22px;
+            }
+            .bindTitle{
+                font-size:20px;
+                font-family:PingFangSC-Regular,PingFang SC;
+                font-weight:400;
+                color:rgba(64,64,64,1);
+                line-height:30px;
+                margin-top: 50px;
+            }
+            .platformContainer {
+              height: 116px;
+              .scanPlatform {
+                margin-top: 10px;
+                text-align: center;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .img1{
+                    width: 149px;
+                    height: 116px;
+                    display: block;
+                }
+                .img2{
+                    width: 149px;
+                    height: 116px;
+                    display: block;
+
+                }
+                .platform {
+                  float: left;
+                  width: 117px;
+                  height: 84px;
+                  overflow: hidden;
+                  border-radius: 10px;
+                  margin-left: 10px
+                }
+              }
+            }
+            .loginForm {
+                margin-top: 20px;
+                .formBlock{
+                    padding-bottom: 70px;
+                }
+                .formItem{
+                  margin-top: 20px;
+                  .label{
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-family: PingFangSC-Medium,PingFang SC;
+                    font-weight: 500;
+                    color: #3C3C3C;
+                    line-height: 22px;
+                  }
+                  .input {
+                    border-radius: 4px !important;
+                  }
+                  input:-webkit-autofill, select:-webkit-autofill {
+                    box-shadow: 0 0 0 1000px white inset; // 背景设为白色
+                  }
+                  input[type=text]:focus, input[type=password]:focus {
+                    box-shadow: 0 0 0 1000px white inset; // 获得焦点时背景设为白色
+                  }
+                }
+                .error{
+                  height: 20px;
+                  line-height: 32px;
+                  color: #FF5363;
+                }
+                .icon{
+                  display: inline-block;
+                  width: 14px;
+                  height: 14px;
+                  margin-right: 5px;
+                }
+                .loginQuestion {
+                  font-size: 14px;
+                  margin-top: 20px;
+                  font-weight: 400;
+                  line-height: 20px;
+                  text-align: center;
+                  color: #999999;
+                  cursor: pointer;
+                  font-family: PingFangSC-Regular,PingFang SC;
+                }
+            }
+            .button{
+              height: 52px;
+              margin-top: 27px;
+              border-radius: 6px;
+              font-size: 20px;
+              background-color: #04B4AD;
+            }
+            .cancelBind{
+                font-size:14px;
+                font-family:PingFangSC-Regular,PingFang SC;
+                font-weight:400;
+                margin-top: 10px;
+                color: #04B4AD;
+                text-align: center;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+          }
+        }
+        :global .ant-input{
+          height: 50px;
+          font-size: 15px;
+          padding-left: 17px;
+          font-weight: 400;
+          color: #5A6876;
+          border-radius:4px;
+          line-height: 21px
+        }
+        :global .ant-input-affix-wrapper .ant-input-suffix{
+          right:17px;
+        }
+        :global .ant-input-affix-wrapper .ant-input-suffix{
+          top:50%;
+        }
+      }
+    }
+}
+

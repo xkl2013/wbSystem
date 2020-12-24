@@ -1,0 +1,18 @@
+@import '../common';
+
+.handleWidth {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    bottom: 0;
+    right: 0px;
+    cursor: ew-resize;
+    z-index: 1;
+    background: #ececec;
+    &.right{
+        left: 0px;
+    }
+    &:hover {
+        background-color: rgb(33, 150, 243);
+    }
+}

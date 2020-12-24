@@ -1,0 +1,133 @@
+{
+    //  "extends": "eslint-config-umi",
+    //基础扩展自airbnb
+    "extends": "airbnb",
+    //解析器babel
+    "parser": "babel-eslint",
+    "parserOptions": {
+        // ECMAScript版本，6为ES6
+        "ecmaVersion": 6,
+        //默认script，如果代码是ECMAScript模块，设置为module
+        "sourceType": "module",
+        // 使用额外的语言特性
+        "ecmaFeatures": {
+            // 启用JSX
+            "jsx": true
+        }
+    },
+    "settings": {
+        //相对路径解析，按webpack的alias
+        "import/resolver": {
+            // This config is used by eslint-import-resolver-webpack
+            "webpack": {
+                "config": "./webpack.config.js"
+            }
+        }
+    },
+    // 指定脚本的运行环境。每种环境都有一组特定的预定义全局变量
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    // 脚本在执行期间访问的额外的全局变量
+    "globals": {
+        "document": true,
+        "navigator": true,
+        "window": true,
+        "node": true
+    },
+    //支持react、jsx、import规则
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    //定制化规则
+    "rules": {
+        //缩进4个空格
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "max-len": [
+            "error",
+            120
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "minProperties": 6,
+                "consistent": true
+            }
+        ],
+        //关闭强制驼峰法命名
+        "camelcase": "off",
+        //强制箭头函数中一致使用圆括号
+        "arrow-parens": [
+            "error",
+            "always"
+        ],
+        //强制在箭头函数体的周围使用大括号
+        "arrow-body-style": [
+            "error",
+            "always"
+        ],
+        //关闭在箭头函数体内必须return
+        "array-callback-return": "off",
+        //关闭label标签具有文本标签和关联的控件
+        "jsx-a11y/label-has-associated-control": "off",
+        //关闭 强制一个可单击的非交互式元素具有至少一个键盘事件侦听器
+        "jsx-a11y/click-events-have-key-events": "off",
+        //关闭 不应为非交互式元素分配鼠标或键盘事件侦听器
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        // 关闭react默认的props-type验证
+        "react/prop-types": "off",
+        //jsx标签缩进4个空格
+        "react/jsx-indent": [
+            "error",
+            4
+        ],
+        //jsx组件props缩进4个空格
+        "react/jsx-indent-props": [
+            "error",
+            4
+        ],
+        //关闭jsx组件多行必须使用圆括号
+        "react/jsx-wrap-multilines": "off",
+        //限制可能包含JSX的文件扩展名
+        "react/jsx-filename-extension": "off",
+        // 关闭react数组index做key检测
+        "react/no-array-index-key": "off",
+        // 关闭jsx中强制布尔属性符号
+        "react/jsx-boolean-value": "off",
+        //关闭在JSX props中使用.bind（）和arrow函数检测
+        "react/jsx-no-bind": "off",
+        //关闭 强制返回类型
+        "consistent-return": "off",
+        //关闭 非Button的 onClick 事件需要至少一个键盘事件。
+        "jsx-a11y/interactive-supports-focus": "off",
+        // 有一些 event 的时候，不需要 role 属性，不需要其他解释
+        "jsx-a11y/no-static-element-interactions": "off",
+        //关闭 强制结构赋值
+        "react/destructuring-assignment": "off",
+        // 关闭 数组解构
+        "prefer-destructuring": "off",
+        // 允许在for循环中使用 ++ --
+        "no-plusplus": "off",
+        "no-case-declarations": "off",
+        "import/no-extraneous-dependencies": "off",
+        "no-param-reassign": "off",
+        "no-shadow": "off",
+        "import/prefer-default-export": "off",
+        // 允许循环导入
+        "import/no-cycle": "off",
+        // 允许js、ts互相导入
+        "import/no-unresolved": "off",
+        // 允许方法定义之前使用
+        "no-use-before-define": "off"
+    }
+}

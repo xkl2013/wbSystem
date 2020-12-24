@@ -1,0 +1,60 @@
+.collapseTitle {
+    color: #04b4ad;
+    font-size: 14px;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+.collapseIcon {
+    font-size: 9px;
+    transform: rotate(0);
+    transition: transform 0.3s ease-in-out;
+    margin-left: 5px;
+    &.show {
+        transform: rotate(180deg);
+    }
+}
+:global .ant-collapse > .ant-collapse-item.ant-collapse-no-arrow > .ant-collapse-header {
+    padding: 0;
+}
+:global .ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+    padding: 0;
+}
+.termLine {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    .termLabel {
+        width: 66px;
+        height: 32px;
+        margin-right: 25px;
+        text-align: right;
+    }
+    .termCont {
+        flex: 1;
+        .termContext {
+            display: block;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .termHead {
+                width: 300px;
+                margin-right: 20px;
+            }
+            .termBody {
+                width: 450px;
+            }
+        }
+    }
+}
+.btnAddTerm {
+    display: block;
+    margin-left: 98px;
+    color: #04b4ad;
+    cursor: pointer;
+    .btnAddTermIcon {
+        font-size: 9px;
+        margin-right: 3px;
+    }
+}

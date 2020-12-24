@@ -1,0 +1,68 @@
+@import '../../common';
+
+.container {
+    padding: 0 @paddingGen @paddingLg;
+    .title {
+        font-size: @textFontGen;
+        color: @textPrimaryColor;
+        line-height: 20px;
+    }
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        align-items: flex-start;
+        margin-top: @marginSm;
+
+        .chooseItem {
+            flex: 1;
+            border: 1px solid @borderColor;
+            padding: 0 @paddingSm;
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 32px;
+            :global(.ant-tag-has-color) {
+                color: @textGeneralColor;
+                margin: @marginSmX;
+            }
+            :global(.ant-tag-has-color .anticon-close) {
+                color: @textGeneralColor;
+            }
+            .tag {
+                //background: #f1f4f7;
+                //border-radius: @borderRadius;
+                //padding: 3px 9px;
+            }
+        }
+
+        .buttonGroup {
+            display: flex;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            margin-left: @marginGen;
+
+            .saveBtn {
+                height: 32px;
+                width: 157px;
+                background: @supportColor;
+                color: white;
+                border-radius: @borderRadius;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            .resetBtn {
+                margin-left: 10px;
+                height: 32px;
+                width: 98px;
+                background: white;
+                color: @supportColor;
+                border-radius: @borderRadius;
+                border: 1px solid @supportColor;
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+    }
+}

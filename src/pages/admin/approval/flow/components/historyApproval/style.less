@@ -1,0 +1,42 @@
+.contentWrap{
+  .title{
+    color: #2C3F53;
+    margin-bottom: 25px;
+    .tipWrap{
+      display: inline-block;
+      position: relative;
+      .tipIconCls{
+        margin-left: 6px;
+        width: 14px;
+      }
+      .tipCls{
+        position: absolute;
+        left: -58px;
+        top: 25px;
+        z-index: 100;
+        display: none;
+        width:148px;
+        height:37px;
+        line-height: 37px;
+        text-align: center;
+        font-size: 12px;
+        color:#5A6876;
+        background:#fff;
+        box-shadow:0px 2px 6px 0px rgba(208,208,208,0.5);
+        border-radius:4px 0 0 0;
+      }
+    }
+    .tipWrap:hover{
+      .tipCls{
+        display: block;
+      }
+    }
+    
+  }
+  .checkboxCls{
+      :global .ant-checkbox-group-item{
+        width: 142px;
+        margin-bottom: 25px;
+      }
+  }
+}

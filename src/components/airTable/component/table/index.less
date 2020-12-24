@@ -1,0 +1,226 @@
+@import '../../../../theme/common';
+
+.tableCell {
+    &.sortCol {
+        background: @hoverColor;
+    }
+}
+
+.table {
+    background: white;
+
+    :global(.ant-table-bordered.ant-table-empty .ant-table-placeholder) {
+        display: none;
+    }
+
+    :global(.ant-table-scroll table) {
+        min-width: 0;
+    }
+
+    :global(.ant-table-thead > tr > th) {
+        padding: 0;
+    }
+
+    :global(.ant-table-tbody > tr > td) {
+        padding: 0;
+        height: 40px;
+    }
+
+    :global(.ant-table-tbody > tr > td:last-child) {
+        text-align: left;
+    }
+
+    :global(.ant-table-thead > tr > th .ant-table-header-column) {
+        display: block;
+    }
+
+    :global(.ant-table.ant-table-bordered .ant-table-footer) {
+        padding: 10px;
+        background: white;
+    }
+}
+
+.indexCell {
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    box-sizing: border-box;
+
+    &.disabled {
+        background: @disabledColor;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    &.approval{
+        background: rgba(247,181,0,0.1);
+    }
+
+    &:hover {
+        box-shadow: inset 0 0 0 1px @operateColor;
+
+        .showFormBtnCls {
+            .showFormBtn {
+                display: initial;
+            }
+            .lockIcon{
+                display: none;
+            }
+            .approvalLockIcon{
+                display: none;
+            }
+        }
+
+        .unchecked {
+            display: initial;
+        }
+
+        .no {
+            display: none;
+        }
+
+        .addCls {
+            .addIcon {
+                display: initial;
+            }
+        }
+    }
+
+    .cellNo {
+        display: flex;
+        align-items: center;
+        min-width: 50px;
+    }
+
+    .cellContent {
+        flex: 1;
+        overflow: hidden;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .firstCell {
+            min-width: 0;
+            max-width: 80%;
+        }
+        .empty {
+            min-width: 80%;
+        }
+        .historyCount {
+            margin: @marginSmX;
+            cursor: pointer;
+            .countNo {
+                color: @primaryColor;
+            }
+        }
+    }
+    .addCls {
+        width: 20px;
+        text-align: center;
+        cursor: pointer;
+        .addIcon {
+            display: none;
+            color: @primaryColor;
+        }
+    }
+
+    .unchecked {
+        display: none;
+    }
+
+    .no {
+        width: 17px;
+        display: block;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .showFormBtnCls {
+        margin: 0 5px;
+        width: 18px;
+        cursor: pointer;
+
+        .showFormBtn {
+            display: none;
+            width: 18px;
+            border-radius: 50%;
+            &:hover {
+                background: #d0f0fd;
+            }
+        }
+        .lockIcon{
+            display: block;
+        }
+        .approvalLockIcon{
+            display: block;
+            color: #F7B500;
+font-size: 18px;
+        }
+    }
+}
+
+.GridRow {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    .LeftSideContainer {
+        box-shadow: 6px 0 6px -4px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+.GridColumn {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    background: #fff;
+}
+
+.LeftSideGridContainer {
+    flex: 0 0 75px;
+    z-index: 10;
+    background: #fff;
+    border-left: 1px solid #e8e8e8;
+}
+
+.LeftSideGrid {
+    overflow: hidden !important;
+    outline: none;
+}
+
+.HeaderGrid {
+    width: 100%;
+    overflow: hidden !important;
+    outline: none;
+
+    .leftHeaderCell {
+        padding: 0 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-right: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        border-top: 1px solid #e8e8e8;
+        box-sizing: border-box;
+
+        .cellNo {
+            min-width: 50px;
+        }
+
+        .cellContent {
+            flex: 1;
+            height: 100%;
+        }
+    }
+}
+
+.BodyGrid {
+    width: 100%;
+    outline: none;
+}

@@ -1,0 +1,59 @@
+.pageWrap {
+    .dividerCls {
+        width: 100%;
+        height: 16px;
+        // background: #f9f9f9;
+    }
+    .contentWrap {
+        // background: #fff;
+        padding: 0 20px;
+        .contentCls {
+            min-height: 530px;
+            .inputCls {
+                display: flex;
+                margin-bottom: 25px;
+                :global .BIInput {
+                    width: 100%;
+                    margin-right: 10px;
+                    input {
+                        height: 40px;
+                    }
+                }
+                :global .BIButton {
+                    button {
+                        width: 76px;
+                        height: 40px;
+                    }
+                }
+                .btncls {
+                    width: 74px;
+                    height: 40px;
+                }
+            }
+            :global .ant-comment:before {
+                content: '';
+                display: block;
+                height: 1px;
+                width: 100%;
+                background: #f3f3f3;
+            }
+        }
+    }
+
+    :global .ant-comment-content-author-name {
+        color: #2c3f53;
+        font-size: 14px;
+    }
+    pre {
+        font-family: PingFangSC-Regular;
+        white-space: pre-wrap; /* css3.0 */
+        white-space: -moz-pre-wrap; /* Firefox */
+        white-space: -pre-wrap; /* Opera 4-6 */
+        white-space: -o-pre-wrap; /* Opera 7 */
+        word-wrap: break-word; /* Internet Explorer 5.5+ */
+        margin: 0;
+        span {
+            color: #5c99ff;
+        }
+    }
+}

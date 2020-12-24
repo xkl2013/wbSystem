@@ -1,0 +1,98 @@
+.notifyNodeStyle{
+    padding: 0;
+    // margin-left: 10px;
+}
+.avatarCls{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #87DCD8FF;
+    color: #FFFFFFFF;
+    font-size: 16px;
+}
+.avatarName{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width:100px;
+    margin-left: 5px;
+}
+.avatarNums{
+    position: absolute;
+    top: 2px;
+    color: #5A6876FF;
+    left: 40px;
+    z-index: 10;
+    min-width: 26px;
+    font-weight: normal;
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: center;
+}
+.singleUser{
+    position: relative;
+}
+.hideNameItem{
+    padding: 0 !important;
+}
+.userItem{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #FAFAFA;
+    border-radius:25px;
+    padding:4px 8px;
+    .avatarContainer{
+        display: inline-block;
+        position: relative;
+        height: 26px;
+        .avatarCls{
+            position: absolute;
+            top: 0;
+            .icon{
+                font-size: 26px;
+            }
+        }
+       
+    }
+    :global .ant-avatar{
+        margin:0
+    }
+    
+}
+.iconCls{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+}
+.popPanel{
+    min-width: 140px;
+    max-height: 500px;
+    max-width: 800px;
+    overflow: auto;
+    word-break: break-all;
+}
+.clearUsers {
+    display: none;
+    position: absolute;
+    top: -6px;
+   right: 0;
+    height: 0px;
+    width: 12px;
+    font-size: 14px !important;
+    cursor: pointer;
+}
+.singleUser:hover .clearUsers {
+    display: block;
+}
+.clearIcon {
+    width: 14px;
+}
+.disabledIcon{
+    cursor: not-allowed !important
+}

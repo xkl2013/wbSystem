@@ -1,0 +1,41 @@
+@import '~@/theme/common';
+.selfTable {
+    .extend {
+        color: @primaryColor;
+        width: 100px;
+        margin: @marginGen auto;
+        cursor: pointer;
+        text-align: center;
+        .extendIcon {
+            font-size: 10px;
+            margin-left: @marginSmX;
+        }
+    }
+}
+
+.changedData {
+    padding: 0 !important;
+    .line {
+        text-align: left;
+        line-height: 20px;
+        border-bottom: 1px solid @borderColor;
+        color: @textGeneralColor;
+        word-break: break-all;
+        padding: @paddingGen;
+        &:last-child {
+            border-bottom: none;
+        }
+        .col {
+            //width: 70px;
+            margin-right: @marginLgX;
+        }
+        .old {
+            text-decoration: line-through;
+        }
+        .tip {
+            margin: 0 @marginSmX;
+        }
+        .new {
+        }
+    }
+}

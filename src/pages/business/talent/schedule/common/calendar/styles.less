@@ -1,0 +1,130 @@
+
+
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    background: #f9f9f9;
+    .wrapLeft{
+        display: flex;
+        :global .selStyle {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border: 1px solid #E1E1E1;
+            border-radius: 4px;
+            margin-left: 10px;
+            box-sizing: border-box;
+            .ant-select{
+                // width: 120px;
+                .ant-select-selection-selected-value{
+                    // color: #2C3F53;
+                    // font-size: 14px;
+                }
+            }
+            .ant-select-selection-selected-value{
+                // float: right;
+            }
+            .ant-input,
+            .ant-input:hover,
+            .ant-input:focus,
+            .ant-select-selection--single:hover,
+            .ant-select-selection-selected-value:focus,
+            .ant-select .ant-select-selection:focus,
+            .ant-select-selection:active,
+            .ant-select .ant-select-selection,
+            .ant-select-selection {
+                border-color: transparent !important;
+                box-shadow: none !important;
+            }
+            .ant-select-selection__rendered{
+                padding-right: 10px;
+            }
+
+            .wrapLeftDate{
+                margin-left: 10px;
+            }
+        }
+        .selInput{
+            width: 150px;
+            margin-left: 10px;
+        }
+    }
+    .wrapCenter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        P{
+            font-size: 18px;
+            color: #2c3f53;
+            padding: 0 6px;
+        }
+        .wrapCenterIcon{
+            color: #2c3f53;
+            font-size: 10px;
+            cursor: pointer;
+        }
+    }
+    .wrapRightRadio{
+        margin: 0 10px;
+    }
+    .wrapRightBtn{
+        background:rgba(132,143,155,1);
+        color:rgba(255,255,255,1);
+    }
+
+}
+.mr10 {
+    margin-right: 10px;
+}
+.monthview{
+    display: flex;
+
+}
+
+
+.tipsItem{
+    display: flex;
+    span {
+        flex-shrink: 0;
+        font-size:14px;
+        font-family:PingFangSC-Regular,PingFang SC;
+        font-weight:400;
+        color:rgba(39,55,70,1);
+        width: 105px;
+    }
+    p {
+        min-width: 145px;
+        font-size:14px;
+        font-family:PingFangSC-Regular,PingFang SC;
+        font-weight:400;
+        color:rgba(140,151,163,1);
+    }
+}
+.tipsItem2{
+    margin-top: 5px;
+}
+
+
+
+.weekViewCon{
+    position: relative;
+    :global .weekViewSearch {
+        width: 210px;
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        z-index: 101;
+        height: 40px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        .ant-input,
+        .ant-input:hover,
+        .ant-input:focus{
+            border-color: transparent !important;
+            box-shadow: none !important;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+Date : 2020-03-12 20:20:52
+Directory : /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer
+Total : 25 files,  3289 codes, 231 comments, 166 blanks, all 3686 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |         17 |      3,075 |        228 |        122 |      3,425 |
+| Less       |          8 |        214 |          3 |         44 |        261 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                       | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                          |         25 |      3,289 |        231 |        166 |      3,686 |
+| _utils                                                                                                                     |          6 |      1,018 |        130 |         17 |      1,165 |
+| _utils/constances                                                                                                          |          6 |      1,018 |        130 |         17 |      1,165 |
+| add                                                                                                                        |          2 |        168 |          1 |         12 |        181 |
+| component                                                                                                                  |          8 |        741 |         23 |         41 |        805 |
+| component/editBrand                                                                                                        |          3 |        206 |          8 |         18 |        232 |
+| component/editTable                                                                                                        |          3 |        290 |         12 |         13 |        315 |
+| detail                                                                                                                     |          2 |        457 |         32 |         21 |        510 |
+| edit                                                                                                                       |          2 |        208 |          2 |         16 |        226 |
+| list                                                                                                                       |          3 |        524 |          6 |         37 |        567 |
++----------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                   | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/_utils/constances/_brandCols.js         | JavaScript |        109 |          4 |          3 |        116 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/_utils/constances/_contactCols.js       | JavaScript |        114 |          9 |          2 |        125 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/_utils/constances/_headerCols.js        | JavaScript |         63 |          4 |          2 |         69 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/_utils/constances/_zhikeCols.js         | JavaScript |        198 |         42 |          3 |        243 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/_utils/constances/index.js              | JavaScript |        509 |         71 |          6 |        586 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/_utils/constances/index.less            | Less       |         25 |          0 |          1 |         26 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/add/index.js                            | JavaScript |        144 |          1 |          6 |        151 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/add/index.less                          | Less       |         24 |          0 |          6 |         30 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/component/constants.js                  | JavaScript |        219 |          3 |          4 |        226 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/component/editBrand/_contantPerColum.js | JavaScript |         60 |          2 |          2 |         64 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/component/editBrand/index.js            | JavaScript |        141 |          6 |         15 |        162 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/component/editBrand/index.less          | Less       |          5 |          0 |          1 |          6 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/component/editTable/_contantPerColum.js | JavaScript |         90 |          9 |          2 |        101 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/component/editTable/index.js            | JavaScript |        195 |          3 |         10 |        208 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/component/editTable/index.less          | Less       |          5 |          0 |          1 |          6 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/component/index.less                    | Less       |         26 |          0 |          6 |         32 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/detail/index.js                         | JavaScript |        439 |         32 |         20 |        491 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/detail/index.less                       | Less       |         18 |          0 |          1 |         19 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/edit/index.js                           | JavaScript |        184 |          2 |         10 |        196 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/edit/index.less                         | Less       |         24 |          0 |          6 |         30 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/list/_selfColumn.js                     | JavaScript |         71 |          1 |          2 |         74 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/list/index.js                           | JavaScript |        366 |          2 |         13 |        381 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/list/index.less                         | Less       |         87 |          3 |         22 |        112 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/model.js                                | JavaScript |        115 |         10 |          3 |        128 |
+| /Users/jamgogh/Desktop/taiyang_work/admin_web/src/pages/business/customer/customer/services.js                             | JavaScript |         58 |         27 |         19 |        104 |
+| Total                                                                                                                      |            |      3,289 |        231 |        166 |      3,686 |
++----------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

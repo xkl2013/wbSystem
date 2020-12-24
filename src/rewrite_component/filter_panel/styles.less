@@ -1,0 +1,167 @@
+@import '../../theme/detailPage';
+.panleContainer{
+    position: absolute;
+    z-index: 300;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+   height: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+}
+.leftBox{
+    flex-grow:1;
+    display: flex;
+    flex-flow: column;
+    margin-top: 30px;
+    .tagsCotainer{
+        width:400px;
+        display: flex;
+        justify-content: start;
+        color:#848F9B;
+        .tab{
+            color:rgba(44,63,83,1);
+            font-size:16px;
+        }
+    }
+}
+.maddleSplit{
+    width: 20px;
+    color: #DFDFDF;
+    display: flex;
+    align-items: center;
+
+}
+
+.rightBox{
+    flex-grow:1;
+    display: flex;
+    flex-flow: column;
+    margin-top: 10px;
+    .rightBoxHeader{
+        font-size: 14px;
+        .chooseTitle{
+            color: #848F9B;
+            float: left;
+        }
+        .chooseClear{
+            color:@primaryColor;
+            float: right;
+            cursor: pointer;
+        }
+
+    }
+    .chooseBox{
+        margin-top: 5px;
+        height: 100%;
+        overflow: auto;
+        background:rgba(255,255,255,1);
+        box-shadow:0px 2px 6px 0px rgba(0,0,0,0.1);
+        border-radius:8px;
+    }
+}
+// 搜索部分
+.searchBox{
+width: 100%;
+height: 32em;
+margin-top: 5px;
+background:rgba(255,255,255,1);
+box-shadow:0px 2px 6px 0px rgba(0,0,0,0.1);
+border-radius:8px;
+overflow: hidden;
+.searchInput{
+    margin: 5px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    color:#848F9B;
+    box-sizing: border-box;
+    .allUserDes{
+       margin-top: 10px;
+       margin-bottom: 5px;
+    }
+    .userList{
+        list-style: none;
+        height: 20em;
+        overflow: auto;
+        .userItem{
+            cursor: pointer;
+            padding: 5px 10px;
+            min-height:30px;
+            .chooseIcon{
+                color: #5C99FF;
+                float: right;
+            }
+        }
+        .hasCheckedUserItem{
+            background:rgba(230,240,255,1);
+        }
+        .userItem:hover{
+         background:rgba(230,240,255,1);
+        }
+
+
+    }
+    .treeList{
+        height: 23em;
+        overflow: auto;
+        .treeTitle{
+            cursor: pointer;
+            
+            .chooseIcon{
+                color: #5C99FF;
+                float: right;
+            }
+           
+        }
+    }
+}
+}
+.addOrgIcon{
+    display: none;
+    margin-left:20px; 
+    color: #5492FF;
+    color: 16px;
+}
+.treeTitle:hover .addOrgIcon{
+  display: inline-block;
+}
+// choose部分
+.userBox{
+    width: 100%;
+    list-style: none;
+    padding-top: 30px;
+    .userItem{
+        display: flex;
+      position: relative;
+        height: 35px;
+        line-height: 35px;
+        color: #5A6876;
+        font-size: 14px;
+        padding-left: 30px;
+        .userAvatar{
+            :global(.ant-avatar){
+                width:24px;
+                height: 24px;
+            }
+        }
+        .userName{
+            display: inline-block;
+            margin-left: 5px;
+            max-width: 150px;
+            white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+        }
+        .clearUser{
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+        }
+    }
+    .userItem:hover{
+        background:rgba(230,240,255,1);
+    }
+}

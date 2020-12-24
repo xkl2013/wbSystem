@@ -1,0 +1,40 @@
+@import '~@/theme/common';
+.wrap {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.spearate {
+    width: 16px;
+    height: 100vh;
+    background: #f9f9f9;
+    flex-shrink: 0;
+}
+
+:global .memberCalendar .ant-spin-nested-loading {
+    width: 100%;
+}
+.kanbanWrap {
+    display: flex;
+    overflow: scroll;
+}
+.btnWrapCls {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 8px 20px 0;
+    .wrapLeftBtn {
+        background: #fff;
+        color: @primaryColor;
+        border: 1px solid @primaryColor;
+    }
+}
+.loadingBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8C97A3FF;
+}
+.kanban{
+    overflow: hidden;
+}

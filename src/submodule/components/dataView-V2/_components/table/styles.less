@@ -1,0 +1,44 @@
+@import '~@/theme/common';
+:global .BITable {
+    clear: both;
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+        padding: 12px 12px;
+        border-bottom: 1px solid @borderColor;
+        border-right: 1px solid @borderColor;
+    }
+    .ant-table-thead > tr > th {
+        font-family: PingFangSC-Semibold !important;
+        font-weight: bold;
+    }
+
+    .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td,
+    .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td,
+    .ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td,
+    .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td,
+    .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+    .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+        background: @tableHoverBgColor;
+    }
+
+    .ant-table-column-title {
+        color: @textPrimaryColor;
+    }
+    .ant-table {
+        color: @textGeneralColor;
+    }
+    .ant-table-thead > tr:first-child > th:last-child,
+    .ant-table-tbody > tr > td:last-child {
+        text-align: right;
+    }
+    .ant-typography {
+        color: inherit;
+    }
+    tr.ant-table-expanded-row,
+    tr.ant-table-expanded-row:hover {
+        background: #fdfdfd;
+    }
+    tr.ant-table-expanded-row td tr th {
+        background: #fdfdfd;
+    }
+}

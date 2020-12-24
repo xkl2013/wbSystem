@@ -1,0 +1,109 @@
+.customTab {
+  float: right;
+  margin-right: 10px;
+  height: 100%;
+}
+
+.mineCotainer {
+  float: right;
+  margin-right: 16px;
+  height: 100%;
+  .avatar{
+    width: 32px;
+    height: 32px;
+  }
+}
+
+:global(.ant-layout-header) {
+  padding: 0;
+  // line-height: 60px;
+}
+:global(.ant-avatar) {
+  margin-top: -2px
+}
+.headerContent {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  .toggleIcon {
+    padding-right: 6px;
+    padding-left: 20px;
+    width: 40px;
+    cursor: pointer;
+    text-align: center;
+
+    .backIcon {
+      width: 7px;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0; /*初始状态 透明度为0*/
+      }
+      50% {
+        opacity: 0.5; /*中间状态 透明度为0*/
+      }
+      100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+      }
+    }
+
+    .menuIcon {
+      width: 14px;
+    }
+
+    .arrowIcon {
+      width: 18px;
+      -webkit-animation: fadeIn 0.5s;
+      animation: fadeIn 0.5s;
+    }
+  }
+
+  .customHeader {
+    flex: 1;
+    height: 100%;
+  }
+}
+
+.nameDes {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(132, 143, 155, 1);
+}
+
+.userName {
+  display: inline-block;
+  margin-left: 6px;
+  // width: 70px;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(90, 104, 118, 1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.overlayClassName {
+  width: 142px !important;
+  font-size: 12px;
+  top: 59px !important;
+  position: fixed;
+  z-index: 999;
+  :global .ant-menu-item {
+    margin: 0 !important;
+    color: #818C98;
+  }
+
+  :global .ant-menu-item:not(:last-child) {
+    border-bottom: 1px solid #ececec !important;
+  }
+
+  :global .ant-menu-item:hover {
+    background: #f5f6fa;
+  }
+}
+
+

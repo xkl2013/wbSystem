@@ -1,0 +1,87 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+min-width: 1366px;
+background: #fff;
+    .baseWrap{
+        padding: 17px 22px;
+        margin-bottom: 5px;
+        .titleCls{
+            padding-bottom: 6px;
+            font-size:16px;
+            font-weight:500;
+            color: #2C3F53;
+            border-bottom: 1px solid #F3F3F3;
+        }
+        .rowWrap{
+            display: flex;
+            .itemCls{
+                height: 32px;
+                .commonWidthCls{
+                    width:250px;
+                //   max-width: 440px;
+                //   min-width: 340px;
+                }
+            }
+        
+            :global(.ant-btn){
+                padding: 0 8px;
+            }
+            :global(.ant-input-affix-wrapper .ant-input-suffix){
+                right: 1px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                background: #f5f5f5;
+            }
+            :global(.ant-select-arrow .ant-select-arrow-icon){
+                width: 12px;
+                height: 12px;
+                background:rgba(245,245,245,1);
+            }
+            :global(.ant-select-arrow){
+                top: 20%;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                background: #f5f5f5;
+            }
+            :global(.ant-form-item > .ant-form-item-label){
+                width: 105px;
+            }
+        }
+        .rowWrap:not(:first-child){
+            margin-top: 33px;
+        }
+    }
+    .buttonWrap{
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        .btnCls{
+            margin-right: 40px;
+            width:150px;   
+        }
+    }
+}
+
+
+
+.moreTxtCls{
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 5px;
+    line-height: 16px;
+    height: 32px; 
+    i{
+        font-style: normal;
+        letter-spacing: 2px;
+    }      
+}

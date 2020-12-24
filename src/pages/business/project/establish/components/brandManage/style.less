@@ -1,0 +1,27 @@
+@import '~@/theme/common';
+.casContainer {
+    :global(.ant-cascader-menu) {
+        margin-bottom: 32px;
+        :global(.ant-cascader-menu-item) {
+            &:last-child {
+                position: absolute;
+                bottom: 0;
+                height: 32px;
+                line-height: 32px;
+                padding: 0 12px;
+                color: @primaryColor;
+            }
+        }
+    }
+    &.filtering {
+        :global(.ant-cascader-menu) {
+            margin-bottom: 0;
+            :global(.ant-cascader-menu-item) {
+                &:last-child {
+                    position: relative;
+                    color: inherit;
+                }
+            }
+        }
+    }
+}

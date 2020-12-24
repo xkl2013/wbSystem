@@ -1,0 +1,25 @@
+@import '../common';
+
+.leftFixedHandleWrap {
+    position: absolute;
+    bottom: 0;
+    width: 2px;
+    z-index: 4;
+    background: transparent;
+    user-select: none;
+    &.hovered {
+        background: #aaa;
+    }
+}
+.leftFixedHandle {
+    cursor: grab;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 6px;
+    height: 26px;
+    background: #2d7ff9;
+    position: fixed;
+    z-index: 4;
+    opacity: 0;
+    transition: opacity ease 100ms;
+}

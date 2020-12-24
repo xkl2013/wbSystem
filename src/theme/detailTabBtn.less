@@ -1,0 +1,41 @@
+@import "common";
+
+.detailTabBtnWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  .tabBtn {
+    width: 120px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+  }
+
+  :global(.ant-radio-button-wrapper-checked) {
+    box-shadow: 2px 3px 7px 0px @primaryColor !important;
+  }
+
+  .editBtn {
+    width: 70px;
+    height: 30px;
+    margin-right: @marginLg;
+    color: @primaryColor;
+    border-color: @primaryColor;
+
+    .editIcon {
+      width: 16px;
+      height: 16px;
+      margin-right: 3px;
+    }
+
+    .editTitle {
+      vertical-align: middle;
+    }
+  }
+
+  :global(.ant-btn > .anticon + span) {
+    margin-left: 2px;
+  }
+}

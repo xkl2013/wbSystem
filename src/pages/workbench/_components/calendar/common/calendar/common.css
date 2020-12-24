@@ -1,0 +1,143 @@
+/* 样式覆盖 */
+
+:global .myCalendar {
+    width: 100%;
+    background: #fff;
+}
+:global .myCalendar .fc-more-cell div{
+    text-align: right;
+}
+:global .myCalendar .fc-widget-header{
+    background: #F7F9FA;
+}
+
+:global .myCalendar .fc-day-header{
+    height:40px;
+    line-height: 40px;
+}
+:global .myCalendar .fc-unthemed th,
+:global .myCalendar .fc-unthemed td,
+:global .myCalendar .fc-unthemed thead,
+:global .myCalendar .fc-unthemed tbody,
+:global .myCalendar .fc-unthemed .fc-divider,
+:global .myCalendar .fc-unthemed .fc-row,
+:global .myCalendar .fc-unthemed .fc-content,
+:global .myCalendar .fc-unthemed .fc-popover,
+:global .myCalendar .fc-unthemed .fc-list-view,
+:global .myCalendar .fc-unthemed .fc-list-heading td{
+    border-color: #ececec;
+}
+:global .myCalendar a.fc-more{
+    background:rgba(66, 202, 196, 0.1);
+    border-radius:10px;
+    display: inline-block;
+    font-size:12px;
+    font-family:PingFangSC-Regular,PingFangSC;
+    font-weight:400;
+    color:#2C3F53;
+    padding: 0 8px;
+    margin-top: 5px;
+}
+
+:global .myCalendar .fc-popover .fc-widget-content{
+    max-height: 400px;
+    overflow-y: auto;
+}
+:global .myCalendar .fc-popover .fc-header{
+    background: #F7F9FA !important;
+    height: 32px;
+}
+:global .myCalendar .fc-popover .fc-header span{
+    color: #2C3F53;
+    padding-left: 6px;
+}
+:global .myCalendar .fc-list-heading-main,
+:global .myCalendar .fc-day-header,
+:global .myCalendar .fc-day-header span,
+:global .myCalendar .fc-day-header a{
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFangSC;
+    font-weight:500;
+    color:rgba(127,138,151,1);
+}
+:global .myCalendar .fc-day-number{
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFangSC;
+    font-weight:400;
+    color:rgba(90,104,118,1);
+}
+:global .myCalendar .fc-today{
+    background: transparent !important;
+}
+:global .myCalendar .fc-today .fc-day-number{
+    background:var(--primaryColor);
+    padding: 0 5px;
+    color: #fff;
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFangSC;
+    font-weight:400;
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+:global .myCalendar .fc-today a{
+    color:var(--primaryColor);
+}
+
+:global .myCalendar .fc-listDay-view .fc-list-table{
+    table-layout: fixed;
+}
+:global .myCalendar .listDayItem{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    /* border-bottom: 1px solid #f3f3f3; */
+    padding: 20px;
+    cursor: pointer;
+}
+:global .myCalendar .listDayItem .time{
+    display: block;
+    width: 80px;
+    flex-shrink: 0;
+}
+:global .myCalendar .listDayItem .title{
+    flex-grow: 1;
+    word-break: break-all;
+}
+
+:global .myCalendar .fc-list-heading,
+:global .myCalendar .fc-list-heading > td{
+    background: #F7F9FA !important;
+
+}
+
+:global .myCalendar .fc-unthemed .fc-disabled-day{
+    background: #f9f9f9;
+    opacity: 1;
+}
+
+:global .myCalendar .fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number{
+    float: left;
+    margin-left: 10px;
+}
+:global .myCalendar .fc-event-container .fc-content .fc-title{
+    padding-top: 4px;
+}
+:global .myCalendar .fc-time-grid .fc-slats .fc-minor td{
+    border: none;
+}
+
+:global .myCalendar .fc-list-empty{
+    background: #fff;
+}
+:global .myCalendar .fc-now-indicator-line{
+    background: #FF5B57;
+}
+:global .myCalendar .fc-now-indicator{
+    border-color:  #FF5B57;
+}
+/* .fc-day-grid */
+:global .myCalendar .fc-time-grid-container{
+    /* height: calc(100vh - 224px) !important; */
+}

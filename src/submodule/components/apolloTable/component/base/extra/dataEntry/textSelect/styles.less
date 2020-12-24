@@ -1,0 +1,27 @@
+.textSelectContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.overlayClassName {
+    max-height: 300px;
+    overflow: auto;
+    :global(.ant-dropdown-menu) {
+        width: auto !important;
+    }
+}
+.input {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    align-items: center;
+}
+.input:hover .clearIcon {
+    z-index: 100;
+}
+.spin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

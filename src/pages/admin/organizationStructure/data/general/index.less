@@ -1,0 +1,48 @@
+@import '../../../../../theme/detailPage';
+.dataBox {
+    display: flex;
+    background-color: #f9f9f9;
+    .dataTree {
+        width: 270px;
+        height: calc(100vh - 92px);
+        overflow: auto;
+        padding: 0 20px 20px;
+        margin-right: 16px;
+        background: #fff;
+        .treeTitle {
+        }
+    }
+    .dataDetail {
+        width: 100%;
+        height: calc(100vh - 92px);
+        overflow: auto;
+        padding: 0 15px;
+        background: #fff;
+        .pushBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .detailBtn {
+                width: 94px;
+                margin: 0 10px;
+            }
+        }
+    }
+    .treeTitle {
+        color: #2c3f53;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 20px 0;
+        line-height: 1;
+        position: relative;
+        .headerBtn {
+            background-color: transparent;
+            border: 1px solid  @primaryColor;
+            color:  @primaryColor;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(0, -50%);
+        }
+    }
+}

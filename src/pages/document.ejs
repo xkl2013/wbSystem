@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <title>Mountaintop<% if(context.env === 'development') { %> 内网v3.0 <% } %></title>
+</head>
+<link rel="icon" type="image/x-icon" href="https://static.mttop.cn/admin/favicon.ico" />
+
+<body>
+    <link rel="stylesheet/less" type="text/css" href="/color.less" />
+    <script>
+        window.less = {
+            async: false,
+            env: 'production'
+        };
+    </script>
+    <script type="text/javascript" src="https://static.mttop.cn/less.min.js"></script>
+    <script src="https://mt.mttop.cn/h5/mtBridge.umd.min.js"></script>
+    <script crossorigin src="https://static-test.mttop.cn/script/react@16:umd.production.min.js"></script>
+    <script crossorigin src="https://static-test.mttop.cn/react-dom@16.umd.react-dom.production.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/lodash.js/4.17.19/lodash.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/moment.js/2.27.0/locale/zh-cn.js"></script>
+    <div id="root">
+    </div>
+</body>
+
+</html>

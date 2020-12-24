@@ -1,0 +1,163 @@
+@import '~@/theme/common';
+.wrap {
+    width: 300px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: relative;
+    border-left: 16px solid #f9f9f9;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: calc(100% + 16px);
+        background: #f3f3f3;
+    }
+    .title {
+        padding: 22px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background: #f9f9f9;
+        span {
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFangSC;
+            font-weight: 500;
+            color: rgba(140, 151, 163, 1);
+            cursor: pointer;
+        }
+        .sel {
+            color: @primaryColor;
+        }
+        .s2 {
+            padding: 0 30px;
+            cursor: initial;
+        }
+        .wrapTitClose {
+            width: 12px;
+            height: 13px;
+            display: block;
+            position: absolute;
+            top: 12px;
+            right: 14px;
+            cursor: pointer;
+        }
+    }
+}
+.con {
+    padding: 0 16px;
+}
+.attention {
+    padding-top: 16px;
+    .wrapTit {
+        // display: flex;
+        // justify-content: center;
+    }
+    .wrapTitInput {
+        // width: 278px;
+    }
+    .checkAll {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .cancleBtn {
+            cursor: pointer;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFangSC;
+            font-weight: 400;
+            color: rgba(140, 151, 163, 1);
+        }
+    }
+    .noData {
+        margin-top: 30px;
+    }
+    .attentionUl {
+        height: 50em;
+        overflow-y: auto;
+        .attentionLi {
+            padding: 10px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:hover {
+                background: rgba(92, 153, 255, 0.1);
+                .wrapTitClose {
+                    display: block;
+                }
+            }
+            .attentionLiBox {
+                .attentionLiImg {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+                .attentionLiSpan {
+                    font-size: 14px;
+                    font-family: PingFangSC-Regular, PingFangSC;
+                    font-weight: 400;
+                    color: rgba(90, 104, 118, 1);
+                }
+            }
+            .wrapTitClose {
+                cursor: pointer;
+                display: none;
+            }
+        }
+    }
+}
+.searchTree {
+    padding-top: 16px;
+}
+
+.itemTitle {
+    position: relative;
+    display: flex;
+}
+.itemTitle:hover .addFock {
+    display: inline-block;
+}
+.addFock {
+    display: none;
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: @primaryColor;
+    float: right;
+    margin-right: 10px;
+    // background: #f0f8ff;
+    padding-left: 6px;
+}
+.avatar {
+    width: 24px;
+}
+.avatarName {
+    margin-left: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+.hasFock {
+    font-size: 12px;
+    color: #8c97a3ff;
+    //float: right;
+    margin-right: 10px;
+    //background: #f3f3f3;
+    padding-left: 6px;
+}
+:global .calendarOrganization .ant-checkbox-inner {
+    width: 14px;
+    height: 14px;
+}
+:global .calendarOrganization .ant-checkbox-inner::after {
+    left: 20%;
+}
+
+:global .calendarOrganization .ant-tree li .ant-tree-node-content-wrapper {
+    color: #5a6876;
+}

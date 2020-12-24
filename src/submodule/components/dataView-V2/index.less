@@ -1,0 +1,77 @@
+@import '~@/theme/common';
+
+@smallSpace: 4px;
+@normalSpace: 16px;
+.view {
+    .tableWrap {
+        background: #fff;
+        padding: 10px 20px;
+        border-radius: 6px;
+    }
+
+    .formWrap {
+        background: #fff;
+        padding: 25px 20px;
+        border-radius: 6px;
+    }
+
+    .row {
+        text-align: right;
+        // display: flex;
+        // margin-bottom: 6px;
+
+        .col {
+            display: inline-block;
+            vertical-align: middle;
+            width: 30%;
+            margin: @smallSpace;
+        }
+
+        .btn {
+            // color: @primaryColor;
+            // border-color: @primaryColor;
+            // line-height: 32px;
+
+            .iconCls {
+                font-size: @textFontGen;
+            }
+            .titleCls {
+                font-size: @textFontGen;
+            }
+        }
+    }
+
+    .table {
+        margin: @smallSpace 0;
+
+        td {
+            word-break: break-word;
+        }
+
+        :global(.ant-table-placeholder) {
+            border-bottom: none;
+        }
+
+        :global(.ant-table-thead > tr > th) {
+            border-right: none;
+            border-bottom: 1px solid #f6f6f8;
+        }
+
+        :global(.ant-table-tbody > tr > td) {
+            border-right: none;
+            border-bottom: 1px solid #f6f6f8;
+        }
+    }
+}
+
+.split {
+    height: 16px;
+    background: #f9f9f9;
+}
+
+.tips {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}

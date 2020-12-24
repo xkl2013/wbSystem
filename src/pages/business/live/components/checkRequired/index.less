@@ -1,0 +1,40 @@
+@import '~@/theme/common';
+.container {
+    width: 100%;
+    min-height: 500px;
+    overflow: auto;
+    margin-top: @marginLgX;
+    .table {
+        height: 500px;
+        &.hidden{
+            visibility: hidden;
+            height: 0;
+        }
+    }
+    .tableCls {
+        display: flex;
+        height: 100%;
+    }
+    .btnContainer {
+        margin-top: @marginLgX;
+        display: flex;
+        justify-content: center;
+        .btnCls {
+            margin: @marginLg;
+        }
+    }
+    .loading {
+        text-align: center;
+        width: 60%;
+        margin: 150px auto;
+        .loadingTip {
+            margin-top: @marginLgX;
+        }
+    }
+}
+.readonly {
+    background: @disabledColor;
+}
+.error {
+    border: 1px solid @errorColor !important;
+}

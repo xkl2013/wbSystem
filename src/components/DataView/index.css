@@ -1,0 +1,15 @@
+.view {
+  margin: 16px;
+}
+.view .row .col {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  margin: 4px;
+}
+.view .row .btn {
+  margin: 4px;
+}
+.view .table {
+  margin: 4px 0;
+}

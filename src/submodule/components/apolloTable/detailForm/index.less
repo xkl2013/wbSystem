@@ -1,0 +1,70 @@
+@import '~@/theme/common';
+.wrap {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .topWrap {
+        display: flex;
+        height: 60px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 @paddingLg;
+        .titleCls {
+            font-size: 14px;
+            color: #5a6876;
+        }
+        .editClick {
+            cursor: pointer;
+            .detailEdit {
+                color: @primaryColor;
+                font-size: 14px;
+            }
+        }
+    }
+    .formWrap {
+        position: relative;
+        flex: 1;
+        padding: @paddingLg;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background: rgb(250, 250, 250);
+
+        .row {
+            display: flex;
+            background-color: rgba(251, 251, 251, 1);
+            border: 1px solid #ececec;
+            &:first-child {
+                border-top: none;
+            }
+
+            .listLeft {
+                width: 150px;
+                padding: 12px;
+                text-align: right;
+                align-self: center;
+                background-color: rgba(251, 251, 251, 1);
+            }
+
+            .listRight {
+                flex: 1;
+                padding: 12px 20px;
+                background-color: #fff;
+
+                .item {
+                    white-space: initial;
+                }
+            }
+        }
+    }
+    .bottomWrap {
+        display: flex;
+        height: 68px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 @paddingLg;
+        .delBtnCls {
+            color: @errorColor;
+        }
+    }
+}

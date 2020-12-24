@@ -1,0 +1,110 @@
+@import '../../../../../theme/common';
+.wrap {
+    display: flex;
+    background-color: #f9f9f9;
+
+    .leftWrap {
+        width: 270px;
+        //min-height: 1000px;
+        height: calc(100vh - 92px);
+        overflow: auto;
+        padding: 20px 15px;
+        margin-right: 16px;
+        background: #fff;
+        // 树
+        .titleCls {
+            position: relative;
+
+            .title {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .moreIconContainer {
+                position: absolute;
+                right: -20px;
+                top: 0;
+                cursor: pointer;
+                width: 30px;
+                text-align: center;
+            }
+
+            .moreIcon {
+                height: 14px;
+            }
+        }
+
+        :global(.ant-tree li .ant-tree-node-content-wrapper) {
+            width: 85%;
+        }
+    }
+
+    .rightWrap {
+        width: 100%;
+        //min-height: 1000px;
+        height: calc(100vh - 92px);
+        overflow: auto;
+        background: #fff;
+
+        .bossCls {
+            font-size: 14px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: #2c3f53;
+            .bosstxt {
+            }
+        }
+    }
+
+    :global(.ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected) {
+        color: @primaryColor;
+        background: #fff;
+    }
+}
+
+.btnCls {
+    color: @primaryColor;
+    cursor: pointer;
+}
+
+.btnCls:not(:last-child) {
+    margin-right: 8px;
+}
+
+.modalCls {
+    cursor: pointer;
+
+    .operateItem:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .operateItem:hover {
+        color: @primaryColor;
+    }
+
+    :global(.ant-popover-inner-content) {
+        padding: 0;
+    }
+}
+
+.activeCls {
+    color: @primaryColor;
+}
+.departModal {
+}
+.departModalWrap {
+    height: 500px;
+    overflow: auto;
+    :global(.ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected) {
+        background: @hoverColor;
+    }
+}
+.inModalTitleCls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .icon {
+        color: @primaryColor;
+    }
+}

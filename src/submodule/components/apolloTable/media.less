@@ -1,0 +1,17 @@
+.mediaMax(@width, @rules) {
+    @media screen and (max-width: @width){
+        @rules();
+    }
+}
+
+.mediaMin(@width, @rules) {
+    @media screen and (min-width: @width){
+        @rules();
+    }
+}
+
+.mediaMM(@minWidth, @maxWidth, @rules) {
+    @media screen and (min-width: @minWidth) and (max-width: @maxWidth){
+        @rules();
+    }
+}

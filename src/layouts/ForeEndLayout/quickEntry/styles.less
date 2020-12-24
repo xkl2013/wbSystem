@@ -1,0 +1,63 @@
+.container {
+    position: fixed;
+    bottom: 30px;
+    right: -68px;
+    width: 750px;
+    height: 217px;
+    display:block;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    text-align: center;
+    opacity: 1;
+    z-index: 10;
+    pointer-events: none;
+    user-select: none;
+    transition: right 0.2s;
+//   visibility: hidden;
+}
+.openStyle{
+  right: 10px;
+}
+.hideBtn{
+    position: fixed;
+    bottom: 66px;
+    right: 21px;
+    width: 47px;
+    z-index: 0;
+    cursor: pointer;
+}
+.tipBox{
+    width: 120px;
+    padding: 10px 10px;
+    text-align: center;
+    h3{ 
+font-weight: 500;
+color: #2C3F53;   
+    }
+    a{  
+font-size: 12px;
+font-weight: 400;
+color: #848F9B; 
+text-decoration-line: underline;
+    }
+}
+//
+.tiggleBtn{
+    cursor: pointer;
+    pointer-events: auto;
+    width: 40px;
+}
+.switchBtn{
+    position: fixed;
+    bottom: 0px;
+    right: -16px;
+    width: 40px;
+    height: 40px;
+    bottom: 60px;
+    transition: right 0.2s;
+     z-index: 10;
+     cursor: pointer;
+}
+.openSwitchBtn{
+    right: 62px; 
+}

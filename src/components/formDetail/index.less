@@ -1,0 +1,82 @@
+@import '~@/theme/common';
+.wrap {
+    position: relative;
+    width: 580px;
+    background: #fff;
+    .titleRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .detailEdit {
+            margin-right: 14px;
+            color: @primaryColor;
+            font-size: 14px;
+            margin-left: 6px;
+        }
+        .editClick {
+            cursor: pointer;
+            //padding-right: 44px;
+        }
+    }
+    .titleCls {
+        margin-left: 26px;
+        font-size: 14px;
+        color: #5A6876;
+        line-height: 62px;
+        z-index: 10;
+        background: #fff;
+    }
+    .formWrap {
+        padding: 0 45px 0 26px;
+        height: 520px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        // border-bottom: 1px solid #ECECEC;
+        // margin:62px 0 68px;
+        margin-bottom: 68px;
+        position: relative;
+        background: rgb(250, 250, 250);
+        :global(.ant-form-item-control) {
+            line-height: 28px;
+        }
+        :global(.ant-btn-link) {
+            color: #ff5363;
+        }
+        :global(.BIDatePicker .ant-calendar-range-picker-input) {
+            max-width: 112px;
+            text-align: center;
+        }
+        :global(.BIDatePicker .ant-calendar-picker) {
+            text-align: left;
+            width: 350px;
+        }
+        .groupTitle {
+            color: #2c3f53;
+            margin-bottom: 8px;
+            .itemIcon {
+                width: 14px;
+                height: 14px;
+                margin: 0 5px 4px 0;
+            }
+        }
+        .row {
+            display: flex;
+            // flex-direction: row;
+            // align-items: center;
+            background-color: rgba(251, 251, 251, 1);
+            .listLeft {
+                width: 150px;
+                padding: 12px;
+                text-align: right;
+                align-self: center;
+                background-color: rgba(251, 251, 251, 1);
+            }
+            .listRight {
+                width: 390px;
+                padding: 12px 20px;
+                background-color: #fff;
+            }
+        }
+    }
+}

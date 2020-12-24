@@ -1,0 +1,45 @@
+@import "../../../../../theme/common.less";
+
+.wrap {
+  padding: @paddingLg 0;
+
+  .wrapTit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    .mr12 {
+      margin-right: 12px;
+    }
+
+    .tabBtn {
+      width: 120px;
+      height: 36px;
+      text-align: center;
+      line-height: 36px;
+    }
+
+    // :global(.ant-radio-button-wrapper-checked) {
+    //   box-shadow: 2px 3px 7px 0px rgba(102, 153, 255, 1) !important;
+    // }
+
+    .editBtn {
+      width: 70px;
+      height: 30px;
+    }
+
+    :global(.ant-btn > .anticon + span) {
+      margin-left: 2px;
+    }
+  }
+}
+
+.headerBtn {
+  width: 76px;
+  height: 30px;
+  margin-right: @marginGen;
+}
+.m20{
+  margin: 0 20px;
+}

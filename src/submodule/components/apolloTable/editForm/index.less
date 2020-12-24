@@ -1,0 +1,39 @@
+@import '~@/theme/common';
+.wrap {
+    position: relative;
+    //width: 580px;
+    background: #fff;
+    .item {
+        display: inline-block;
+    }
+    .row {
+        display: flex;
+        background-color: rgba(251, 251, 251, 1);
+        .listLeft {
+            width: 150px;
+            padding: 12px;
+            text-align: right;
+            align-self: center;
+            background-color: rgba(251, 251, 251, 1);
+        }
+        .listRight {
+            flex: 1;
+            padding: 12px 20px;
+            background-color: #fff;
+            .item {
+                white-space: initial;
+            }
+        }
+    }
+    .btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .btn {
+            margin-left: @marginGen;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}

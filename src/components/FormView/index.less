@@ -1,0 +1,88 @@
+.wrap {
+  background-color: #F9F9F9;
+
+  .formWrap {
+    padding: 20px;
+    background: #fff;
+
+    .groupWrap {
+      .groupTitle {
+        height: 45px;
+        line-height: 45px;
+        color: #2C3F53;
+        font-size: 16px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        border-bottom: 1px solid #f3f3f3;
+        margin-bottom: 20px;
+      }
+
+      .rowWrap {
+        display: flex;
+
+        .colWrap {
+          display: flex;
+          color: #848F9B;
+          font-size: 14px;
+          font-family: PingFangSC-Regular;
+          font-weight: 400;
+          width: 100%;
+
+          &.half {
+            width: 50%;
+          }
+
+          &.three {
+            width: 33.33%;
+          }
+
+          &.four {
+            width: 25%;
+          }
+
+          &.five {
+            width: 20%;
+          }
+
+          .newLableCls{
+            display: inline-block;
+            line-height: 16px;
+            padding-top: 12px;
+            max-width: 56px;
+            white-space: pre-wrap;
+            .lineSpanCls{
+              display: block;
+              line-height: 16px;
+            }
+          }
+          .colItem {
+            width: 100%;
+
+            .itemContent {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .buttonWrap {
+      margin-top: 200px;
+      width: 100%;
+      text-align: center;
+
+      .btnCls {
+        width: 94px;
+        margin:0 10px;
+      }
+    }
+  }
+  :global .ant-col-6{
+    height:auto;
+  }
+  :global .ant-form-item-required::before{
+    vertical-align: top;
+    position: relative;
+    top: 14px;
+  }
+}

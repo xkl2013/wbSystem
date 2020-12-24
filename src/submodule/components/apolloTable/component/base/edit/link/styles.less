@@ -1,0 +1,46 @@
+@import '../../../../common';
+.container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: @paddingSmX;
+    border: 1px solid @primaryColor;
+    min-height: 100%;
+    user-select: none;
+    .content {
+        border-bottom: 1px solid @borderColor;
+        .row {
+            display: flex;
+            align-items: center;
+            padding: @paddingSmX 0;
+            .label {
+                width: 40px;
+                font-size: @textFontSm;
+                text-align: right;
+                padding-right: @paddingSm;
+            }
+            .input {
+                flex: 1;
+            }
+            .delContainer {
+                width: 20px;
+                text-align: center;
+                cursor: pointer;
+                .delIcon {
+                    width: 14px;
+                }
+            }
+        }
+    }
+    .btn {
+        width: 20px;
+        padding: @paddingSmX;
+        display: inline-block;
+        .icon{
+            width: 12px;
+            cursor: pointer;
+        }
+    }
+}

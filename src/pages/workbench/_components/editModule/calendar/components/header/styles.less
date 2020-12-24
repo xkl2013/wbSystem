@@ -1,0 +1,58 @@
+@import '~@/theme/common';
+
+.headerStyle{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 30px 10px 30px;
+    border-bottom: 1px solid #ECECECFF;
+    .taskName{
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: center;
+        
+            .checkParentBtn{
+                cursor: pointer;
+                color:@primaryColor;
+            }
+            .parentTaskName{
+                display: inline-block;
+                color: #5A6876FF;
+                cursor: pointer;
+                margin-left: 5px;
+                max-width: 300px;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                 white-space: nowrap;
+            }
+        }
+        .btnsWrap{
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-start;
+            align-items: center;
+            .btn{
+                margin-left: 16px;
+                cursor: pointer;
+            }
+            .currentPageNum{
+                display: flex;
+                justify-content: center;
+            }
+           
+            .currentPageNum::after{
+                display: inline-block;
+                content: '';
+                width: 1px;
+                background: #ECECECFF;
+                height: 20px;
+                margin-left: 16px;
+            }
+        }
+}

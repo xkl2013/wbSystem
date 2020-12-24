@@ -1,0 +1,55 @@
+@import '~@/theme/common';
+@space: 60px;
+.wrap {
+    position: relative;
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    .titleCls {
+        height: @space;
+        font-size: @textFontLg;
+        color: @textPrimaryColor;
+        line-height: @space;
+        background: white;
+        border-bottom: 1px solid @borderColor;
+        padding: 0 @paddingLg;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .formWrap {
+        flex: 1;
+        padding: @paddingLg;
+        max-height: 520px;
+        min-height: 520px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+
+        .listCls {
+            border: 1px solid @borderColor;
+            .row {
+                display: flex;
+                background-color: rgba(251, 251, 251, 1);
+                border-bottom: 1px solid @borderColor;
+                .listLeft {
+                    width: 150px;
+                    padding: 12px;
+                    text-align: right;
+                    align-self: center;
+                    background-color: rgba(251, 251, 251, 1);
+                }
+                .listRight {
+                    flex: 1;
+                    padding: 12px 20px;
+                    background-color: #fff;
+                    word-break: break-all;
+                }
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

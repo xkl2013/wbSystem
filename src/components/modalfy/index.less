@@ -1,0 +1,21 @@
+@normalSpace: 20px;
+@lessSpace: 10px;
+.view {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: @normalSpace @lessSpace;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.modalDymic {
+    :global(.ant-modal-body) {
+        padding: 0;
+    }
+}

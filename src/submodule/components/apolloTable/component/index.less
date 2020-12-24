@@ -1,0 +1,125 @@
+@import '../common';
+.container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 92px);
+
+    .operateContainer {
+    }
+    .tableContainer {
+        position: relative;
+        box-shadow: @boxShadow;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .tableOperateContainer {
+            height: 38px;
+            overflow: hidden;
+        }
+
+        .tableC {
+            flex: 1;
+        }
+        .rowClassName {
+            border: 1px solid black;
+        }
+    }
+}
+.groupContainer {
+    padding: 16px 0;
+    background: #EAEAEA;
+    min-height: 100%;
+    //position: absolute;
+    //min-width: 100%;
+
+    :global( .ant-table.ant-table-bordered .ant-table-footer) {
+        border-color: transparent;
+    }
+
+    :global(.ant-table-bordered .ant-table-body > table) {
+        border-color: transparent;
+        border-top-color: #DBDBDB;
+    }
+
+    :global(.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow) {
+        left: 10px;
+    }
+
+    :global(.ant-collapse > .ant-collapse-item > .ant-collapse-header) {
+        padding: 4px 30px 10px 33px;
+    }
+
+    :global(.ant-collapse-content) {
+        background: transparent;
+    }
+
+    :global(.ant-collapse-content > .ant-collapse-content-box) {
+        padding: 0;
+    }
+
+    .groupFloor1 {
+        background: #E8E8E8;
+        border-radius: 4px;
+        border: 1px solid #CBCBCB;
+        margin: 0 16px 16px 16px;
+
+        .groupFloor2 {
+            background: #EDEDED;
+            border-radius: 4px;
+            border: 1px solid #CBCBCB;
+            margin: 0 16px 16px 16px;
+
+            .groupFloor3 {
+                background: #F7F9FA;
+                border-radius: 4px;
+                border: 1px solid #DBDBDB;
+                margin: 0 16px 16px 16px;
+            }
+        }
+    }
+
+    .floorContainer {
+        //padding: 4px 10px;
+        font-size: 12px;
+        font-family: PingFangSC;
+        font-weight: 400;
+
+        .groupName {
+            color: #5A6876;
+            margin-bottom: 4px;
+        }
+
+        .groupText {
+            display: flex;
+            align-items: flex-start;
+            color: #2C3F53;
+
+            .groupTextColor {
+                border-radius: 12px;
+                padding: 0 10px;
+                height: 20px;
+                line-height: 20px;
+            }
+
+            .groupTextColorNormal {
+                border-radius: 4px;
+                padding: 0 10px;
+                background: #E9EEF9;
+                height: 20px;
+                line-height: 20px;
+            }
+
+            .groupTextNormal {
+
+            }
+
+            .groupNumber {
+                margin-left: 12px;
+                color: #666666;
+                width: 100px;
+            }
+        }
+    }
+}

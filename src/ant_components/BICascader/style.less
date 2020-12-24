@@ -1,0 +1,30 @@
+@import "../config.less";
+
+:global .BICascader {
+  .ant-cascader-picker,.ant-input {
+      width: 100%;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+  .ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled){
+    //border-color: #52C9C2 !important;
+    //-webkit-box-shadow: 0 0 0 2px @base-green-shadow;
+    //box-shadow: 0 0 0 2px @base-green-shadow;
+  }
+
+  .ant-calendar-picker:focus .ant-calendar-picker-input:not(.ant-input-disabled){
+    //border-color: @base-green;
+    outline: 0;
+    //-webkit-box-shadow: 0 0 0 2px @base-green-shadow;
+    //box-shadow: 0 0 0 2px @base-green-shadow;
+  }
+
+  .ant-calendar-picker-clear, .ant-calendar-picker-icon {
+    right: 16px;
+  }
+  .ant-input:hover{
+    //border-color: @base-green;
+  }
+}
+
+

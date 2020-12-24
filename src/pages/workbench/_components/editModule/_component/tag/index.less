@@ -1,0 +1,17 @@
+@import '~@/theme/common';
+
+.tagWrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .addTagIcon{
+        color: @primaryColor;
+        cursor: pointer;
+    }
+}
+.tagModal {
+   padding: 0;
+   :global .ant-popover-inner-content{
+       padding: 0;
+   }
+}
