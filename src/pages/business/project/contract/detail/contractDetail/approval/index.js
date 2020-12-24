@@ -16,10 +16,13 @@ class Index extends Component {
     }
 
     getData = async () => {
-        const result = await getInstance(this.props.formData.contract.contractInstanceId);
+        const result = await getInstance(222);
         if (result && result.success) {
+            let instanceData = result.data;
+            instanceData.approvalFlowNodeDtos = instanceData.approvalNoticers.map(ls => ({ ...ls, executorName: ls.userName }))
+            instanceData.approvalTaskLogDtos = []
             this.setState({
-                instanceData: result.data,
+                instanceData,
             });
         }
     };

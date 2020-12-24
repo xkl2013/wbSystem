@@ -7,11 +7,7 @@ import SlefProgress from '@/components/Progress';
 import styles from './index.less';
 import AuthButton from '@/components/AuthButton';
 import Info from './info';
-import Execute from './execute';
 import Receipt from './receipt';
-import Fee from './fee';
-import Account from './account';
-import Approval from './approval';
 import { connectInfo } from '@/services/globalDetailApi';
 import { detail2detail } from '../../utils/transferData';
 
@@ -123,11 +119,7 @@ class Index extends PureComponent {
                 {selTab === 1 && (
                     <Info {...this.props} formData={formData} updataFn={this.getData} connectData={connectData} />
                 )}
-                {selTab === 2 && <Execute {...this.props} formData={formData} />}
                 {selTab === 3 && <Receipt {...this.props} formData={formData} />}
-                {selTab === 4 && <Fee {...this.props} formData={formData} />}
-                {selTab === 5 && <Account {...this.props} formData={formData} />}
-                {selTab === 6 && <Approval {...this.props} formData={formData} />}
                 <AuthButton authority="/foreEnd/business/contract/manage/detail/commen">
                     <SlefProgress
                         id={Number(commentsParams.id || this.props.id)}
