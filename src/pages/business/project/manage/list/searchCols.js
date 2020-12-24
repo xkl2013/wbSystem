@@ -63,29 +63,12 @@ export const searchCols = [
     ],
     [
         {
-            key: 'talentsName',
-            type: 'associationSearchFilter',
-            placeholder: '请输入目标艺人或博主',
-            className: styles.searchCls,
-            componentAttr: {
-                request: (val) => {
-                    return getTalentList({ pageNum: 1, pageSize: 100, talentName: val });
-                },
-                fieldNames: {
-                    value: (val) => {
-                        return `${val.talentId}_${val.talentType}`;
-                    },
-                    label: 'talentName',
-                },
-                initDataType: 'onfocus',
-            },
-        },
-        {
             key: 'projectingCode',
             placeholder: '请输入项目编号',
             className: styles.searchCls,
         },
         {},
+        {}
     ],
 ];
 export const advancedSearchCols = [
@@ -107,30 +90,14 @@ export const advancedSearchCols = [
             className: styles.dateRangeCls,
         },
     ],
-    [
-        {
-            key: 'projectTypeList',
-            type: 'checkbox',
-            label: '项目类型',
-            options: PROJECT_TYPE,
-        },
-    ],
-    [
-        {
-            key: 'projectingSignStateList',
-            type: 'checkbox',
-            label: '签约状态',
-            options: PROJECTING_SIGN_STATE,
-        },
-    ],
-    [
-        {
-            key: 'projectingExecteStateList',
-            type: 'checkbox',
-            label: '执行状态',
-            options: PROJECTING_EXECTE_STATE,
-        },
-    ],
+    // [
+    //     {
+    //         key: 'projectingExecteStateList',
+    //         type: 'checkbox',
+    //         label: '执行状态',
+    //         options: PROJECTING_EXECTE_STATE,
+    //     },
+    // ],
     [
         {
             key: 'returnStatusList',
@@ -139,22 +106,14 @@ export const advancedSearchCols = [
             options: PROJECT_MONEY_STATUS,
         },
     ],
-    [
-        {
-            key: 'reimburseStatusList',
-            type: 'checkbox',
-            label: '报销状态',
-            options: CONTRACT_REIMBURSE_STATUS,
-        },
-    ],
-    [
-        {
-            key: 'expenseConfirmStatusList',
-            type: 'checkbox',
-            label: '费用确认状态',
-            options: CONTRACT_FEE_STATUS,
-        },
-    ],
+    // [
+    //     {
+    //         key: 'expenseConfirmStatusList',
+    //         type: 'checkbox',
+    //         label: '费用确认状态',
+    //         options: CONTRACT_FEE_STATUS,
+    //     },
+    // ],
     // [
     //     {
     //         key: 'settleStatusList',
@@ -163,14 +122,6 @@ export const advancedSearchCols = [
     //         options: CONTRACT_SETTLEMENT_STATUS,
     //     },
     // ],
-    [
-        {
-            key: 'endStatusList',
-            type: 'checkbox',
-            label: '结案状态',
-            options: CONTRACT_END_STATUS,
-        },
-    ],
     [
         {
             key: 'projectBudgetStart',

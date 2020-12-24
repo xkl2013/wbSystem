@@ -95,14 +95,6 @@ export function columnsFn(props) {
             },
         },
         {
-            title: '艺人/博主',
-            dataIndex: 'talents',
-            render: (text) => {
-                return text && renderTxt(text);
-            },
-            width: 180,
-        },
-        {
             title: '合同总金额',
             dataIndex: 'contractMoneyTotal',
             render: (text, record) => {
@@ -112,50 +104,6 @@ export function columnsFn(props) {
                 return isNumber(text) && `${thousandSeparatorFixed(text)}元`;
             },
             // width: '5%',
-        },
-        {
-            title: '执行进度',
-            dataIndex: 'contractProgress',
-            // width: '5%',
-            render: (text, record) => {
-                const content = (text && `${(text * 100).toFixed(2)}%`) || '0.00%';
-                const contractAppointmentList = (record.contractAppointmentList || []).map((item, index) => {
-                    return {
-                        ...item,
-                        index,
-                    };
-                });
-                const column = [
-                    {
-                        title: '艺人/博主',
-                        dataIndex: 'contractAppointmentTalentName',
-                        render: (text) => {
-                            return text && renderTxt(text);
-                        },
-                        width: 100,
-                        className: styles.columnHeader,
-                    },
-                    {
-                        title: '执行进度',
-                        className: styles.columnHeader,
-                        dataIndex: 'contractAppointmentProgress',
-                        render: (word) => {
-                            return (word && `${(word * 100).toFixed(2)}%`) || '0.00%';
-                        },
-                        width: 80,
-                    },
-                    {
-                        title: '进度更新时间',
-                        className: styles.columnHeader,
-                        dataIndex: 'contractAppointmentCreatedAt',
-                        render: (text) => {
-                            return text && text.slice(0, 10);
-                        },
-                        width: 100,
-                    },
-                ];
-                return renderPopTable(content, column, contractAppointmentList, styles.tableClass);
-            },
         },
         {
             title: '开票进度',
@@ -262,27 +210,6 @@ export function columnsFn(props) {
             },
         },
         {
-            title: '累计报销金额',
-            dataIndex: 'accumulatedReimbursementMoney',
-            // width: '5%',
-            render: (text, record) => {
-                const disabled = !(
-                    checkPathname('/foreEnd/business/project/contract/detail/cost')
-                    && record.contractApprovalStatus === 3
-                );
-                return (
-                    <span
-                        className={disabled ? `${styles.link} ${styles.disabled}` : styles.link}
-                        onClick={() => {
-                            return !disabled && props.checkFeeData(record.contractId);
-                        }}
-                    >
-                        {(text && thousandSeparatorFixed(text)) || 0}
-                    </span>
-                );
-            },
-        },
-        {
             title: '结算进度',
             dataIndex: 'settlementProgress',
             // width: '5%',
@@ -319,22 +246,6 @@ export function columnsFn(props) {
             // // width: '5%',
         },
         {
-            title: '主子合同',
-            dataIndex: 'contractCategory',
-            render: (text) => {
-                return getOptionName(contractCategory, text);
-            },
-            // width: '5%',
-        },
-        {
-            title: '审批状态',
-            dataIndex: 'contractApprovalStatus',
-            render: (text) => {
-                return <span style={{ color: getColor(text) }}>{getOptionName(FEE_APPLY_TYPE_LIST, text)}</span>;
-            },
-            // width: '5%',
-        },
-        {
             title: '执行状态',
             dataIndex: 'contractProgressStatus',
             render: (text) => {
@@ -350,14 +261,6 @@ export function columnsFn(props) {
                     return '';
                 }
                 return getOptionName(CONTRACT_MONEY_STATUS, text);
-            },
-            // width: '5%',
-        },
-        {
-            title: '报销状态',
-            dataIndex: 'reimburseStatus',
-            render: (text) => {
-                return getOptionName(CONTRACT_REIMBURSE_STATUS, text);
             },
             // width: '5%',
         },
@@ -381,17 +284,6 @@ export function columnsFn(props) {
             // width: '5%',
         },
         {
-            title: '结案状态',
-            dataIndex: 'endStatus',
-            render: (text, record) => {
-                if (Number(record.contractProjectType) === 4) {
-                    return '';
-                }
-                return getOptionName(CONTRACT_END_STATUS, text);
-            },
-            // width: '5%',
-        },
-        {
             title: '归档状态',
             dataIndex: 'contractArchiveStatus',
             render: (text, record) => {
@@ -410,30 +302,12 @@ export function columnsFn(props) {
             title: '操作',
             fixed: 'right',
             dataIndex: 'operate',
-            width: isEmpty(list) ? 0 : 200,
+            width: isEmpty(list) ? 0 : 100,
             ellipsis: true,
             render: (text, record) => {
                 const { contractCategory, contractApprovalStatus, contractIsVirtual, projectEndStatus } = record;
                 return (
                     <div>
-                        <AuthButton authority="/foreEnd/business/project/contract/addChildren">
-                            {Number(contractCategory) === 0
-                                && Number(contractApprovalStatus) === 3
-                                && Number(contractIsVirtual) !== 1 && (
-                                <span
-                                    className={
-                                        Number(projectEndStatus) === 1
-                                            ? `${styles.btnCls} ${styles.disabled}`
-                                            : styles.btnCls
-                                    }
-                                    onClick={() => {
-                                        return props.addChildContract(record.contractId);
-                                    }}
-                                >
-                                    创建子合同
-                                </span>
-                            )}
-                        </AuthButton>
                         {/*
                         <AuthButton authority="/foreEnd/business/project/contract/specialEdit">
                             <span

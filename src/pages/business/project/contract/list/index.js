@@ -248,24 +248,6 @@ class Establish extends Component {
                         ],
                         [
                             {
-                                key: 'talentName',
-                                type: 'associationSearchFilter',
-                                placeholder: '请输入艺人名',
-                                className: styles.searchCls,
-                                componentAttr: {
-                                    request: (val) => {
-                                        return getTalentList({ talentName: val });
-                                    },
-                                    initDataType: 'onfocus',
-                                    fieldNames: {
-                                        value: (item) => {
-                                            return `${item.talentId}_${item.talentType}`;
-                                        },
-                                        label: 'talentName',
-                                    },
-                                },
-                            },
-                            {
                                 key: 'contractHeaderName',
                                 type: 'associationSearchFilter',
                                 placeholder: '请输入负责人',
@@ -283,6 +265,7 @@ class Establish extends Component {
                                 placeholder: '请输入合同编号',
                                 className: styles.searchCls,
                             },
+                            {}
                         ],
                     ]}
                     advancedSearchCols={[
@@ -297,42 +280,10 @@ class Establish extends Component {
                         ],
                         [
                             {
-                                key: 'contractProjectType',
-                                type: 'checkbox',
-                                label: '项目类型',
-                                options: PROJECT_TYPE,
-                            },
-                        ],
-                        [
-                            {
-                                key: 'contractApprovalStatus',
-                                type: 'checkbox',
-                                label: '审批状态',
-                                options: FEE_APPLY_TYPE,
-                            },
-                        ],
-                        [
-                            {
-                                key: 'talentTypes',
-                                type: 'checkbox',
-                                label: 'talent类型',
-                                options: TALENDT_TYPE,
-                            },
-                        ],
-                        [
-                            {
                                 key: 'contractArchiveStatus',
                                 type: 'checkbox',
                                 label: '归档状态',
                                 options: CONTRACT_ARCHIVE_STATUS,
-                            },
-                        ],
-                        [
-                            {
-                                key: 'contractCategory',
-                                type: 'checkbox',
-                                label: '主子合同',
-                                options: contractCategory,
                             },
                         ],
                         [
@@ -349,30 +300,6 @@ class Establish extends Component {
                                 type: 'checkbox',
                                 label: '回款状态',
                                 options: CONTRACT_MONEY_STATUS,
-                            },
-                        ],
-                        [
-                            {
-                                key: 'reimburseStatusList',
-                                type: 'checkbox',
-                                label: '报销状态',
-                                options: CONTRACT_REIMBURSE_STATUS,
-                            },
-                        ],
-                        [
-                            {
-                                key: 'expenseConfirmStatusList',
-                                type: 'checkbox',
-                                label: '费用确认状态',
-                                options: CONTRACT_FEE_STATUS,
-                            },
-                        ],
-                        [
-                            {
-                                key: 'endStatusList',
-                                type: 'checkbox',
-                                label: '结案状态',
-                                options: CONTRACT_END_STATUS,
                             },
                         ],
                         [

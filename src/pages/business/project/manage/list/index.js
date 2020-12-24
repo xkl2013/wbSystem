@@ -86,7 +86,7 @@ class Establish extends Component {
                     loading={loading}
                     searchCols={searchCols}
                     advancedSearchCols={advancedSearchCols}
-                    // btns={[{ label: '新增', onClick: this.addFn, authority: '/foreEnd/business/project/manage/add' }]}
+                    btns={[{ label: '新增', onClick: this.addFn, authority: '/foreEnd/business/project/manage/add' }]}
                     fetch={this.fetchData}
                     cols={columns}
                     pageData={projectListPage}

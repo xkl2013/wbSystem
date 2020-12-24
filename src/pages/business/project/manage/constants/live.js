@@ -3,6 +3,7 @@ import {
     renderProjectingTalent,
     renderProjectingName,
     renderProjectingDescription,
+    renderProjectingHeader,
 } from '../../establish/components';
 
 const formatCols = (obj) => {
@@ -14,6 +15,10 @@ const formatCols = (obj) => {
                 renderProjectingTalent(obj, { from: 'manage' }),
                 [renderProjectingName(obj, { from: 'manage' }), renderProjectingDescription()],
             ],
+        },
+        {
+            title: '负责人信息',
+            columns: [renderProjectingHeader(obj)],
         },
     ];
 };

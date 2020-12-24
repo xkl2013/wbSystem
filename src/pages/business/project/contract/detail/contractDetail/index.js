@@ -28,30 +28,9 @@ class Index extends PureComponent {
                     limit: '/foreEnd/business/project/contract/detail/signInfo',
                 },
                 {
-                    key: 2,
-                    value: '合同执行',
-                    limit: '/foreEnd/business/project/contract/detail/corry',
-                },
-                {
                     key: 3,
                     value: '收款管理',
                     limit: '/foreEnd/business/project/contract/detail/receivables',
-                },
-                {
-                    key: 4,
-                    value: '合同费用',
-                    limit: '/foreEnd/business/project/contract/detail/cost',
-                },
-                {
-                    key: 5,
-                    value: '合同结算',
-                    limit: '/foreEnd/business/project/contract/detail/settle',
-                },
-                {
-                    key: 6,
-                    value: '审批信息',
-                    limit: '/foreEnd/business/project/contract/detail/approval',
-                    isShow: true,
                 },
             ],
             formData: {}, // 合同详情概况

@@ -45,14 +45,6 @@ export function columnsFn(props) {
             width: 180,
         },
         {
-            title: '目标艺人/博主',
-            dataIndex: 'talentsName',
-            render: (text) => {
-                return <span style={{ cursor: 'pointer' }}>{renderTxt(text)}</span>;
-            },
-            width: 180,
-        },
-        {
             title: '签单额',
             dataIndex: 'projectingBudget',
             render: (d, record) => {
@@ -87,13 +79,6 @@ export function columnsFn(props) {
                     return '';
                 }
                 return getOptionName(PROJECT_MONEY_STATUS, text);
-            },
-        },
-        {
-            title: '报销状态',
-            dataIndex: 'reimburseStatus',
-            render: (text) => {
-                return getOptionName(CONTRACT_REIMBURSE_STATUS, text);
             },
         },
         {

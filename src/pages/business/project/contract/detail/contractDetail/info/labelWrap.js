@@ -33,13 +33,6 @@ export const labelWrap1 = (props) => {
             },
         },
         {
-            key: 'contractCategory',
-            label: '主子合同',
-            render: (detail) => {
-                return getOptionName(CONTRACT_PRI_TYPE, detail.contractCategory);
-            },
-        },
-        {
             key: 'contractProjectName',
             label: '项目名称',
             render: (detail) => {
@@ -60,24 +53,8 @@ export const labelWrap1 = (props) => {
             },
         },
         {
-            key: 'contractProjectCategory',
-            label: '项目明细分类',
-            render: (detail) => {
-                return getOptionName(PROJECT_INFO_TYPE, detail.contractProjectCategory);
-            },
-            isHide: Number(props.contractProjectType) === 4,
-        },
-        {
             key: 'contractName',
             label: '合同名称',
-        },
-        {
-            key: 'contractSigningType',
-            label: '签约方式',
-            render: (detail) => {
-                return getOptionName(CONTRACT_SIGN_TYPE, detail.contractSigningType);
-            },
-            isHide: Number(props.contractProjectType) === 4,
         },
         {
             key: 'contractCustomerList',
@@ -112,20 +89,6 @@ export const labelWrap1 = (props) => {
             isHide: Number(props.contractSigningType) === 3 || Number(props.contractProjectType) === 4,
         },
         {
-            key: 'contractStudioList',
-            label: '工作室主体',
-            render: (detail) => {
-                const name = [];
-                if (detail.contractStudioList) {
-                    detail.contractStudioList.forEach((item) => {
-                        name.push(item.contractCompanyName);
-                    });
-                }
-                return <span style={{ cursor: 'pointer' }}>{renderTxt(name.join(','), 15)}</span>;
-            },
-            isHide: Number(props.contractSigningType) === 1 || Number(props.contractProjectType) === 4,
-        },
-        {
             key: 'contractCount',
             label: '合同份数',
             render: (detail) => {
@@ -139,22 +102,6 @@ export const labelWrap1 = (props) => {
             render: (detail) => {
                 return detail.contractSigningDate && moment(detail.contractSigningDate).format(DATE_FORMAT);
             },
-        },
-        {
-            key: 'clauseName',
-            label: '合同审核流程',
-            render: (detail) => {
-                const data = [
-                    {
-                        ...detail,
-                        id: props.contract.clauseCurrentVersionId,
-                        name: renderTxt(detail.clauseName, 15),
-                        path: '/foreEnd/approval/apply/contract/notify',
-                    },
-                ];
-                return <Information data={data} />;
-            },
-            isHide: Number(props.contractProjectType) === 4,
         },
     ];
 
@@ -187,37 +134,13 @@ export const labelWrap2 = (props) => {
             isHide: Number(props.contractProjectType) === 4,
         },
         {
-            key: 'contractMoneyCompany',
-            label: '公司金额',
-            render: (detail) => {
-                // eslint-disable-next-line max-len
-                return (
-                    isNumber(detail.contractMoneyCompany) && `${thousandSeparatorFixed(detail.contractMoneyCompany)}元`
-                );
-            },
-            isHide: Number(props.contractProjectType) === 4,
-        },
-        {
             key: 'contractMoneyCompanyName',
             label: '回款主体(公司)',
             isHide: Number(props.contractSigningType) === 3,
         },
         {
-            key: 'contractMoneyStudioName',
-            label: '回款主体(工作室)',
-            isHide: Number(props.contractSigningType) === 1,
-        },
-        {
             key: 'contractInvoiceProject',
             label: '开票项目',
-            isHide: Number(props.contractProjectType) === 4,
-        },
-        {
-            key: 'contractInvoiceOrder',
-            label: '开票顺序',
-            render: (detail) => {
-                return getOptionName(CONTRACT_INVOICE_ORDER, detail.contractInvoiceOrder);
-            },
             isHide: Number(props.contractProjectType) === 4,
         },
         {
@@ -236,9 +159,6 @@ export const labelWrap2 = (props) => {
             },
             isHide: Number(props.contractProjectType) === 4,
         },
-        { key: 'contractCooperateProductDesc', label: '合作产品', isHide: !props.contractCooperateProductDesc },
-        { key: 'contractCooperateIndustryDesc', label: '合作行业', isHide: !props.contractCooperateIndustryDesc },
-        { key: 'contractCooperateBrandDesc', label: '合作品牌', isHide: !props.contractCooperateBrandDesc },
     ];
     let temp = [];
     const newArr = [];
