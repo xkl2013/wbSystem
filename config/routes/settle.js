@@ -17,7 +17,7 @@ export const settle = {
 export const receivable = {
     path: '/foreEnd/business/receivable',
     component: '../components/renderRouter',
-    name: '应收管理',
+    name: '费用确认',
     routes: [
         // 项目合同
         {
@@ -26,7 +26,7 @@ export const receivable = {
             tagGroup: [
                 { path: '/foreEnd/business/receivable', },
             ],
-            name: '应收管理',
+            name: '费用确认',
         },
     ],
 };

@@ -29,11 +29,6 @@ export function columnsFn(currentIsCreater, props) {
       render: text => getOptionName(CONTRACT_INVOICE_COMPANY_TYPE, text)
     },
     {
-      title: '开票主体',
-      align: 'center',
-      dataIndex: 'contractInvoiceCompanyName',
-    },
-    {
       title: '发票开具时间',
       align: 'center',
       dataIndex: 'contractInvoiceDate',
@@ -66,30 +61,57 @@ export function columnsFn(currentIsCreater, props) {
       render: text => thousandSeparatorFixed(text)
     },
     {
-      title: '未税金额',
+      title: '实际金额',
       align: 'center',
-      dataIndex: 'contractInvoiceMoneyTotal',
+      dataIndex: 'contractInvoiceTaxMoney111',
       render: text => thousandSeparatorFixed(text)
     },
+    {
+      title: '费用确认时间',
+      align: 'center',
+      dataIndex: 'contractInvoiceDate',
+      render: (text) => {
+        return text && moment(text).format(DATE_FORMAT);
+      }
+    },
+    {
+      title: '费用确认金额',
+      align: 'center',
+      dataIndex: 'contractInvoiceDate',
+      render: (text) => {
+        return 1000
+      }
+    },
+    {
+      title: '费用确认状态',
+      align: 'center',
+      dataIndex: 'contractInvoiceTaxMoney111',
+      render: text => '未确认|已确认|部分确认'
+    },
+    // {
+    //   title: '审批状态',
+    //   align: 'center',
+    //   dataIndex: 'contractInvoiceTaxMoney111',
+    //   render: text => '待审批|已通过|已驳回'
+    // },
+    // {
+    //   title: '驳回原因',
+    //   align: 'center',
+    //   dataIndex: 'contractInvoiceTaxMoney111',
+    //   render: text => '实际回款比发票金额少,不予通过'
+    // },
     {
       title: '操作',
       align: 'center',
       dataIndex: 'operate',
       render: (text, record) => {
-        if (record.contractInvoiceStatus == 0) {
-          return (
-            <div>
-              <AuthButton authority="/foreEnd/business/project/contract/detail/receivables/edit">
-                <span className={styles.btnCls} onClick={() => props.editTableLine(record)}> 编辑</span>
-              </AuthButton>
-              <AuthButton authority="/foreEnd/business/project/contract/detail/receivables/delete">
-                <span className={styles.btnCls} onClick={() => props.delTableLine(record)}> 删除</span>
-              </AuthButton>
-            </div>
-          );
-        } else {
-          return null
-        }
+        return (
+          <div>
+            <span className={styles.btnCls} onClick={() => props.editTableLine(record)}> 编辑</span>
+            <span className={styles.btnCls} onClick={() => props.delTableLine(record)}> 删除</span>
+            <span className={styles.btnCls} onClick={() => props.props.checkVerifyModal(record)}> 发起费用确认</span>
+          </div>
+        );
       },
     },
   ];

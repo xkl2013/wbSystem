@@ -44,7 +44,7 @@ const routes = [
             // 项目管理
             project,
             // 结算管理
-            settle,
+            // settle,
             // 应收管理
             receivable,
         ],

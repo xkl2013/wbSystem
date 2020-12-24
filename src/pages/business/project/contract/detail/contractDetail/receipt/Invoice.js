@@ -38,6 +38,10 @@ class Index extends Component {
         }
         const result = await getContractInvoices({ contractId: id });
         if (result && result.success) {
+            let contractInvoice = (result.data && result.data.list) || [];
+            if (contractInvoice.length === 0) {
+                contractInvoice.push({})
+            }
             this.setState({
                 contractInvoice: (result.data && result.data.list) || [],
             });
@@ -139,7 +143,7 @@ class Index extends Component {
 
     render() {
         const { contractInvoice, companyList } = this.state;
-        const { currentIsCreater } = this.props;
+        const { currentIsCreater, checkVerifyModal } = this.props;
         const formDataObj = this.props.formData;
         return (
             <div className={styles.detailPage1}>
@@ -154,6 +158,7 @@ class Index extends Component {
                     initForm={this.initForm}
                     delCallback={this.del}
                     submitCallback={this.submit}
+                    checkVerifyModal={checkVerifyModal}
                 />
             </div>
         );

@@ -77,32 +77,9 @@ class Index extends PureComponent {
         const detail = this.detail.current;
         return (
             <div>
-                {/* {Number(endStatus) === 2 && (
-                    <AuthButton authority="/foreEnd/business/project/contract/detail/end"> */}
-                <BIButton type="primary" className={styles.headerBtn} onClick={this.end}>
-                    结案
-                        </BIButton>
-                {/* </AuthButton>
-                )} */}
-                {/* {Number(formData.contractProjectType) !== 4
-                    && Number(contractApprovalStatus) === 3
-                    && Number(contractArchiveStatus) === 0 && (
-                        <AuthButton authority="/foreEnd/business/project/contract/detail/archive"> */}
                 <BIButton type="primary" className={styles.headerBtn} onClick={this.archive}>
                     归档
                         </BIButton>
-                {/* </AuthButton>
-                    )} */}
-                {/* {Number(formData.contractProjectType) !== 4 && Number(contractFeeVerifyTaskStatus) === 0 && (
-                    <AuthButton authority="/foreEnd/business/project/contract/detail/verify"> */}
-                <BIButton
-                    type="primary"
-                    className={styles.headerBtn}
-                    onClick={lodash.debounce(this.checkVerify, 400)}
-                >
-                    发起项目费用确认
-                        </BIButton>
-                {/* </AuthButton> */}
             </div>
         );
     };
@@ -306,6 +283,7 @@ class Index extends PureComponent {
                     handleCallback={this.hancleCallback}
                     ref={this.detail}
                     approvalIcon={approvalIcon}
+                    checkVerifyModal={this.checkVerifyModal}
                 />
             </>
         );

@@ -53,29 +53,6 @@ class Index extends Component {
                         />
                     </FlexDetail>
                 )}
-                <FlexDetail LabelWrap={[[]]} detail={formData} title="合同附件">
-                    {normalFiles.length > 0 ? (
-                        <FileDetail data={normalFiles} />
-                    ) : (
-                            <span className={styles.noData}>暂无数据</span>
-                        )}
-                </FlexDetail>
-                {archiveFiles.length > 0 && (
-                    <FlexDetail LabelWrap={[[]]} detail={formData} title="归档附件">
-                        <FileDetail data={archiveFiles} />
-                    </FlexDetail>
-                )}
-                {Array.isArray(connectData) && connectData.length > 0 && (
-                    <FlexDetail LabelWrap={[[]]} detail={{}} title="转交记录">
-                        <BITable
-                            rowKey="id"
-                            dataSource={connectData}
-                            bordered
-                            pagination={false}
-                            columns={labelWrap7}
-                        />
-                    </FlexDetail>
-                )}
             </div>
         );
     }

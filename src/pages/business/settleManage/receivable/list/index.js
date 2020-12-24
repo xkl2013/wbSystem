@@ -157,7 +157,7 @@ class StatementList extends React.Component {
                         [
                             {
                                 key: 'contractDate',
-                                label: '应收日期',
+                                label: '发票日期',
                                 type: 'daterange',
                                 placeholder: ['签约开始日期', '签约结束日期'],
                                 className: styles.dateRangeCls,
@@ -167,8 +167,8 @@ class StatementList extends React.Component {
                             {
                                 key: 'expenseConfirmStatus',
                                 type: 'checkbox',
-                                label: '应收状态',
-                                options: [{ id: 1, name: '延期' }, { id: 2, name: '正常' }],
+                                label: '审批状态',
+                                options: [{ id: 1, name: '待审批' }, { id: 2, name: '已通过' }, { id: 3, name: '已驳回' }],
                             },
                         ],
                     ]}

@@ -3,8 +3,6 @@ import { connect } from 'dva';
 import styles from './index.less';
 import Invoice from './Invoice';
 import Return from './Return';
-import Yingshou from './yingshou';
-
 import storage from '@/utils/storage';
 
 @connect(() => {
@@ -37,7 +35,6 @@ class Index extends Component {
         return (
             <div className={styles.detailPage}>
                 <Invoice {...this.props} currentIsCreater={currentIsCreater} />
-                <Yingshou {...this.props} currentIsCreater={currentIsCreater} />
                 <Return {...this.props} currentIsCreater={currentIsCreater} />
             </div>
         );

@@ -210,50 +210,6 @@ export function columnsFn(props) {
             },
         },
         {
-            title: '结算进度',
-            dataIndex: 'settlementProgress',
-            // width: '5%',
-            render: (text, record) => {
-                if (Number(record.contractProjectType) === 4) {
-                    return '';
-                }
-                const result = text ? text.split('/') : [0, 0];
-                const left = Number(result[0]) === 0 ? 0 : thousandSeparatorFixed(result[0]);
-                const right = Number(result[1]) === 0 ? 0 : thousandSeparatorFixed(result[1]);
-                const content = `${left === 'null' ? 0 : left}/${right === 'null' ? 0 : right}`;
-                const disabled = !(
-                    checkPathname('/foreEnd/business/project/contract/detail/settle')
-                    && record.contractApprovalStatus === 3
-                );
-                return (
-                    <span
-                        className={disabled ? `${styles.link} ${styles.disabled}` : styles.link}
-                        onClick={() => {
-                            return !disabled && props.checkAccountData(record.contractId);
-                        }}
-                    >
-                        {content}
-                    </span>
-                );
-            },
-        },
-        {
-            title: '签约日期',
-            dataIndex: 'contractSigningDate',
-            render: (text) => {
-                return text && text.slice(0, 10);
-            },
-            // // width: '5%',
-        },
-        {
-            title: '执行状态',
-            dataIndex: 'contractProgressStatus',
-            render: (text) => {
-                return getOptionName(CONTRACT_PROGRESS_STATUS, text);
-            },
-            // width: '5%',
-        },
-        {
             title: '回款状态',
             dataIndex: 'contractMoneyStatus',
             render: (text, record) => {
@@ -272,14 +228,6 @@ export function columnsFn(props) {
                     return '';
                 }
                 return getOptionName(CONTRACT_FEE_STATUS, text);
-            },
-            // width: '5%',
-        },
-        {
-            title: '结算状态',
-            dataIndex: 'contractSettlementStatus',
-            render: (text) => {
-                return getOptionName(CONTRACT_SETTLEMENT_STATUS, text);
             },
             // width: '5%',
         },

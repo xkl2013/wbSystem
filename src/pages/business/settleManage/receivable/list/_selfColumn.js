@@ -18,7 +18,7 @@ function columnsFn(props) {
 
     const columns = [
         {
-            title: '应收编码',
+            title: '发票编码',
             dataIndex: 'projectingName1',
             width: 150,
             render: (text) => {
@@ -42,20 +42,27 @@ function columnsFn(props) {
             },
         },
         {
-            title: '应收金额',
+            title: '发票金额',
             align: 'center',
             width: 150,
             dataIndex: 'contractReturnMoney',
             render: text => 10000
         },
         {
-            title: '应收时间',
+            title: '发票开具时间',
             align: 'center',
             width: 150,
             dataIndex: 'contractReturnDate',
             render: (text) => {
                 return '2020/20/2';
             }
+        },
+        {
+            title: '费用确认金额',
+            align: 'center',
+            width: 150,
+            dataIndex: 'contractReturnMoney',
+            render: text => 10000
         },
         {
             title: '负责人',
@@ -76,13 +83,24 @@ function columnsFn(props) {
             }
         },
         {
-            title: '应收状态',
+            title: '审批状态',
             align: 'center',
             width: 150,
             dataIndex: 'contractReturnDate3',
             render: (text) => {
                 return (
-                    <span style={{ color: 'red' }}>延期</span>
+                    '待审批|已通过|已驳回'
+                )
+            }
+        },
+        {
+            title: '驳回原因',
+            align: 'center',
+            width: 150,
+            dataIndex: 'contractReturnDate3',
+            render: (text) => {
+                return (
+                    '款项与发起实际金额不符'
                 )
             }
         },
@@ -94,7 +112,10 @@ function columnsFn(props) {
             fixed: 'right',
             render: (text) => {
                 return (
-                    <a onClick={() => props.startApproval()}>延期审批</a>
+                    <>
+                        <a onClick={() => props.startApproval()}>确认</a>|
+                        <a onClick={() => props.startApproval()}>驳回</a>
+                    </>
                 )
             }
         },

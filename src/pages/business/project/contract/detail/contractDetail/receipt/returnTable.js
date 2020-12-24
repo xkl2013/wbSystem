@@ -60,12 +60,12 @@ export function columnsFn(currentIsCreater, props) {
         if (record.contractReturnStatus == 0) {
           return (
             <div>
-              <AuthButton authority="/foreEnd/business/project/contract/detail/backInfo/edit">
-                <span className={styles.btnCls} onClick={() => props.editTableLine(record)}> 编辑</span>
-              </AuthButton>
-              <AuthButton authority="/foreEnd/business/project/contract/detail/backInfo/delete">
-                <span className={styles.btnCls} onClick={() => props.delTableLine(record)}> 删除</span>
-              </AuthButton>
+              {/* <AuthButton authority="/foreEnd/business/project/contract/detail/backInfo/edit"> */}
+              <span className={styles.btnCls} onClick={() => props.editTableLine(record)}> 编辑</span>
+              {/* </AuthButton> */}
+              {/* <AuthButton authority="/foreEnd/business/project/contract/detail/backInfo/delete"> */}
+              <span className={styles.btnCls} onClick={() => props.delTableLine(record)}> 删除</span>
+              {/* </AuthButton> */}
             </div>
           );
         } else {
