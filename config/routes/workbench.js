@@ -18,12 +18,12 @@ export const workbench = [
                 name: '工作台',
                 authignore: true,
             },
-            {
-                path: '/foreEnd/workbench/monitor',
-                component: './workbench/monitor',
-                name: '数据监控',
-                authignore: true,
-            },
+            // {
+            //     path: '/foreEnd/workbench/monitor',
+            //     component: './workbench/monitor',
+            //     name: '数据监控',
+            //     authignore: true,
+            // },
         ],
     },
 ];

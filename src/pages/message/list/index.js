@@ -197,7 +197,7 @@ class Message extends React.Component {
     render() {
         let messageCountList = this.props.messageCountList || [];
         // 
-        messageCountList = messageCountList.filter(ls => ls.messageModule !== 3 && ls.messageModule !== 4 && ls.messageModule !== 5)
+        messageCountList = messageCountList.filter(ls => ls.messageModule !== 2 && ls.messageModule !== 3 && ls.messageModule !== 4 && ls.messageModule !== 5)
         console.log(messageCountList)
         const {
             total, messageList, loading, listParams, commentVisible, commentItem,

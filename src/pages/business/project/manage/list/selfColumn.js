@@ -99,16 +99,6 @@ export function columnsFn(props) {
         //     },
         // },
         {
-            title: '结案状态',
-            dataIndex: 'endStatus',
-            render: (text, record) => {
-                if (Number(record.projectingType) === 4) {
-                    return '';
-                }
-                return getOptionName(CONTRACT_END_STATUS, text);
-            },
-        },
-        {
             title: '操作',
             dataIndex: 'operate',
             render: (text, record) => {

@@ -7,7 +7,7 @@ import { project } from './project';
 const routes = [
     ...workbench,
     // 消息模块
-    ...news,
+    // ...news,
     // ...calendar,
     {
         path: '/foreEnd/executorApproval',

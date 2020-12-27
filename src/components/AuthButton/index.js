@@ -35,7 +35,8 @@ export function checkPathname(authority) {
     if (process.env.NODE_ENV === 'development') {
         return true;
     }
-    return !!menuKey;
+    return true
+    // return !!menuKey;
 }
 
 /*
